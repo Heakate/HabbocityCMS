@@ -1,0 +1,79 @@
+.CompTabs {
+    position: fixed;
+    z-index: 999999;
+}
+
+.CompTabs .tab {
+    position: fixed;
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+    background: var(--city-white);
+    box-shadow: 0 0 0 2px #0000001f, 0 0 20px #0003;
+    border-radius: 12px;
+    max-height: 100%;
+    color: var(--city-black);
+    max-width: 100%;
+    z-index: 99999999;
+}
+
+.CompTabs .tab.notdraggable {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.CompTabs .tabHead {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid var(--city-grey);
+    display: flex;
+}
+
+.CompTabs .tabHeadIcon {
+    height: 26px;
+    margin-right: 10px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CompTabs .tabHeadClose {
+    margin-left: auto;
+    height: 24px;
+    width: 24px;
+    margin-top: 3px;
+    cursor: pointer;
+    background: url("../../img/close_24.png");
+}
+
+.CompTabs .tabHeadClose:hover {
+    opacity: 0.7;
+}
+
+.CompTabs .tabHeadTitle {
+    font-size: 22px;
+}
+
+.CompTabs .tabContent {
+    position: relative;
+    height: calc(100% - 49px);
+    width: 100%;
+}
+
+.mobile .CompTabs .tab {
+    left: 0 !important;
+    top: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+@media (max-width: 800px) {
+    .CompTabs .tab {
+        top: 0 !important;
+        left: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+}

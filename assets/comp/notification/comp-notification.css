@@ -1,0 +1,261 @@
+.CompNotification {
+    position: fixed;
+    width: 350px;
+    top: 80px;
+    max-height: calc(100% - 20px);
+    left: 0;
+    z-index: 9999999999;
+}
+
+.CompNotification .closeAll {
+    display: none;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    background: rgb(255, 146, 72);
+    justify-content: center;
+    color: var(--city-white);
+    height: 40px;
+    align-items: center;
+    width: 220px;
+    left: 20px;
+    box-shadow: 0 0 0 2px #0000001f, 0 0 20px #0003;
+    font-size: 120%;
+}
+
+.CompNotification .closeAll:hover {
+    background: rgb(230, 91, 0);
+}
+
+.CompNotification .notification {
+    top: 55px;
+    position: absolute;
+    border-radius: 10px;
+    width: 220px;
+    left: -500px;
+    padding-bottom: 10px;
+    background: var(--city-white);
+    box-shadow: 0 0 0 2px #0000001f, 0 0 20px #0003;
+    z-index: 999;
+}
+
+.CompNotification .notification .cancel {
+    display: none;
+}
+
+.CompNotification .notification .CompButtonsFloater {
+    box-shadow: unset;
+}
+
+.CompNotification .ntf1 {
+    position: relative;
+    left: 10px;
+    border-bottom: 2px solid var(--city-grey);
+    width: calc(100% - 30px);
+    height: 46px;
+}
+
+.CompNotification .ntf2 {
+    position: absolute;
+    width: 20px;
+    top: 16px;
+    height: 20px;
+    background: url(../../../assets/img/32_warn.png);
+    background-size: contain;
+}
+
+.CompNotification .ntf3 {
+    position: absolute;
+    font-size: 120%;
+    left: 26px;
+    top: 14px;
+}
+
+.CompNotification .ntf3Close {
+    position: absolute;
+    right: -10px;
+    height: 18px;
+    width: 18px;
+    top: 16px;
+    background: url(../../../assets/img/close_24.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.CompNotification .ntf3Close:hover {
+    opacity: 0.8;
+}
+
+.CompNotification .ntf3OpenProfile:hover {
+    cursor: pointer;
+}
+
+.CompNotification .ntf4 {
+    position: relative;
+    word-wrap: break-word;
+    font-size: 100%;
+    color: var(--city-black);
+    width: calc(100% - 30px);
+    left: 15px;
+    margin-top: 10px;
+}
+
+.CompNotification .ntf4Buttons {
+    position: relative;
+    display: flex;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.CompNotification .ntf5 {
+    position: relative;
+    cursor: pointer;
+    padding: 7px 15px;
+    font-size: 100%;
+    color: var(--city-white);
+    background: #5ea6ee;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+.CompNotification .ntf5:hover {
+    opacity: 0.7;
+}
+
+.CompNotification .ntf6 {
+    left: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: -50px;
+    background: rgb(255, 146, 72);
+    display: flex;
+    justify-content: center;
+    color: var(--city-white);
+    height: 40px;
+    align-items: center;
+    width: 220px;
+}
+
+.CompNotification .ntf6:hover {
+    background: rgb(230, 91, 0)
+}
+
+.CompNotification .ntf8 {
+    position: absolute;
+    height: 17px;
+    top: 7px;
+    left: 9px;
+    width: 19px;
+    background: url(../../../assets/img/notification.png) -1px -1px;
+}
+
+.CompNotification .ntf9 {
+    position: relative;
+    cursor: pointer;
+    padding: 7px 15px;
+    border: 2px solid rgb(235, 235, 235);
+    font-size: 100%;
+    color: var(--city-white);
+    background: var(--city-grey-light);
+    border-radius: 12px;
+    height: 14px;
+    width: 80px;
+}
+
+.CompNotification .ntf10 {
+    position: absolute;
+    height: 16px;
+    top: 5px;
+    left: 9px;
+    width: 14px;
+    background: url(../../../assets/img/notification.png) -34px -1px;
+}
+
+.CompNotification .ntf11 {
+    position: absolute;
+    color: #d0d0d0;
+    font-size: 14px;
+    left: 30px;
+    top: 6px;
+}
+
+.CompNotification .ntf12 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 12px;
+    width: 100%;
+    background: var(--city-white);
+}
+
+.CompNotification .ntf13 {
+    color: var(--city-black);
+    width: calc(100% - 20px);
+    font-size: 100%;
+    overflow: hidden;
+    padding: 10px;
+    resize: none;
+    border: none;
+    background: transparent;
+    height: 55px;
+    font-family: 'Ubuntu X', 'habbofont', sans-serif !important;
+}
+
+.CompNotification .ntf13:focus {
+    outline: none;
+}
+
+.CompNotification .animation {
+    min-height: 330px;
+    width: 580px !important;
+}
+
+.CompNotification .animation .notificationContainer {
+    display: flex;
+}
+
+.compNotificationContainer {
+    display: flex;
+}
+
+.CompNotification .animation .image {
+    height: auto;
+    flex: 0 0 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CompNotification .animation .content {
+    padding: 15px;
+}
+
+.CompNotification .animation .author {
+    display: flex;
+    background: #eeeeee;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.CompNotification .animation .authorFigure {
+    height: 110px;
+    width: 64px;
+    margin-top: -26px;
+}
+
+.CompNotification .animation .authorUsername {
+    margin-top: 5px;
+    color: var(--city-black-forced);
+}
+
+.CompNotification .animation .buttons {
+    padding-right: 15px;
+    height: 70px;
+}
+
+.mobile .CompNotification .animation {
+    display: none !important;
+}

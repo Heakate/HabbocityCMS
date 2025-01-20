@@ -1,0 +1,79 @@
+.CompPopup {
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+}
+
+.CompPopup .background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000000a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CompPopup .popup {
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+    background: var(--city-white);
+    box-shadow: 0 0 0 2px #0000001f, 0 0 20px #0003;
+    border-radius: 12px;
+    opacity: 1;
+    transform: scale(0.7);
+    transition: 0.25s ease-in-out;
+}
+
+.CompPopup .popup .notdraggable {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.CompPopup .popupHead {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid var(--city-grey);
+    display: flex;
+}
+
+.CompPopup .popupHeadIcon {
+    height: 26px;
+    margin-right: 18px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CompPopup .popupHeadClose {
+    margin-left: auto;
+    height: 24px;
+    width: 24px;
+    margin-top: 3px;
+    cursor: pointer;
+    background: url("../../img/close_24.png");
+}
+
+.CompPopup .popupHeadClose:hover {
+    opacity: 0.7;
+}
+
+.CompPopup .popupHeadTitle {
+    font-size: 22px;
+}
+
+.CompPopup .popupContent {
+    position: relative;
+    height: calc(100% - 49px);
+    width: 100%;
+}
+
+.mobile .CompPopup .popup {
+    height: 100% !important;
+    max-width: 650px !important;
+    width: 100% !important;
+}

@@ -1,0 +1,55 @@
+.CompButtons {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.CompButtonsFloater {
+    position: absolute;
+    display: flex;
+    bottom: -90px;
+    left: 15px;
+    padding: 15px;
+    width: calc(100% - 60px);
+    background: var(--city-white);
+    box-shadow: 0 0 0 2px #0000001f, 0 0 20px #0003;
+    border-radius: 8px;
+    justify-content: flex-end;
+}
+
+.CompButtons .button {
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1.5px solid #000;
+    background: #32bf1a;
+    width: fit-content;
+    position: relative;
+    color: var(--city-white-forced);
+    cursor: pointer;
+}
+
+.CompButtons .button::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+    left: 5px;
+    top: 3px;
+    background: #9add8f;
+}
+
+.CompButtons .button:hover {
+    transform: scale(0.97);
+    opacity: 0.9;
+}
+
+.CompButtons .cancel {
+    background: #ee2929 !important;
+}
+
+.CompButtons .cancel::before {
+    background: #ffa0a0 !important;
+}

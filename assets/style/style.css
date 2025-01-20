@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'ubuntu x';
+    src: url('../fonts/ubuntu-condensed.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'habbofont';
+    src: url('../fonts/habbfont.woff2');
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'habbofont', 'Ubuntu X', sans-serif;
+    background: var(--city-white);
+    color: var(--city-black);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 6px dotted var(--city-black);
+}
+
+input {
+    font-family: 'habbofont', 'Ubuntu X', sans-serif !important;
+    color: var(--city-black);
+}
+
+input::placeholder {
+    color: var(--placeholder);
+}
+
+input:active {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    font-family: 'habbofont', 'Ubuntu X', sans-serif !important;
+    color: var(--city-black);
+}
+
+.JavaScriptData {
+    display: none;
+}
+
+/* AVATAR */
+.AvatarImage {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.AvatarFigure {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -12%;
+    image-rendering: pixelated;
+}
+
+.AvatarFigureCustom {
+    position: absolute;
+    left: -6px;
+    margin-top: -22%;
+    image-rendering: pixelated;
+}
+
+.BannerImage {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.GroupImage {
+    top: 25%;
+    width: 50%;
+    left: 25%;
+    position: absolute;
+}
+
+/* Empty */
+.Empty {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Empty .FrankIcon {
+    height: 180px;
+    width: 215px;
+    background: url(../img/frank.gif);
+    background-size: cover;
+}
+
+.Empty .RoomIcon {
+    height: 526px;
+    width: 733px;
+    background: url(https://cdn.discordapp.com/attachments/981887429319462921/1192949849323225240/EMv4cBJXUAA5MGj.png?ex=65aaf020&is=65987b20&hm=74c2b48…&);
+}
+
+.Empty .EmptyTextRoomicon {
+    margin-top: 4px;
+    font-size: 22px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.Empty .EmptyText {
+    margin-top: 4px;
+    font-size: 16px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.Empty .EmptyButton {
+    background: #0095F6;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Empty .EmptyButton:hover {
+    background: #0066a8;
+}
+
+/* Scrollbar */
+/*
+.ScrollBox {
+    scrollbar-color: #8c8c8c #c3c3c3;
+}
+*/
+
+.ScrollBox::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ScrollBox::-webkit-scrollbar-track {
+    /*  background: #c3c3c3; */
+}
+
+.ScrollBox::-webkit-scrollbar-thumb {
+    height: 50px;
+    background: #8c8c8c;
+    border-radius: 4px;
+}

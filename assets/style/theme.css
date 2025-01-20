@@ -1,0 +1,73 @@
+:root {
+    --city-black: black;
+    --city-black-forced: black;
+    --city-black-text: black;
+    --city-white: white;
+    --city-white-forced: white;
+    --city-white-dark: white;
+    --city-white-light: white;
+    --city-grey: #ececec;
+    --city-grey-contour: #ececec;
+    --city-grey-light: rgb(245, 245, 245);
+    --city-grey-dark: #d9d9d9;
+    --city-grey-scrollbar: #ececec;
+    --city-yellow: #FDC628;
+    --city-blue: #e3f4ff;
+
+    /* Forum */
+    --forum-title: #000000;
+    --forum-post: white;
+    --forum-border-grey: #C7C7C7;
+    --forum-cercle: #A6AFC8;
+    --forum-avatar-bubble: #E5E5E5;
+
+    /* Palmares */
+    --palmares-text: black;
+
+    /* Header */
+    --header-navigation: #ffffff;
+    --green-button: #00E07D;
+    --green-d: #00b968;
+    --placeholder: #BFBFBF;
+    --background: #f8f8f8;
+    --radio-btn: #57606f;
+    --radio-title : #e1b12c;
+}
+
+.black {
+    --city-black: #d4d4d4;
+    --city-black-forced: black;
+    --city-black-text: #B9C5C9;
+    --city-white: #1F2333;
+    --city-white-dark: #3B435C;
+    --city-white-light: #3B435C;
+    --city-grey: #3B435C;
+    --city-grey-contour: #191C29;;
+    --city-grey-light: #3B435C;
+    --city-grey-dark: #2f2f33;
+    --city-grey-scrollbar: #1F2333;
+    --city-yellow: #818181;
+    --city-blue: #1a1a1a;
+
+    /* Forum */
+    --forum-title: #A6AFC8;
+    --forum-post: #1a1a1a;
+    --forum-border-grey: #000000;
+    --forum-cercle: #FFF;
+    --forum-avatar-bubble: #1F2333;
+
+    /* Palmares */
+    --palmares-text: #A6AFC8;
+
+    /* Header */
+    --header-navigation: #3b435cc2;
+
+    --green-button: #00E07D;
+    --green-d: #00b968;
+
+    --placeholder: #A6AFC8;
+    --background: #212536fa;
+
+    --radio-btn: #c8d6e5;
+    --radio-title : #fbc531;
+}

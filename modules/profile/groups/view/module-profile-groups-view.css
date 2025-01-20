@@ -1,0 +1,361 @@
+.moduleProfileGroupsBoxDetail {
+    width: 98%;
+    border-radius: 10px;
+    background: var(--city-grey);
+    display: flex;
+}
+
+.moduleProfileGroupsPartLeft {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moduleProfileGroupsBadge {
+    margin-top: 40px;
+}
+
+.moduleProfileGroupsOwner {
+    width: 150px;
+    height: 40px;
+    background: var(--city-white);
+    border-radius: 5px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsOwner:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsOwnerAvatar {
+    width: 50px;
+    height: 75px;
+    overflow: hidden;
+    margin-top: -35px;
+}
+
+.moduleProfileGroupsOwnerPseudo {
+    margin-left: 10px;
+    font-size: 116%;
+    width: 85px;
+    overflow: hidden;
+}
+
+.moduleProfileGroupsBoxFavorite {
+    height: 40px;
+    width: 150px;
+    background: #f1762f;
+    border-radius: 5px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxFavorite:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxFavoriteIcon {
+    position: relative;
+    height: 30px;
+    width: 24px;
+    margin-left: 5px;
+    background: url(../../../../assets/img/profile/group_favorite.png) no-repeat;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxFavoriteText {
+    font-size: 110%;
+    position: relative;
+    margin-left: 6px;
+    color: var(--city-white-forced);
+}
+
+.moduleProfileGroupsBoxIsFavorite {
+    height: 40px;
+    width: 150px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxIsFavoriteText {
+    user-select: none;
+    font-size: 112%;
+    position: relative;
+    margin-left: 6px;
+    text-decoration: underline;
+}
+
+.moduleProfileGroupsContainer {
+    width: 65%;
+    margin-top: 15px;
+}
+
+.moduleProfileGroupsBoxTitle {
+    position: relative;
+    font-size: 150%;
+}
+
+.moduleProfileGroupsBoxAlign {
+    display: flex;
+    width: 98%;
+}
+
+.moduleProfileGroupsBoxDate {
+    height: 40px;
+    width: 170px;
+    background: #FFCD00;
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.moduleProfileGroupsBoxDateIcon {
+    height: 30px;
+    width: 30px;
+    background: url(../../../../assets/img/profile/time_icon.png) no-repeat;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxDateText {
+    font-size: 100%;
+    color: #3D2614;
+}
+
+.moduleProfileGroupsBoxDescription {
+    height: 135px;
+    width: 98%;
+    background: var(--city-white);
+    border-radius: 8px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileGroupsBoxDescriptionText {
+    height: 125px;
+    width: 96%;
+    font-size: 100%;
+}
+
+.moduleProfileGroupsBoxQg {
+    height: 40px;
+    width: 150px;
+    background: #FB87B9;
+    border-radius: 5px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.moduleProfileGroupsBoxQg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxQgIcon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url(../../../../assets/img/profile/room_icon.png) no-repeat;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxQgText {
+    user-select: none;
+    font-size: 110%;
+    position: relative;
+    color: var(--city-white-forced);
+}
+
+.moduleProfileGroupsBoxLeave {
+    height: 40px;
+    width: 210px;
+    background: #8e87fb;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxLeave:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxLeaveIcon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
+    margin-right: 5px;
+    background: url(../../../../assets/img/profile/icon_group_leave.png) no-repeat;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxDelete {
+    height: 40px;
+    width: 210px;
+    background: #ef7272;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileGroupsBoxDelete:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxDeleteIcon {
+    position: relative;
+    height: 30px;
+    width: 26px;
+    background: url(../../../../assets/img/profile/icon_group_delete.png) no-repeat;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxText {
+    user-select: none;
+    font-size: 105%;
+    position: relative;
+    color: var(--city-white-forced);
+}
+
+.moduleProfileGroupsBoxMembers {
+    cursor: pointer;
+    height: 40px;
+    width: 155px;
+    background: var(--city-white);
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxMembersIcon {
+    height: 24px;
+    width: 23px;
+    margin-left: 6px;
+    background: url(../../../../assets/img/profile/community.png) no-repeat;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxMembersText {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 105%;
+    user-select: none;
+}
+
+.moduleProfileGroupsBoxJoin {
+    height: 40px;
+    width: 210px;
+    background: #26C454;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.moduleProfileGroupsBoxJoin:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxJoinIcon {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: url(../../../../assets/img/profile/icon_plus.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileGroupsBoxJoinText {
+    user-select: none;
+    font-size: 112%;
+    position: relative;
+    color: var(--city-white-forced);
+}
+
+
+.mobile .moduleProfileGroupsBadge {
+    margin-top: 25px;
+}
+
+.mobile .moduleProfileGroupsBoxAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px
+}
+
+.mobile .moduleProfileGroupsBoxMembers {
+    width: 170px;
+    margin-left: 0;
+}
+
+.mobile .moduleProfileGroupsOwner {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.mobile .moduleProfileGroupsBoxIsFavorite {
+    height: 55px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile .moduleProfileGroupsBoxFavoriteIcon {
+    margin-left: 0;
+}
+
+.mobile .moduleProfileGroupsBoxIsFavoriteText {
+    margin-left: 0;
+}
+
+.mobile .moduleProfileGroupsBoxDescription {
+    height: 85px;
+}
+
+.mobile .moduleProfileGroupsBoxDescriptionText {
+    height: 75px;
+}
+
+.mobile .moduleProfileGroupsBoxQgText {
+    display: none;
+}
+
+.mobile .moduleProfileGroupsBoxText {
+    display: none;
+}
+
+.mobile .moduleProfileGroupsBoxJoinText {
+    display: none;
+}

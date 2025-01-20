@@ -1,0 +1,396 @@
+.moduleChat {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: var(--city-white);
+}
+
+.moduleChatWebsite .moduleChatRight {
+    position: absolute;
+    display: none !important;
+    left: 0;
+    opacity: 1 !important;
+    top: 0 !important;
+    background: var(--city-white);
+    width: 100%;
+    height: calc(100% - 0px);
+    overflow: hidden;
+}
+
+.moduleChatWebsite .moduleChatRightOpened {
+    display: block !important;
+}
+
+.moduleChatWebsite .moduleChatRightOpenedClose {
+    position: absolute;
+    font-size: 12px;
+    border-radius: 8px;
+    left: 2px;
+    z-index: 9;
+    height: 16px;
+    width: 16px;
+    top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.moduleChatWebsite .moduleChatRightOpenedClose:hover {
+    background: var(--city-grey);
+}
+
+.moduleChatWebsite .moduleChatRightOpenedClose .icon {
+    height: 12px;
+    width: 12px;
+    background: url(../../assets/img/32_left_arrow.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleChatWebsite .moduleChatLeft {
+    width: calc(100% - 5px);
+    flex: unset;
+    border-right: unset;
+}
+
+.moduleChatLeft {
+    flex: 0 0 216px;
+    width: 216px;
+    position: relative;
+    border-right: 1px solid #E9E9E9;
+}
+
+.moduleChatSearchBox {
+    height: 32px;
+    width: 93%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    background: var(--city-grey);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.moduleChatSearchBoxIcon {
+    position: relative;
+    margin-left: 10px;
+    height: 14px;
+    width: 14px;
+    top: 2px;
+    margin-right: 6px;
+    background: url(../../assets/img/chat/icon_search.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleChatSearchBar {
+    border: 0;
+    background: 0 0;
+    width: 90%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.moduleChatButtonsBox {
+    margin-top: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.moduleChatButtonMessages {
+    padding: 0 6px;
+    border-radius: 20px;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 28px;
+    margin-right: 1px;
+}
+
+.moduleChatButtonMessagesRequests {
+    background: #eb0000;
+    height: 16px;
+    font-size: 14px;
+    width: 16px;
+    margin-top: 1px;
+    margin-left: 4px;
+    border-radius: 100%;
+    color: var(--city-white-forced);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleChatButtonMessages:hover {
+    background: var(--city-grey);
+}
+
+.moduleChatButtonMessagesSelected {
+    background: var(--city-grey);
+}
+
+.moduleChatMessagesBox {
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-top: 10px;
+    position: relative;
+    overflow: auto;
+}
+
+.moduleChatMessagesBoxReq .moduleChatMessagesListNormal {
+    display: none;
+}
+
+.moduleChatMessagesBoxMsg .moduleChatMessagesListRequest {
+    display: none;
+}
+
+.moduleChatMessageBoxSearch {
+    position: absolute;
+    height: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    z-index: 1;
+    display: none;
+    box-shadow: 0 0 11px #00000036;
+    border-radius: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    top: 8px;
+}
+
+.moduleChatMessageBoxInvites {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--city-white);
+    overflow-x: hidden;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.moduleChatMessagesList {
+    height: 54px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatMessagesList:hover {
+    background-color: var(--city-grey);
+}
+
+.moduleChatMessagesList:hover .moduleChatMessagesHide {
+    display: flex;
+}
+
+.moduleChatMessagesListNewMessages {
+    background-color: var(--city-blue);
+}
+
+.moduleChatMessagesAvatarBox {
+    height: 100%;
+    width: 48px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleChatMessagesAvatar {
+    height: 38px;
+    overflow: hidden;
+    width: 38px;
+    border-radius: 50%;
+    background: var(--city-grey);
+    position: absolute;
+}
+
+.moduleChatMessagesCardBox {
+    margin-left: 2px;
+}
+
+.moduleChatMessagesHide {
+    height: 24px;
+    width: 24px;
+    background: var(--city-white-forced);
+    position: absolute;
+    margin-top: -15px;
+    margin-right: 10px;
+    right: 5px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #00000038;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleChatMessagesHide .icon {
+    height: 14px;
+    width: 14px;
+    background: url("../../assets/img/32_delete.png");
+    background-size: contain;
+}
+
+.moduleChatMessagesPseudo {
+    font-size: 19px;
+    width: 130px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleChatMessagesText {
+}
+
+.moduleChatMessagesView {
+    width: 65px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    color: #969ba5;
+}
+
+.moduleChatMessagesNotView {
+    width: 82px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 17px;
+}
+
+.moduleChatMessagesTime {
+    color: #969ba5;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 3px;
+    right: 15px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.moduleChatMessagesNotification {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #4D9BFB;
+    right: 14px;
+    top: calc(50% - 18px);
+    color: var(--city-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.moduleChatMessagesPlayerOnline {
+    position: relative;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #44cf48;
+    top: -20px;
+    right: -20px;
+}
+
+.moduleChatMessagesPlayerOffline {
+    position: relative;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #ED1C24;
+    top: -14px;
+    right: -16px;
+}
+
+.moduleChatInvite {
+    padding: 10px;
+    display: flex;
+    background: #97dfff;
+    color: #00b1ff;
+    position: relative;
+    margin: 5px 17px;
+    border-radius: 10px;
+}
+
+.moduleChatInviteImg {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: -7px;
+    right: -9px;
+    background: url('../../assets/img/chat/icon_invite.png');
+    -webkit-filter: drop-shadow(1.5px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(0 -1px 0px #fff);
+}
+
+.moduleChatInviteAvatar {
+    height: 30px;
+    width: 30px;
+    flex: 0 0 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    background: var(--city-grey);
+}
+
+.moduleChatInviteTexts {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.moduleChatInviteContent {
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatInviteDate {
+    text-align: right;
+    margin-left: auto;
+}
+
+.moduleChatInviteBottom {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatInviteBottomButton {
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+    background: #0000001a;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moduleChatInviteJoinIcon {
+    height: 27px;
+    width: 27px;
+    background: url('../../assets/img/chat/icon_follow.png');
+}
+
+.moduleChatRight {
+    width: calc(100% - 216px);
+    position: relative;
+}

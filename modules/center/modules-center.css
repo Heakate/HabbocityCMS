@@ -1,0 +1,4866 @@
+.moduleCenter {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.moduleCenterMenu {
+    display: flex;
+    height: 100%;
+}
+
+.moduleCenterMenuLeft {
+    height: 100%;
+    width: 172px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.moduleCenterMenuBox {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 122px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterMenuBoxMonneyBox {
+    height: 68px;
+    background-color: var(--city-grey);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterMenuBoxMonneyCityCash {
+    position: relative;
+    top: 11px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMenuBoxMonneyCityCashIcon {
+    height: 22px;
+    width: 22px;
+    background: url(../../assets/img/center/citycash_yellow.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterMenuBoxMonneyCityCashText {
+    margin-left: 8px;
+    font-size: 115%;
+}
+
+.moduleCenterMenuBoxMonneyCityCashPlusIcon {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-left: auto;
+    margin-right: 22px;
+    background: url(../../assets/img/center/plus_vert.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterMenuBoxMonneyDiamonds {
+    position: relative;
+    top: 21px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMenuBoxMonneyDiamondsIcon {
+    height: 22px;
+    width: 22px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleCenterMenuBoxMonneyDiamondsText {
+    margin-left: 8px;
+    font-size: 115%;
+}
+
+.moduleCenterMenuBoxMonneyDiamondsPlusIcon {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-left: auto;
+    margin-right: 22px;
+    background: url(../../assets/img/center/plus_bleu.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterMenuBoxMonneyMyRares {
+    position: relative;
+    top: 2px;
+    height: 45px;
+    background: #B28E6A;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+}
+
+.moduleCenterMenuBoxMonneyMyRares:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterMenuBoxMonneyMyRares[selected] {
+    background: var(--city-yellow);
+}
+
+.moduleCenterMenuBoxMonneyMyRaresIcon {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 26px;
+    width: 26px;
+    background: url(../../assets/img/center/my_rares.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterMenuBoxMonneyMyRaresTitle {
+    margin-top: 11px;
+    margin-left: 7px;
+    font-size: 19px;
+    color: var(--city-white-forced);
+}
+
+.moduleCenterMenuBoxCategory {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 518px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.moduleCenterMenuBubble {
+    height: 38px;
+    color: var(--city-black);
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMenuBubble:hover {
+    cursor: pointer;
+    background-color: rgb(223 223 223 / 50%);
+}
+
+.moduleCenterMenuBubble[selected] {
+    background-color: var(--city-grey);
+}
+
+.moduleCenterMenuBubbleIcon {
+    margin-left: 14px;
+    height: 30px;
+    width: 30px;
+}
+
+.moduleCenterMenuBubbleIcon_1 {
+    background: url(../../assets/img/center/navigation/1.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_2 {
+    background: url(../../assets/img/center/navigation/2.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_3 {
+    background: url(../../assets/img/center/navigation/3.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_4 {
+    background: url(../../assets/img/center/navigation/4.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_5 {
+    background: url(../../assets/img/center/navigation/5.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_6 {
+    background: url(../../assets/img/center/navigation/6.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_7 {
+    background: url(../../assets/img/center/navigation/7.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_8 {
+    background: url(../../assets/img/center/navigation/8.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_9 {
+    background: url(../../assets/img/center/navigation/9.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_10 {
+    background: url(../../assets/img/center/navigation/10.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleIcon_11 {
+    background: url(../../assets/img/center/navigation/11.png) no-repeat;
+}
+
+.moduleCenterMenuBubbleTitle {
+    margin-left: 10px;
+    align-items: center;
+    font-size: 21px;
+}
+
+.moduleCenterMenuRight {
+    height: 100%;
+    width: calc(100% - 172px);
+    position: relative;
+    min-height: 350px;
+}
+
+
+/* =========================== */
+/*       CENTER AUCTIONS       */
+/* =========================== */
+.moduleCenterAuctionHighMenu {
+    margin-left: 14px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterAuctionHighMenuSearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.moduleCenterAuctionHighMenuSearchBoxIcon {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    margin-right: 11px;
+    background: url(../../assets/img/chat/icon_search.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterAuctionHighMenuSearchBar {
+    border: 0;
+    background: 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: 125%;
+}
+
+.moduleCenterAuctionHighMenuSeparatorBar {
+    position: relative;
+    width: 1px;
+    height: 20px;
+    background: var(--city-grey);
+}
+
+.moduleCenterAuctionHighMenuBox {
+    margin-left: auto;
+    margin-right: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.moduleCenterAuctionHighMenuButton {
+    height: 32px;
+    width: auto;
+    font-size: 140%;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.moduleCenterAuctionHighMenuButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleCenterAuctionHighMenuButton[selected] {
+    border-bottom: 5px solid #dcdcdc;
+}
+
+.moduleCenterAuctionHighMenuButtonIconFurni {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/valeurs_items.png);
+    background-repeat: no-repeat;
+
+}
+
+.moduleCenterAuctionHighMenuButtonIconBadge {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/valeurs_badges.png);
+    background-repeat: no-repeat;
+
+}
+
+.moduleCenterAuctionHighMenuButtonText {
+    position: relative;
+}
+
+.moduleCenterAuctionHighMenuBar {
+    position: relative;
+    left: 16px;
+    border-bottom: 1px solid var(--city-grey);
+}
+
+
+/* =========================== */
+/*    CENTER AUCTION BADGES    */
+/* =========================== */
+.moduleCenterAuctionBadge {
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 12px;
+    column-gap: 12px;
+    position: relative;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterAuctionBadge {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.websiteOnClient .moduleCenterAuctionBadge {
+    height: 578px;
+}
+
+.moduleCenterAuctionBadgeBubble {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    background: var(--city-grey);
+    margin-bottom: 12px;
+}
+
+.moduleCenterAuctionBadgeTitleBox {
+    height: 40px;
+}
+
+.moduleCenterAuctionBadgeIcon {
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    padding: 3px;
+    top: 7px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMAuctionRareTitle {
+    position: absolute;
+    font-size: 120%;
+    left: 45px;
+    width: 160px;
+    top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterAuctionBadgeContainerBox {
+    height: 170px;
+    display: flex;
+}
+
+.moduleCenterAuctionBadgeContainerBoxLeft {
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterAuctionBadgePicture {
+    image-rendering: pixelated;
+    scale: 2;
+}
+
+.moduleCenterAuctionBadgeContainerBoxRight {
+    width: 63%;
+}
+
+.moduleCenterAuctionBadgeBoxValueEco {
+    margin-top: 2px;
+    height: 34px;
+    width: 95%;
+    background: rgb(217, 217, 217);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.moduleCenterAuctionBadgeValueEcoText {
+    color: #929292;
+    font-size: 105%;
+    margin-left: 12px;
+}
+
+.moduleCenterAuctionBadgeValueEcoIcon {
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    margin-left: auto;
+    background: url(../../assets/img/center/diamonds.png) 0 0 / contain no-repeat;
+}
+
+.moduleCenterAuctionBadgeValueEcoPrice {
+    color: var(--city-black-forced);
+    font-size: 124%;
+    margin-right: 10px;
+}
+
+.moduleCenterAuctionBadgeBoxTime {
+    height: 34px;
+    width: 95%;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.moduleCenterAuctionBadgeBoxTimeText {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 150px;
+    height: 20px;
+    font-size: 118%;
+    color: #392317;
+}
+
+.moduleCenterAuctionBadgeBoxTimeIcon {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    margin-top: 4px;
+    left: auto;
+    right: 18px;
+    background: url(../../assets/img/center/time.png);
+
+}
+
+.moduleCenterAuctionBadgeBoxTimeHeader {
+    height: 17px;
+    background: #FFCD00;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.moduleCenterAuctionBadgeBoxTimeFooter {
+    height: 17px;
+    background: #FFE700;
+    border-radius: 0 0 8px 8px;
+}
+
+.moduleCenterAuctionBadgeValuesBox {
+    height: 34px;
+    width: 95%;
+    background-color: var(--city-white);
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterAuctionBadgeValuesText {
+    color: #929292;
+    font-size: 110%;
+    margin-left: 12px;
+}
+
+.moduleCenterAuctionBadgeValuesIcon {
+    height: 22px;
+    width: 22px;
+    margin-right: 2px;
+    margin-left: auto;
+    background: url(../../assets/img/center/diamonds.png) 0 0 / contain no-repeat;
+}
+
+.moduleCenterAuctionBadgeValuesPrice {
+    font-size: 120%;
+    margin-right: 5px;
+}
+
+.moduleCenterAuctionBadgeAuctionBox {
+    position: relative;
+    width: 95%;
+    height: 44px;
+    background: #A1E477;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterAuctionBadgeAuctionBox:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterAuctionBadgeAuctionPrice {
+    font-size: 130%;
+    color: white;
+    margin-left: 8px;
+    text-shadow: 1px 0 #67924c, -1px 0 #67924c, 0 2px #67924c, -1px 0 #67924c, 1px 1px #67924c, 0 -1px #67924c, 1px 2px #67924c, -1px -1px #67924c, 1px -1px #67924c, -1px 2px #67924c, -1px 1px #67924c;
+}
+
+
+/* =========================== */
+/*    CENTER AUCTION RARES     */
+/* =========================== */
+.moduleCenterAuctionRare {
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 12px;
+    column-gap: 12px;
+    position: relative;
+}
+
+.websiteOnClient .moduleCenterAuctionRare {
+    height: 578px;
+}
+
+.moduleCenterAuctionRareBubble {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    background: var(--city-grey);
+    margin-bottom: 12px;
+}
+
+.moduleCenterAuctionRareTitleBox {
+    height: 40px;
+}
+
+.moduleCenterAuctionRareIcon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    padding: 3px;
+    top: 7px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMAuctionRareTitle {
+    position: absolute;
+    font-size: 120%;
+    left: 45px;
+    width: 82%;
+    top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterAuctionRareContainerBox {
+    height: 170px;
+    display: flex;
+}
+
+.moduleCenterAuctionRareContainerBoxLeft {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.moduleCenterAuctionRarePicture {
+
+}
+
+.moduleCenterAuctionRareContainerBoxRight {
+    width: 60%;
+}
+
+.moduleCenterAuctionRareBoxValueEco {
+    margin-top: 2px;
+    height: 34px;
+    width: 95%;
+    background: rgb(217, 217, 217);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.moduleCenterAuctionRareValueEcoText {
+    color: #929292;
+    font-size: 105%;
+    margin-left: 12px;
+}
+
+.moduleCenterAuctionRareValueEcoIcon {
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    margin-left: auto;
+    background: url(../../assets/img/center/diamonds.png) 0 0 / contain no-repeat;
+}
+
+.moduleCenterAuctionRareValueEcoPrice {
+    color: var(--city-black-forced);
+    font-size: 124%;
+    margin-right: 10px;
+}
+
+.moduleCenterAuctionRareBoxTime {
+    height: 34px;
+    width: 95%;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.moduleCenterAuctionRareBoxTimeText {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 150px;
+    height: 20px;
+    font-size: 118%;
+    color: #392317;
+}
+
+.moduleCenterAuctionRareBoxTimeIcon {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    margin-top: 4px;
+    left: auto;
+    right: 18px;
+    background: url(../../assets/img/center/time.png);
+
+}
+
+.moduleCenterAuctionRareBoxTimeHeader {
+    height: 17px;
+    background: #FFCD00;
+    border-radius: 8px 8px 0 0;
+}
+
+.moduleCenterAuctionRareBoxTimeFooter {
+    height: 17px;
+    background: #FFE700;
+    border-radius: 0 0 8px 8px;
+}
+
+.moduleCenterAuctionRareValuesBox {
+    height: 34px;
+    width: 95%;
+    background-color: var(--city-white);
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterAuctionRareValuesText {
+    color: #929292;
+    font-size: 110%;
+    margin-left: 12px;
+}
+
+.moduleCenterAuctionRareValuesIcon {
+    height: 22px;
+    width: 22px;
+    margin-right: 2px;
+    margin-left: auto;
+    background: url(../../assets/img/center/diamonds.png) 0 0 / contain no-repeat;
+}
+
+.moduleCenterAuctionRareValuesPrice {
+    font-size: 120%;
+    margin-right: 5px;
+}
+
+.moduleCenterAuctionRareAuctionBox {
+    position: relative;
+    width: 95%;
+    height: 44px;
+    background: #A1E477;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterAuctionRareAuctionBox:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterAuctionRareAuctionPrice {
+    font-size: 130%;
+    color: var(--city-white-forced);
+    margin-left: 8px;
+    text-shadow: 1px 0 #67924c, -1px 0 #67924c, 0 2px #67924c, -1px 0 #67924c, 1px 1px #67924c, 0 -1px #67924c, 1px 2px #67924c, -1px -1px #67924c, 1px -1px #67924c, -1px 2px #67924c, -1px 1px #67924c;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterAuctionRare {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* =========================== */
+/*       CENTER BADGES         */
+/* =========================== */
+.moduleCenterBadge {
+    height: 98%;
+    width: 100%;
+    overflow: auto;
+}
+
+.moduleCenterBadgeContainer {
+    width: calc(100% - 28px);
+    overflow: hidden;
+    column-gap: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 14px;
+    margin-top: 10px;
+}
+
+.moduleCenterBadgeBubbles {
+    margin-top: 10px;
+    position: relative;
+    height: 368px;
+    background-color: var(--city-grey);
+    border-radius: 17px;
+    margin-bottom: 18px;
+    transition: 0.1s;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.moduleCenterBadgeBubbles:hover {
+    opacity: 0.9;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.moduleCenterBadgeMysteryBoxTitle {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterBadgeMysteryTitle {
+    font-size: 180%;
+    color: #5e5e5e;
+}
+
+.moduleCenterBadgeMysteryBoxImage {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterBadgeMysteryImage {
+    height: 116px;
+    width: 144px;
+    background: url(../../assets/img/center/mystery_box.png) no-repeat;
+
+}
+
+.moduleCenterBadgeMysteryBoxInformation {
+    height: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterBadgeMysteryInformation {
+    height: 80%;
+    width: 90%;
+    border-radius: 17px;
+    background: rgb(255 255 255 / 68%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterBadgeMysteryText {
+    width: 90%;
+}
+
+.moduleCenterBadgeMysteryBoxPrice {
+    height: 12%;
+    background-color: #FEDA74;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+}
+
+.moduleCenterBadgeMysteryPrice {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterBadgeBubblesLittle {
+    position: relative;
+    height: 175px;
+    background: var(--city-grey);
+    border-radius: 17px;
+    margin-bottom: 18px;
+    transition: 0.1s;
+}
+
+.moduleCenterBadgeBubblesLittle:hover {
+    opacity: 0.9;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.moduleCenterBadgeAmount {
+    position: absolute;
+    background-color: white;
+    border-radius: 25px;
+    color: #42b3c4;
+    top: 5px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 118%;
+}
+
+.moduleCenterBadgePictureBox {
+    position: relative;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.moduleCenterBadgePicture {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterBadgePrice {
+    height: 25%;
+    background-color: #FEDA74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+}
+
+.moduleCenterBadgePriceBox {
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterBadgePriceBoxCityCashIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/citycash_yellow.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterBadgePriceBoxDiamondsIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterBadgePriceBoxText {
+    position: relative;
+    left: 10px;
+    width: 50px;
+    font-size: 130%;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #7c6933, -1px 0 #7c6933, 0 2px #7c6933, -1px 0 #7c6933, 1px 1px #7c6933, 0 -1px #7c6933, 1px 2px #7c6933, -1px -1px #7c6933, 1px -1px #7c6933, -1px 2px #7c6933, -1px 1px #7c6933;
+}
+
+.moduleCenterBadgePriceBoxText.Other {
+    left: 0;
+    width: 170px;
+    text-align: center;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterBadgeContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* =========================== */
+/*       CENTER BONAMIGO       */
+/* =========================== */
+.moduleCenterBonamigoContainer {
+    height: 97%;
+    overflow: auto;
+    padding: 8px 12px 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.moduleCenterBonamigoHeader {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moduleCenterBonamigoTitleBox {
+    height: 44px;
+    width: 200px;
+    border-radius: 8px;
+    background: rgb(242, 164, 15);
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterBonamigoTitleText {
+    color: var(--city-white-forced);
+    font-size: 160%;
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+}
+
+.moduleCenterBonamigoPriceContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.moduleCenterBonamigoPriceBox {
+    height: 44px;
+    padding: 0 12px;
+    border-radius: 12px;
+    border-bottom: 4px solid rgba(0, 0, 0, .15);
+    background: #87f255;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.moduleCenterBonamigoPriceBox:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.moduleCenterBonamigoDiamondsPriceBox {
+    height: 44px;
+    padding: 0 12px;
+    border-radius: 12px;
+    border-bottom: 4px solid rgba(0, 0, 0, .15);
+    background: rgb(107 178 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.moduleCenterBonamigoDiamondsPriceBox:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.moduleCenterBonamigoPriceText {
+    color: var(--city-white-forced);
+    font-size: 22px;
+    text-shadow: 1px 0 #157e2e, -1px 0 #157e2e, 0 2px #157e2e, -1px 0 #157e2e, 1px 1px #157e2e, 0 -1px #157e2e, 1px 2px #157e2e, -1px -1px #157e2e, 1px -1px #157e2e, -1px 2px #157e2e, -1px 1px #157e2e;
+}
+
+.moduleCenterBonamigoPriceDiamondsText {
+    color: var(--city-white-forced);
+    font-size: 22px;
+    text-shadow: 1px 0 #4e76a6, -1px 0 #4e76a6, 0 2px #4e76a6, -1px 0 #4e76a6, 1px 1px #4e76a6, 0 -1px #4e76a6, 1px 2px #4e76a6, -1px -1px #4e76a6, 1px -1px #4e76a6, -1px 2px #4e76a6, -1px 1px #4e76a6;
+}
+
+.moduleCenterBonamigoPriceIcon {
+    height: 22px;
+    width: 22px;
+    background: url(../../assets/img/center/citycash_yellow.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterBonamigoPriceDiamondsIcon {
+    height: 26px;
+    width: 28px;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterBonamigoDisabled {
+    height: 46px;
+    width: 310px;
+    border-radius: 16px;
+    background: rgb(62 210 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: var(--city-white-forced);
+}
+
+.moduleCenterBonamigoBubbleBox {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.moduleCenterBonamigoBubble {
+    width: calc(25% - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.moduleCenterBonamigoBubbleNull {
+    border-radius: 12px;
+    border: 2px solid #a5a5a5;
+}
+
+.moduleCenterBonamigoBubbleFurni {
+    border-radius: 12px;
+    border: 2px solid #aae6ff;
+}
+
+.moduleCenterBonamigoBubbleFurniUltime {
+    border-radius: 12px;
+    border: 2px solid #ff88ae;
+}
+
+.moduleCenterBonamigoBubbleCityCash {
+    border-radius: 12px;
+    border: 2px solid #ffdc80;
+}
+
+.moduleCenterBonamigoBubbleDiamonds {
+    border-radius: 12px;
+    border: 2px solid #caf4d7;
+}
+
+.moduleCenterBonamigoBubbleSelected {
+    box-shadow: 0 0 100px 25px #ffc700;
+}
+
+.moduleCenterBonamigostarsIcon {
+    position: relative;
+    top: -15px;
+    height: 39px;
+    width: 45px;
+
+}
+
+.moduleCenterBonamigoOneStarIcon {
+    background: url(../../assets/img/center/bonamigo/bonamigo_one.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterBonamigoTwoStarsIcon {
+    background: url(../../assets/img/center/bonamigo/bonamigo_two.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterBonamigoThreeStarsIcon {
+    background: url(../../assets/img/center/bonamigo/bonamigo_three.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterBonamigoBubbleCenter {
+    position: relative;
+    height: 140px;
+    margin-top: -15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.moduleCenterBonamigoImage {
+    width: 1px;
+    height: 1px;
+    background: var(--city-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.moduleCenterBonamigoImageStar {
+    position: absolute;
+    width: 107px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.moduleCenterBonamigoImageStarBlue {
+    background: url(../../assets/img/center/bonamigo/bonamigo.png) -112px -2px;
+}
+
+.moduleCenterBonamigoImageStarPink {
+    background: url(../../assets/img/center/bonamigo/bonamigo.png) -223px -2px;
+}
+
+.moduleCenterBonamigoIconNull {
+    width: 112px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../assets/img/center/bonamigo/loose.png);
+
+}
+
+.moduleCenterBonamigoIconCityCash {
+    width: 107px;
+    height: 112px;
+    background: url(../../assets/img/center/bonamigo/bonamigo.png) -332px -2px;
+
+}
+
+.moduleCenterBonamigoIconDiamonds {
+    width: 107px;
+    height: 112px;
+    background: url(../../assets/img/center/bonamigo/bonamigo.png) -2px -2px;
+
+}
+
+.moduleCenterBonamigoBubbleDown {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--city-black);
+    font-size: 118%;
+    text-align: center;
+    padding: 0 0 8px 0;
+}
+
+.moduleCenterBonamigoPricePlayText {
+    margin-top: 8px;
+    color: var(--city-white-forced);
+    font-size: 135%;
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterBonamigoBubble {
+        width: calc(20% - 12px);
+    }
+}
+
+
+/* =========================== */
+/*        CENTER BOX           */
+/* =========================== */
+.moduleCenterCityBoxScroll {
+    height: 98%;
+    overflow: auto;
+}
+
+.moduleCenterCityBoxHeader {
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.moduleCenterCityBoxBannerBox {
+    position: relative;
+    height: 60px;
+    width: calc(100% - 16px);
+    background: var(--city-grey);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.moduleCenterCityBoxBannerBubble {
+    position: absolute;
+    height: 65px;
+    width: 82px;
+    background: #6caff4;
+    border-radius: 12px;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterCityBoxBannerImage {
+    height: 44px;
+    width: 27px;
+    background: url(../../assets/img/center/page_box.png) -118px -170px;
+
+}
+
+.moduleCenterCityBoxBannerText {
+    font-size: 16px;
+    color: rgb(108, 175, 244);
+    margin-left: 100px;
+    padding: 0 10px;
+}
+
+.moduleCenterCityBoxContainer {
+    margin-top: 8px;
+    width: calc(100% - 20px);
+    left: 16px;
+    position: relative;
+    display: inline-flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.moduleCenterCityBoxBubble {
+    position: relative;
+    width: calc(33% - 9px);
+    height: 58px;
+    background: rgb(108, 175, 244);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterCityHigh {
+    height: 29px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterCityLow {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.moduleCenterCityBoxRewardTitleBox {
+    height: 25px;
+    width: 95%;
+    margin-top: 4px;
+    background: #a2cdf9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterCityBoxRewardTitle {
+    color: rgb(23, 129, 234);
+    margin-left: 10px;
+    width: 130px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterCityBoxPourcentageTitle {
+    font-size: 100%;
+    color: var(--city-white-forced);
+}
+
+.moduleCenterCityBoxRounder {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    background: rgb(245 245 245);
+    border-radius: 50%;
+    margin-top: 5px;
+    box-shadow: rgb(0, 0, 0) 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: auto;
+    right: 5px;
+}
+
+.moduleCenterCityBoxRounderDiamond {
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    background: url(../../assets/img/center/page_box.png) -16px -224px;
+
+}
+
+.moduleCenterCityBoxRounderCityCash {
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    background: url(../../assets/img/center/page_central.png) -60px -185px;
+
+}
+
+.moduleCenterCityBoxRounderDucket {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    background: url(../../assets/img/center/page_box.png) -112px -224px
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterCityBoxBubble {
+        width: calc(25% - 12px);
+    }
+}
+
+
+/* =========================== */
+/*        CENTER CLUB          */
+/* =========================== */
+.moduleCenterClub {
+    height: 96%;
+    overflow: auto;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.moduleCenterClubBoxBase {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.moduleCenterClubAvatarBox {
+    height: 80px;
+    width: 60%;
+    border-radius: 12px;
+    background: var(--city-grey-light);
+    overflow: hidden;
+    display: flex;
+}
+
+.moduleCenterClubAvatar {
+    margin-top: -30px;
+}
+
+.moduleCenterClubAvatarBoxLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moduleCenterClubAvatarBoxLeftTitle {
+    font-size: 135%;
+}
+
+.moduleCenterClubAvatarBoxLeftInfo {
+    font-size: 110%;
+}
+
+.moduleCenterClubButton {
+    height: 76px;
+    width: 40%;
+    background: #A1E477;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--city-white-forced);
+    text-shadow: rgb(103, 146, 76) 1px 0, rgb(103, 146, 76) -1px 0, rgb(103, 146, 76) 0 2px, rgb(103, 146, 76) -1px 0, rgb(103, 146, 76) 1px 1px, rgb(103, 146, 76) 0 -1px, rgb(103, 146, 76) 1px 2px, rgb(103, 146, 76) -1px -1px, rgb(103, 146, 76) 1px -1px, rgb(103, 146, 76) -1px 2px, rgb(103, 146, 76) -1px 1px;
+}
+
+.moduleCenterClubButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterClubButtonTextJoin {
+    font-size: 130%;
+}
+
+.moduleCenterClubButtonTextPrice {
+    display: flex;
+    font-size: 150%;
+    gap: 10px;
+    align-items: center;
+}
+
+.moduleCenterClubButtonTextPriceImage {
+    height: 22px;
+    width: 22px;
+    background: url(../../assets/img/center/citycash_yellow.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterClubContainer {
+    margin-top: 4px;
+    gap: 12px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.moduleCenterClubBubble {
+    height: 180px;
+    width: calc(33.333% - 8px);
+    background: var(--city-grey-light);
+    color: var(--city-black-text);
+    border-radius: 11px;
+    display: inline;
+    overflow: hidden;
+}
+
+.moduleCenterClubBubbleTitle {
+    font-size: 125%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.moduleCenterClubBubbleImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.moduleCenterClubBubbleImageBox {
+    margin-top: 3px;
+    height: 70px;
+    width: 195px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.moduleCenterClubBubbleImage {
+    height: 70px;
+    width: 198px;
+
+}
+
+.moduleCenterClubBubbleImage1 {
+    background: url(../../assets/img/center/club/1.png);
+}
+
+.moduleCenterClubBubbleImage2 {
+    background: url(../../assets/img/center/club/2.png);
+}
+
+.moduleCenterClubBubbleImage3 {
+    background: url(../../assets/img/center/club/3.png);
+}
+
+.moduleCenterClubBubbleImage4 {
+    background: url(../../assets/img/center/club/4.png);
+}
+
+.moduleCenterClubBubbleImage5 {
+    background: url(../../assets/img/center/club/5.png?1);
+}
+
+.moduleCenterClubBubbleImage6 {
+    background: url(../../assets/img/center/club/6.png);
+}
+
+.moduleCenterClubBubbleImage7 {
+    background: url(../../assets/img/center/club/7.png);
+}
+
+.moduleCenterClubBubbleImage8 {
+    background: url(../../assets/img/center/club/8.png);
+}
+
+.moduleCenterClubBubbleImage9 {
+    background: url(../../assets/img/center/club/9.png);
+}
+
+.moduleCenterClubBubbleImage10 {
+    background: url(../../assets/img/center/club/10.png);
+}
+
+.moduleCenterClubBubbleImage11 {
+    background: url(../../assets/img/center/club/11.png);
+}
+
+.moduleCenterClubBubbleImage12 {
+    background: url(../../assets/img/center/club/12.png);
+}
+
+.moduleCenterClubBubbleDescription {
+    margin-top: 5px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterClubBubble {
+        width: calc(25% - 9px);
+    }
+}
+
+
+/* =========================== */
+/*       CENTER COFFRES        */
+/* =========================== */
+.moduleCenterCoffers {
+    height: 97%;
+    width: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterCoffersOpen {
+    z-index: 99999;
+    position: fixed !important;
+    left: calc(50% - 150px);
+    top: calc(50% - 200px);
+    height: 400px;
+    width: 300px !important;
+    border-radius: 50px !important;
+    overflow: hidden;
+    box-shadow: 0 0 500px 100px #ffffff82;
+}
+
+.moduleCenterCoffersBackground {
+    position: fixed;
+    height: 100%;
+    display: none;
+    width: 100%;
+    background-image: radial-gradient(circle, #3f9cf5, #3fa3f7, #40a9fa, #43b0fb, #48b6fd, #43b3fb, #3eb0fa, #39adf8, #29a0f2, #1d92ec, #1885e5, #1c77dd);
+    z-index: 11;
+    top: 0;
+    left: 0;
+}
+
+.moduleCenterCoffersBackgroundClose {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background: url(../../assets/img/close_24.png);
+
+}
+
+.moduleCenterCoffersBackgroundBuy {
+    margin-right: 25px;
+    border-radius: 13px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    background: rgb(135, 242, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    color: var(--city-white-forced);
+    text-shadow: rgb(21, 126, 46) 1px 0, rgb(21, 126, 46) -1px 0, rgb(21, 126, 46) 0 2px, rgb(21, 126, 46) -1px 0, rgb(21, 126, 46) 1px 1px, rgb(21, 126, 46) 0 -1px, rgb(21, 126, 46) 1px 2px, rgb(21, 126, 46) -1px -1px, rgb(21, 126, 46) 1px -1px, rgb(21, 126, 46) -1px 2px, rgb(21, 126, 46) -1px 1px;
+    bottom: 50px;
+    font-size: 25px;
+    height: 76px;
+    cursor: pointer;
+    width: 300px;
+    left: calc(50% - 150px);
+}
+
+.moduleCenterCoffersBackgroundBuy:hover {
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+.moduleCenterCoffersBackgroundItems {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 70px;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    transform: scale(0);
+}
+
+.moduleCenterCoffersBackgroundImg {
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+
+    -webkit-filter: drop-shadow(1.5px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(0 -1px 0 #fff)
+}
+
+.moduleCenterCoffersContainer {
+    width: calc(100% - 16px);
+    height: 98%;
+    left: 16px;
+    position: relative;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.moduleCenterCoffersBubbles {
+    position: relative;
+    width: calc(33% - 8px);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.moduleCenterCoffersBubblesOrange {
+    background: rgb(237 160 11);
+}
+
+.moduleCenterCoffersBubblesPurple {
+    background: #A229FF;
+}
+
+.moduleCenterCoffersBubblesGreen {
+    background: #00B372;
+}
+
+.moduleCenterCoffersBubbles:hover {
+    cursor: pointer;
+}
+
+.moduleCenterCoffersImage {
+    transition: 0.3s;
+    position: relative;
+    top: 0;
+    image-rendering: pixelated;
+}
+
+.moduleCenterCoffersBubblesClick {
+    cursor: pointer;
+}
+
+.moduleCenterCoffersBubblesClick:hover .moduleCenterCoffersImage {
+    transition: 0.3s;
+    top: -20px;
+}
+
+.moduleCenterCoffersBubblesClick:hover .moduleCenterCoffersImageLight {
+    box-shadow: 0 0 57px 86px #ffffff;
+}
+
+.moduleCenterCoffersBubblesLimited {
+    position: absolute;
+    background-color: #ffffff73;
+    border-radius: 15px 0 0 15px;
+    top: 40px;
+    right: 0;
+    width: 40px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 118%;
+}
+
+.moduleCenterCoffersBubblesEmpty {
+    position: absolute;
+    background-color: #ff0000;
+    border-radius: 15px 0 0 15px;
+    top: 40px;
+    right: 0;
+    width: 40px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 125%;
+    z-index: 1;
+}
+
+.moduleCenterCoffersBubblesBackground {
+    position: absolute;
+    height: calc(100% - 48px);
+    top: 0;
+    width: 100%;
+    background: url(../../assets/img/center/coffers/back_coffer.png);
+
+    opacity: 0.2;
+    zoom: 0.6;
+}
+
+.moduleCenterCoffersTitleBox {
+    margin-top: 3px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 8;
+}
+
+.moduleCenterCoffersTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--city-white-forced);
+}
+
+.moduleCenterCoffersTitleOrange {
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+}
+
+.moduleCenterCoffersTitlePurple {
+    text-shadow: 1px 0 #542168, -1px 0 #542168, 0 2px #542168, -1px 0 #542168, 1px 1px #542168, 0 -1px #542168, 1px 2px #542168, -1px -1px #542168, 1px -1px #542168, -1px 2px #542168, -1px 1px #542168;
+}
+
+.moduleCenterCoffersTitleGreen {
+    text-shadow: 1px 0 #235801, -1px 0 #235801, 0 2px #235801, -1px 0 #235801, 1px 1px #235801, 0 -1px #235801, 1px 2px #235801, -1px -1px #235801, 1px -1px #235801, -1px 2px #235801, -1px 1px #235801;
+}
+
+.moduleCenterCoffersImageBox {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.moduleCenterCoffersImageLight {
+    width: 1px;
+    height: 1px;
+    background: var(--city-white);
+    box-shadow: 0 0 75px 65px #ffffff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 5;
+}
+
+.moduleCenterCoffersContainerBox {
+    display: flex;
+    justify-content: center;
+}
+
+.moduleCenterCoffersItemsBox {
+    border-radius: 8px;
+    margin: 10px;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.moduleCenterCoffersItemsBoxText {
+    font-size: 85%;
+    width: 100%;
+    color: var(--city-white-forced);
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.moduleCenterCoffersIcon {
+    width: 19px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.moduleCenterCoffersIconrares {
+    background: url(../../assets/img/center/coffers/coffers.png) -103px -355px;
+}
+
+.moduleCenterCoffersIconrespects {
+    background: url(../../assets/img/center/coffers/coffers.png) -79px -375px;
+}
+
+.moduleCenterCoffersIconrespects {
+    background: url(../../assets/img/center/coffers/coffers.png) -79px -375px;
+}
+
+.moduleCenterCoffersIconcarresse {
+    background: url(../../assets/img/center/coffers/coffers.png) -55px -352px;
+}
+
+.moduleCenterCoffersIconduckets {
+    background: url(../../assets/img/center/coffers/coffers.png) -103px -375px;
+}
+
+.moduleCenterCoffersIcondiamants {
+    background: url(../../assets/img/center/coffers/coffers.png) -55px -376px;
+}
+
+.moduleCenterCoffersItemsBoxTextItem {
+}
+
+.moduleCenterCoffersPriceBox {
+    width: 100%;
+    height: 40px;
+    border-width: 1px 0 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterCoffersPriceBoxOrange {
+    background: rgb(223 147 0);
+    z-index: 1;
+}
+
+.moduleCenterCoffersPriceBoxPurple {
+    background: #CE52FE;
+    z-index: 1;
+}
+
+.moduleCenterCoffersPriceBoxGreen {
+    background: #54D803;
+    z-index: 1;
+}
+
+.moduleCenterCoffersPriceIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/citycash_yellow.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterCoffersPriceText {
+    margin-left: 8px;
+    color: var(--city-white-forced);
+    font-size: 130%;
+}
+
+.moduleCenterCoffersPriceTextOrange {
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+}
+
+.moduleCenterCoffersPriceTextPurple {
+    text-shadow: 1px 0 #542168, -1px 0 #542168, 0 2px #542168, -1px 0 #542168, 1px 1px #542168, 0 -1px #542168, 1px 2px #542168, -1px -1px #542168, 1px -1px #542168, -1px 2px #542168, -1px 1px #542168;
+}
+
+.moduleCenterCoffersPriceTextGreen {
+    text-shadow: 1px 0 #235801, -1px 0 #235801, 0 2px #235801, -1px 0 #235801, 1px 1px #235801, 0 -1px #235801, 1px 2px #235801, -1px -1px #235801, 1px -1px #235801, -1px 2px #235801, -1px 1px #235801;
+}
+
+.moduleCenterCoffersBubblesLittle {
+    position: relative;
+    width: calc(33% - 8px);
+    background: #067ACC;
+    border-radius: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.moduleCenterCoffersTitleLittle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #064B91, -1px 0 #064B91, 0 2px #064B91, -1px 0 #064B91, 1px 1px #064B91, 0 -1px #064B91, 1px 2px #064B91, -1px -1px #064B91, 1px -1px #064B91, -1px 2px #064B91, -1px 1px #064B91;
+}
+
+.moduleCenterCoffersImageBoxLittle {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.moduleCenterCoffersContainerTextLittle {
+    font-size: 110%;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #064B91, -1px 0 #064B91, 0 2px #064B91, -1px 0 #064B91, 1px 1px #064B91, 0 -1px #064B91, 1px 2px #064B91, -1px -1px #064B91, 1px -1px #064B91, -1px 2px #064B91, -1px 1px #064B91;
+}
+
+.moduleCenterCoffersPriceBoxLittle {
+    width: 100%;
+    height: 40px;
+    background: #0665C7;
+    border-width: 1px 0 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.moduleCenterCoffersPriceTextLittle {
+    margin-left: 8px;
+    color: var(--city-white-forced);
+    font-size: 130%;
+    text-shadow: 1px 0 #064B91, -1px 0 #064B91, 0 2px #064B91, -1px 0 #064B91, 1px 1px #064B91, 0 -1px #064B91, 1px 2px #064B91, -1px -1px #064B91, 1px -1px #064B91, -1px 2px #064B91, -1px 1px #064B91;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterCoffersBubbles {
+        width: calc(25% - 10px);
+    }
+}
+
+
+/* =========================== */
+/*       CENTER CRAFTING       */
+/* =========================== */
+.moduleCenterCrafting {
+    position: relative;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.moduleCenterCraftingInfo {
+    height: 45px;
+    padding: 15px 30px 15px 150px;
+    background: #84a8b9;
+    border-radius: 15px;
+    color: var(--city-white-forced);
+    font-size: 18px;
+    margin: 0 20px 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterCraftingInfo::before {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 114px;
+    height: 102px;
+    background: url(../../assets/img/center/craft/crafting.png) no-repeat;
+    display: block;
+    content: '';
+}
+
+.moduleCenterCraftingContainer {
+    height: calc(100% - 130px);
+    overflow: auto;
+}
+
+.moduleCenterCraftingRecipe {
+    margin: 0 20px 20px 20px;
+    padding-bottom: 20px;
+    display: flex;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.moduleCenterCraftingRecipe:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.moduleCenterCraftingRecipeIngredients {
+    padding-top: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.moduleCenterCraftingRecipeIngredients > .moduleCenterCraftingRecipeIngredientsTitle {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 15px;
+    flex-basis: 100%;
+}
+
+.moduleCenterCraftingRecipeIngredientsRares {
+    flex-basis: calc(100% / 4);
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-color: #ff9a15;
+    border: 3px solid #e26a12;
+    border-radius: 15px;
+    position: relative;
+}
+
+.moduleCenterCraftingRecipeIngredientsRares:nth-child(-n+3) {
+    margin-bottom: 20px;
+}
+
+.moduleCenterCraftingRecipeIngredientsRares:hover .moduleCenterCraftingRecipeIngredientsRaresName {
+    display: block;
+}
+
+.moduleCenterCraftingRecipeIngredientsRaresName {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background: var(--city-white);
+    width: 270px;
+    text-align: center;
+    left: 0;
+    z-index: 9;
+    border-radius: 10px;
+    font-size: 120%;
+    top: -34px;
+    box-shadow: 0 0 10px #0000001f;
+}
+
+.moduleCenterCraftingRecipeIngredientsRaresImg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-filter: drop-shadow(1.5px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(0 -1px 0 #fff);
+    overflow: hidden;
+
+}
+
+.moduleCenterCraftingRecipeIngredientsRaresImg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterCraftingRecipeIngredientsRaresPts {
+    position: absolute;
+    right: -10px;
+    height: 35px;
+    width: 35px;
+    background: url(../../assets/img/center/craft/craft_pt.png);
+
+    font-size: 20px;
+    color: var(--city-white-forced);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    bottom: -15px;
+}
+
+.moduleCenterCraftingRecipeIngredientsRares:nth-child(even) {
+    background-color: #3ba3c2;
+    border: 3px solid #35ddeb;
+}
+
+.moduleCenterCraftingRecipeIngredientsRares:last-child {
+    margin-right: 0;
+}
+
+.moduleCenterCraftingResult {
+    border-left: 1px solid #c3c3c3;
+    padding-left: 25px;
+    flex: 0.9;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.moduleCenterCraftingResultEx {
+    border-radius: 8px;
+    font-size: 1.25em;
+    color: var(--city-white);
+    z-index: 2;
+    background-color: #ed1c24;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+}
+
+.moduleCenterCraftingResultImg {
+    position: relative;
+    width: 106px;
+    height: 90px;
+    margin: 0 auto;
+    background-image: url(../../assets/img/center/craft/craft_rare_bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterCraftingResultName {
+    width: 100%;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 5px auto 20px;
+}
+
+.moduleCenterCraftingBtn {
+    width: 150px;
+    line-height: 30px;
+    position: relative;
+    height: 35px;
+    text-align: center;
+    padding: 7px 13px 0;
+    border-radius: 8px;
+    border-width: 1px 1px 4px 1px;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #67924C, -1px 0 #67924C, 0 2px #67924C, -1px 0 #67924C, 1px 1px #67924C, 0 -1px #67924C, 1px 2px #67924C, -1px -1px #67924C, 1px -1px #67924C, -1px 2px #67924C, -1px 1px #67924C;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    background: #A1E477;
+}
+
+.moduleCenterCraftingBtn:hover {
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.75;
+}
+
+.moduleCenterCraftingBtnText {
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    font-size: 1.25em;
+}
+
+.moduleCenterCraftingBtnImg {
+    position: absolute;
+    right: -5px;
+    top: -15px;
+    height: 65px;
+    width: 65px;
+    background: url(../../assets/img/center/craft/craft_hammer.png) no-repeat;
+}
+
+.moduleCenterCraftingBtnReflection {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #00000029;
+    transition: 2s;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* =========================== */
+/*    CENTER INFORMATIONS      */
+/* =========================== */
+.moduleCenterInformation {
+    height: 96%;
+    overflow: auto;
+    padding: 10px 12px 6px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.moduleCenterInformationBanner {
+    width: 100%;
+    border-radius: 18px;
+    background: #0a7ee1;
+    color: var(--city-white-forced);
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInformationBannerText {
+    padding: 12px;
+}
+
+.moduleCenterInformationPackDisplay {
+    display: flex;
+    gap: 10px;
+}
+
+.moduleCenterInformationPack {
+    width: calc(50% - 24px);
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.moduleCenterInformationPackTitle {
+    font-size: 19px
+}
+
+.moduleCenterInformationPackBonus {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.moduleCenterInformationPackBonusContainer {
+    padding: 0 6px;
+    background: #f5cb66;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.moduleCenterInformationPackContainer {
+    display: flex;
+    height: 100%;
+    gap: 9px;
+}
+
+.moduleCenterInformationPackImage {
+    margin-top: 3px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    height: 110px;
+    width: 110px;
+    background: #d9d9d9;
+    border-radius: 8px;
+}
+
+.moduleCenterInformationPackDesc {
+    width: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.moduleCenterInformationPackButton {
+    margin-top: 10px;
+    height: 44px;
+    border-radius: 12px;
+    border-bottom: 4px solid rgba(0, 0, 0, .15);
+    background: #A1E477;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 130%;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #67924c, -1px 0 #67924c, 0 2px #67924c, -1px 0 #67924c, 1px 1px #67924c, 0 -1px #67924c, 1px 2px #67924c, -1px -1px #67924c, 1px -1px #67924c, -1px 2px #67924c, -1px 1px #67924c;
+}
+
+.moduleCenterInformationPackButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterInformationPackButtonDisplay {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.moduleCenterInformationPackCitycashIcon {
+    height: 22px;
+    width: 22px;
+    background: url(../../assets/img/center/citycash_yellow.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleCenterInformationPackDiamondsIcon {
+    height: 26px;
+    width: 28px;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleCenterInformationContainer {
+    display: flex;
+    gap: 15px;
+}
+
+.moduleCenterInformationBox {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.moduleCenterInformationBubbleTitle {
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+}
+
+.moduleCenterInformationBubble {
+    height: 50px;
+    width: 100%;
+    background: var(--city-grey-light);
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.moduleCenterInformationImage {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 12px;
+}
+
+.moduleCenterInformationDisplay {
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterInformationTitle {
+    font-size: 125%;
+}
+
+
+/* =========================== */
+/*     CENTER INVENTORY        */
+/* =========================== */
+.moduleCenterInventory {
+    height: 100%;
+}
+
+.moduleCenterInventoryHighMenuBase {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 12px;
+}
+
+.moduleCenterInventoryHighMenu {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--city-yellow);
+    display: flex;
+}
+
+.moduleCenterInventoryHighMenuLeft {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryHighMenuLeftIconRichess {
+    height: 25px;
+    width: 26px;
+    margin-left: 15px;
+    background: url(../../assets/img/profile/richess.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterInventoryHighMenuLeftTextRichess {
+    margin-left: 10px;
+    font-size: 125%;
+    color: var(--city-black);
+}
+
+.moduleCenterInventoryHighMenuRight {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.moduleCenterInventoryMenuBase {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 12px;
+}
+
+.moduleCenterInventoryMenu {
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    border: 0.1px solid var(--city-grey);
+    background: var(--city-white-dark);
+    display: flex;
+}
+
+.moduleCenterInventoryMenuSearchBox {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moduleCenterInventoryMenuSearchBoxPlace {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterInventoryMenuSearchBoxIcon {
+    height: 18px;
+    width: 18px;
+    background: url(../../assets/img/chat/icon_search.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterInventoryMenuSearchBar {
+    border: 0;
+    background: 0 0;
+    width: 98%;
+    height: 100%;
+    font-size: 125%;
+}
+
+.moduleCenterInventoryMenuBox {
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.moduleCenterInventoryMenuButton {
+    height: 32px;
+    width: auto;
+    margin-right: 20px;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    border-bottom: 4px solid transparent;
+}
+
+.moduleCenterInventoryMenuButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.moduleCenterInventoryMenuButton[selected] {
+    border-bottom: 4px solid #00000029;
+}
+
+.moduleCenterInventoryMenuButtonIconFurni {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/valeurs_items.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterInventoryMenuButtonIconBadge {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/valeurs_badges.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterInventoryMenuButtonIconRoom {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/inventory/icon_room.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterInventoryMenuButtonIconBanner {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/inventory/icon_banner.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterInventoryMenuButtonIconRichess {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/inventory/icon_stats.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterInventoryMenuBar {
+    margin-left: 16px;
+    border-bottom: 1px solid var(--city-grey);
+}
+
+.moduleCenterInventoryContent {
+    height: calc(100% - 130px);
+}
+
+
+/* =========================== */
+/*  CENTER INVENTORY BADGES    */
+/* =========================== */
+.moduleCenterInventoryBadge {
+    height: calc(100% - 12px);
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.moduleCenterInventoryBadgeContainer {
+    margin-left: 10px;
+    width: 96%;
+    height: 98%;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryBadgeBubbles {
+    position: relative;
+    width: calc(33% - 5px);
+    height: 160px;
+    background: var(--city-grey-light);
+    border-radius: 17px;
+}
+
+.moduleCenterInventoryBadgeBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterInventoryBadgeHeaderBox {
+    height: 40px;
+}
+
+.moduleCenterInventoryBadgeIcon {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    padding: 3px;
+    top: 6px;
+    left: 8px;
+}
+
+.moduleCenterInventoryBadgeTitle {
+    position: absolute;
+    font-size: 120%;
+    left: 44px;
+    width: 160px;
+    top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterInventoryBadgeImage {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryBadgeImagePlace {
+    image-rendering: pixelated;
+    transform: scale(2);
+}
+
+.moduleCenterInventoryBadgeFooterBox {
+    height: 40px;
+    display: flex;
+}
+
+.moduleCenterInventoryBadgeExemplaryBox {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryBadgeTextExemplary {
+    margin-left: 8px;
+}
+
+.moduleCenterInventoryBadgePriceBox {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryBadgePriceD {
+    font-size: 135%;
+}
+
+.moduleCenterInventoryBadgePriceImageD {
+    width: 29px;
+    height: 27px;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterInventoryBadgeBubbles {
+        width: calc(25% - 10px);
+    }
+}
+
+
+/* =========================== */
+/*  CENTER INVENTORY BANNER    */
+/* =========================== */
+.moduleCenterInventoryBanner {
+    height: calc(100% - 12px);
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterInventoryBannerContainer {
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryBannerBubble {
+    width: calc(24% - 3px);
+    height: 235px;
+    border-radius: 13px;
+    background-color: var(--city-grey);
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterInventoryBannerBubbleImg {
+    height: 183px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryBannerBubbleAction {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryBannerBubbleActionButtonCarry {
+    height: 38px;
+    width: 88%;
+    background: #A1E477;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterInventoryBannerBubbleActionButtonCarry:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleCenterInventoryBannerBubbleActionButtonCarryText {
+    font-size: 125%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(103 146 76) 1px 0, rgb(103 146 76) -1px 0, rgb(103 146 76) 0 2px, rgb(103 146 76) -1px 0, rgb(103 146 76) 1px 1px, rgb(103 146 76) 0 -1px, rgb(103 146 76) 1px 2px, rgb(103 146 76) -1px -1px, rgb(103 146 76) 1px -1px, rgb(103 146 76) -1px 2px, rgb(103 146 76) -1px 1px;
+}
+
+.moduleCenterInventoryBannerBubbleActionButtonDelete {
+    height: 38px;
+    width: 88%;
+    background: #fd3a3a;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterInventoryBannerBubbleActionButtonDelete:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleCenterInventoryBannerBubbleActionButtonDeleteText {
+    font-size: 125%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(179 1 1) 1px 0, rgb(179 1 1) -1px 0, rgb(179 1 1) 0 2px, rgb(179 1 1) -1px 0, rgb(179 1 1) 1px 1px, rgb(179 1 1) 0 -1px, rgb(179 1 1) 1px 2px, rgb(179 1 1) -1px -1px, rgb(179 1 1) 1px -1px, rgb(179 1 1) -1px 2px, rgb(179 1 1) -1px 1px;
+}
+
+
+/* =========================== */
+/*  CENTER INVENTORY HISTORY   */
+/* =========================== */
+.moduleCenterInventoryHistory {
+    height: calc(100% - 12px);
+    width: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterInventoryHistoryContainer {
+    width: calc(100% - 19px);
+    height: 98%;
+    margin-left: 14px;
+    position: relative;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryHistoryBubblesBox {
+    width: calc(50% - 11px);
+}
+
+.moduleCenterInventoryHistoryBubblesBox:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterInventoryHistoryBubbles {
+    background: var(--city-grey-light);
+    border-radius: 17px;
+    margin-bottom: 3px;
+}
+
+.moduleCenterInventoryHistoryBubbleAlign {
+    display: flex;
+    height: 80px;
+}
+
+.moduleCenterInventoryHistoryBubbleLeft {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryHistoryBubbleCenter {
+    width: 72%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryHistoryBubbleCenterText {
+    width: 95%;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterInventoryHistoryBubblesBox {
+        width: calc(33.33% - 11px);
+    }
+}
+
+
+/* =========================== */
+/*  CENTER INVENTORY RARES     */
+/* =========================== */
+.moduleCenterInventoryRare {
+    height: calc(100% - 12px);
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterInventoryRareContainer {
+    width: calc(100% - 13px);
+    margin-left: 12px;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryRareBubbles {
+    position: relative;
+    width: calc(33.333% - 10px);
+    background: var(--city-grey);
+    border-radius: 17px;
+    margin-right: 10px;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.moduleCenterInventoryRareBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterInventoryRareHeaderBox {
+    height: 40px;
+}
+
+.moduleCenterInventoryRareIcon {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    padding: 3px;
+    top: 6px;
+    left: 8px;
+}
+
+.moduleCenterInventoryRareTitle {
+    position: absolute;
+    font-size: 120%;
+    left: 44px;
+    width: 160px;
+    top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterInventoryRareBubbleExemplary {
+    height: 18px;
+    width: 34px;
+    margin-top: 10px;
+    margin-left: 150px;
+    position: absolute;
+    background-color: rgb(0, 177, 255);
+    border-radius: 8px;
+    outline-style: solid;
+    outline-color: var(--city-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryRareBubbleExemplaryText {
+    color: var(--city-white-forced);
+    font-size: 14px;
+}
+
+.moduleCenterInventoryRareImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryRareImagePlace {
+
+}
+
+.moduleCenterInventoryRareFooterBox {
+    height: 50px;
+    display: flex;
+}
+
+.moduleCenterInventoryRarePriceBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterInventoryRarePriceAlign {
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryRarePriceD {
+    font-size: 135%;
+}
+
+.moduleCenterInventoryRarePriceImageD {
+    width: 29px;
+    height: 27px;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterInventoryRareBubbles {
+        width: calc(20% - 10px);
+    }
+}
+
+
+/* =========================== */
+/*  CENTER INVENTORY RICHESS   */
+/* =========================== */
+.moduleCenterInventoryRichess {
+    margin-top: 8px;
+    height: calc(100% - 12px);
+    overflow: auto;
+}
+
+.moduleCenterInventoryRichessContainer {
+    width: calc(100% - 23px);
+    margin-left: 12px;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryRichessInformationBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.moduleCenterInventoryRichessInformationBoxEconomy {
+    width: 50%;
+    height: 52px;
+    border-radius: 8px;
+    background: #F9CF00;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryRichessInformationEconomyText {
+    font-size: 125%;
+    color: var(--city-white-forced);
+    margin-left: 12px;
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+}
+
+.moduleCenterInventoryRichessInformationBoxRichess {
+    width: 50%;
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    background: var(--city-grey);
+    align-items: center;
+}
+
+.moduleCenterInventoryRichessInformationBoxLeft {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryRichessInformationBoxRight {
+    width: calc(100% - 60px);
+}
+
+.moduleCenterInventoryRichessInformationText {
+    font-size: 125%;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #494747, -1px 0 #494747, 0 2px #494747, -1px 0 #494747, 1px 1px #494747, 0 -1px #494747, 1px 2px #494747, -1px -1px #494747, 1px -1px #494747, -1px 2px #494747, -1px 1px #494747;
+}
+
+.moduleCenterInventoryRichessInformationBubble {
+    width: 40px;
+    height: 39px;
+    border-radius: 100px;
+    background: #F9CF00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventoryRichessCityCash {
+    border-radius: 12px;
+    margin-bottom: 8px;
+    background: #72d5ff;
+    padding: 12px;
+}
+
+.moduleCenterInventoryRichessCityCashIcon {
+    height: 30px;
+    width: 35px;
+    background: url(../../assets/img/center/inventory/icon_citycash.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterInventoryRichessCityCashTitle {
+    margin-left: 5px;
+    font-size: 19px;
+    color: var(--city-white);
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryRichessCityCashButton {
+    height: 44px;
+    width: 174px;
+    background: #38a4b8;
+    min-width: 105px;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    color: var(--city-white-forced);
+    font-family: habbofont, ubuntu x, sans-serif;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterInventoryRichessCityCashButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterInventoryRichessIcon {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.moduleCenterInventoryRichessDiamondsBrutIcon {
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterInventoryRichessRareDiamondsIcon {
+    background: url(../../assets/img/center/richess/icon_rare_diamonds.png) no-repeat;
+}
+
+.moduleCenterInventoryRichessBadgeDiamondsIcon {
+    background: url(../../assets/img/center/richess/icon_badge_diamonds.png) no-repeat;
+}
+
+.moduleCenterInventoryRichessRareIcon {
+    background: url(../../assets/img/center/richess/icon_rare.png) no-repeat;
+}
+
+.moduleCenterInventoryRichessDiamondsIcon {
+    background: url(../../assets/img/center/richess/icon_badge.gif) no-repeat;
+}
+
+.moduleCenterInventoryRichessValueText {
+    font-size: 19px;
+}
+
+.moduleCenterInventoryRichessBubbleContainer {
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-bottom: 12px
+}
+
+.moduleCenterInventoryRichessBubble {
+    height: 38px;
+    flex-basis: calc(50% - 6px);
+    border-radius: 14px;
+    background: var(--city-grey);
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* INVENTORY ROOM */
+.moduleCenterInventoryRoom {
+    height: calc(100% - 12px);
+    width: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 12px;
+}
+
+.moduleCenterInventoryRoomContainer {
+    width: calc(100% - 16px);
+    height: 98%;
+    left: 16px;
+    position: relative;
+    display: inline-flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventoryRoomBubbles {
+    width: calc(24% - 5px);
+    height: 192px;
+    background: var(--city-grey);
+    border-radius: 17px;
+    margin-bottom: 3px;
+}
+
+.moduleCenterInventoryRoomBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterInventoryRoomTitleBox {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterInventoryRoomTitle {
+    font-size: 108%;
+    margin-left: 10px;
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.moduleCenterInventoryRoomBodyBox {
+    display: flex;
+    margin-top: 2px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.moduleCenterInventoryRoomImage {
+    overflow: hidden;
+}
+
+.moduleCenterInventoryButton {
+    margin-top: 5px;
+    height: 35px;
+    width: 100%;
+    background: rgb(137 194 201);
+    border-radius: 0 0 17px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterInventoryButtonText {
+    font-size: 100%;
+    color: var(--city-white-forced);
+}
+
+.moduleCenterInventoryButtonIcon {
+    margin-left: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+
+}
+
+/* INVENTORY SELLS */
+.moduleCenterInventorySells {
+    height: calc(100% - 12px);
+    overflow: auto;
+    margin-top: 8px;
+}
+
+.moduleCenterInventorySellsDivider {
+    border-radius: 12px;
+    font-size: 20px;
+    margin-left: 14px;
+    margin-bottom: 10px;
+    background: var(--city-grey);
+    width: fit-content;
+    padding: 6px 14px;
+}
+
+.moduleCenterInventorySellsContainer {
+    width: calc(100% - 24px);
+    margin-left: 14px;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.moduleCenterInventorySellsEmpty {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+}
+
+.moduleCenterInventorySellsBubble {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: 0.1px solid var(--city-grey);
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.moduleCenterInventorySellsIcon {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventorySellsIconThumb {
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.moduleCenterInventorySellsSeparator {
+    position: relative;
+    width: 1px;
+    height: 40px;
+    background: var(--city-grey);
+}
+
+.moduleCenterInventorySellsTitle {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 116%;
+}
+
+.moduleCenterInventorySellsTitleExemplary {
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+    border-radius: 50px;
+    background: #b75eb7;
+    color: var(--city-white-forced);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.moduleCenterInventorySellsPrice {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+}
+
+.moduleCenterInventorySellsPriceIconDiamonds {
+    position: relative;
+    margin-right: 7px;
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/page_center.png) -108px -115px;
+
+}
+
+.moduleCenterInventorySellsPriceIconDuckets {
+    position: relative;
+    float: left;
+    margin-right: 7px;
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/page_center.png) -139px -115px;
+
+}
+
+.moduleCenterInventorySellsGive {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterInventorySellsGiveButton {
+    height: 35px;
+    width: 133px;
+    background: #A1E477;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.moduleCenterInventorySellsGiveButton:hover {
+    opacity: 0.8;
+}
+
+.moduleCenterInventorySellsGiveButtonText {
+    font-size: 105%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(103 146 76) 1px 0, rgb(103 146 76) -1px 0, rgb(103 146 76) 0 2px, rgb(103 146 76) -1px 0, rgb(103 146 76) 1px 1px, rgb(103 146 76) 0 -1px, rgb(103 146 76) 1px 2px, rgb(103 146 76) -1px -1px, rgb(103 146 76) 1px -1px, rgb(103 146 76) -1px 2px, rgb(103 146 76) -1px 1px;
+}
+
+.moduleCenterInventorySellsDeleteButton {
+    height: 35px;
+    width: 133px;
+    background: #2ab1c9;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.moduleCenterInventorySellsDeleteButton:hover {
+    opacity: 0.8;
+}
+
+.moduleCenterInventorySellsDeleteButtonText {
+    font-size: 105%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(37 119 134) 1px 0, rgb(37 119 134) -1px 0, rgb(37 119 134) 0 2px, rgb(37 119 134) -1px 0, rgb(37 119 134) 1px 1px, rgb(37 119 134) 0 -1px, rgb(37 119 134) 1px 2px, rgb(37 119 134) -1px -1px, rgb(37 119 134) 1px -1px, rgb(37 119 134) -1px 2px, rgb(37 119 134) -1px 1px;
+}
+
+/*  CENTER MARKET */
+.moduleCenterMarket {
+    height: 100%;
+}
+
+.moduleCenterMarketHighMenuBase {
+    display: flex;
+    height: 62px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 12px;
+}
+
+.moduleCenterMarketHighMenu {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: 0.1px solid var(--city-grey);
+    display: flex;
+}
+
+.moduleCenterMarketHighMenuSearchBox {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moduleCenterMarketHighMenuSearchBoxPlace {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMarketHighMenuSearchBoxIcon {
+    height: 18px;
+    width: 18px;
+    background: url(../../assets/img/chat/icon_search.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterMarketHighMenuSearchBar {
+    border: 0;
+    background: 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: 125%;
+}
+
+.moduleCenterMarketHighMenuSeparatorBarBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.moduleCenterMarketHighMenuSeparatorBar {
+    width: 1px;
+    height: 20px;
+    background: var(--city-grey);
+}
+
+.moduleCenterMarketHighMenuBox {
+    margin-left: auto;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.moduleCenterMarketHighMenuButton {
+    height: 32px;
+    width: auto;
+    gap: 2px;
+    font-size: 140%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMarketHighMenuButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleCenterMarketHighMenuButton[selected] {
+    border-bottom: 5px solid var(--city-grey);
+}
+
+.moduleCenterMarketHighMenuButtonIconFurni {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/valeurs_items.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterMarketHighMenuButtonIconBadge {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/valeurs_badges.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterMarketHighMenuButtonIconRoom {
+    width: 35px;
+    height: 30px;
+    background-image: url(../../assets/img/center/inventory/icon_room.png);
+    background-repeat: no-repeat;
+}
+
+.moduleCenterMarketHighMenuButtonText {
+    position: relative;
+}
+
+.moduleCenterMarketHighMenuBar {
+    position: relative;
+    left: 16px;
+    border-bottom: 1px solid var(--city-grey);
+}
+
+.moduleCenterMarketContent {
+    height: calc(100% - 82px);
+}
+
+
+/* CENTER MARKET BADGES */
+.moduleCenterMarketBadge {
+    height: 100%;
+    width: 100%;
+    background: var(--city-white);
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterMarketBadgeContainer {
+    width: calc(100% - 20px);
+    height: 98%;
+    left: 16px;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.moduleCenterMarketBadgeBubbles {
+    position: relative;
+    width: calc(33% - 8px);
+    height: 230px;
+    background: var(--city-grey);
+    border-radius: 17px;
+}
+
+.moduleCenterMarketBadgeBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterMarketBadgeTitleBox {
+    height: 40px;
+}
+
+.moduleCenterMarketBadgeIcon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    padding: 3px;
+    top: 7px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMarketBadgeTitle {
+    position: absolute;
+    font-size: 120%;
+    left: 45px;
+    width: 150px;
+    top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterMarketBadgeImageBox {
+
+}
+
+.moduleCenterMarketBadgeImage {
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterMarketBadgeImagePlace {
+    image-rendering: pixelated;
+    transform: scale(2);
+}
+
+.moduleCenterMarketBadgeValuesBox {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMarketBadgeValues {
+    height: 33px;
+    width: 180px;
+    background: var(--city-grey-dark);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMarketBadgeValuesText {
+    color: #929292;
+    font-size: 105%;
+    margin-left: 12px;
+}
+
+.moduleCenterMarketBadgeValuesIcon {
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    margin-left: auto;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterMarketBadgeValuesPrice {
+    font-size: 124%;
+    margin-right: 10px;
+}
+
+.moduleCenterMarketBadgePriceBox {
+    position: relative;
+    top: 8px;
+    height: 44px;
+    background: #A1E477;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMarketBadgePriceIcon {
+    height: 24px;
+    width: 24px;
+    margin-left: 16px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterMarketBadgePrice {
+    font-size: 130%;
+    color: var(--city-white-forced);
+    margin-left: 8px;
+    text-shadow: 1px 0 #67924C, -1px 0 #67924C, 0 2px #67924C, -1px 0 #67924C, 1px 1px #67924C, 0 -1px #67924C, 1px 2px #67924C, -1px -1px #67924C, 1px -1px #67924C, -1px 2px #67924C, -1px 1px #67924C;
+}
+
+.moduleCenterMarketBadgeNumberBox {
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.23);
+    margin-left: auto;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterMarketBadgeNumber {
+    font-size: 110%;
+    color: var(--city-white-forced);
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterMarketBadgeBubbles {
+        width: calc(20% - 10px);
+    }
+}
+
+
+/* =========================== */
+/*   CENTER MARKET RARES       */
+/* =========================== */
+.moduleCenterMarketRare {
+    height: 100%;
+    width: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterMarketRareContainer {
+    margin-left: 12px;
+}
+
+.moduleCenterMarketRareBubbles {
+    position: relative;
+    width: calc(33.333% - 10px);
+    background: var(--city-grey);
+    border-radius: 17px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.moduleCenterMarketRareBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterMarketRareTitleBox {
+    height: 40px;
+}
+
+.moduleCenterMarketRareIcon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    padding: 3px;
+    top: 7px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMarketRareTitle {
+    position: absolute;
+    font-size: 118%;
+    left: 40px;
+    width: 150px;
+    top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.moduleCenterMarketRareImageBox {
+}
+
+.moduleCenterMarketRareImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterMarketRareValuesBox {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMarketRareValues {
+    height: 33px;
+    width: 180px;
+    background: var(--city-grey-dark);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMarketRareValuesText {
+    color: #929292;
+    font-size: 105%;
+    margin-left: 12px;
+}
+
+.moduleCenterMarketRareValuesIcon {
+    height: 22px;
+    width: 22px;
+    margin-right: 8px;
+    margin-left: auto;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterMarketRareValuesPrice {
+    font-size: 124%;
+    margin-right: 10px;
+}
+
+.moduleCenterMarketRarePriceBox {
+    position: relative;
+    top: 8px;
+    height: 44px;
+    background: #A1E477;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 13px 13px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterMarketRarePriceIcon {
+    height: 24px;
+    width: 24px;
+    margin-left: 16px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterMarketRarePrice {
+    font-size: 130%;
+    margin-left: 8px;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #67924C, -1px 0 #67924C, 0 2px #67924C, -1px 0 #67924C, 1px 1px #67924C, 0 -1px #67924C, 1px 2px #67924C, -1px -1px #67924C, 1px -1px #67924C, -1px 2px #67924C, -1px 1px #67924C;
+}
+
+.moduleCenterMarketRareNumberBox {
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.23);
+    margin-left: auto;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterMarketRareNumber {
+    font-size: 110%;
+    color: var(--city-white-forced);
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterMarketRareBubbles {
+        width: calc(20% - 12px);
+        margin-right: 12px;
+    }
+}
+
+/* center market rooms */
+.moduleCenterMarketRoom {
+    height: 100%;
+    width: 100%;
+    background: var(--city-white);
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterMarketRoomContainer {
+    height: 98%;
+    margin-left: 12px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.moduleCenterMarketRoomBubbles {
+    width: calc(50% - 10px);
+    height: 160px;
+    background: var(--city-grey);
+    border-radius: 17px;
+}
+
+.moduleCenterMarketRoomBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterMarketRoomTitleBox {
+    height: 30px;
+}
+
+.moduleCenterMarketRoomTitle {
+    font-size: 120%;
+    color: #878787;
+    margin-left: 15px;
+    width: 300px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterMarketRoomImageBox {
+    height: 115px;
+    display: flex;
+}
+
+.moduleCenterMarketRoomImageBoxContainer {
+    width: 40%;
+}
+
+.moduleCenterMarketRoomImage {
+    margin-left: 15px;
+    overflow: hidden;
+    height: 110px;
+    width: 110px;
+    background: rgb(217, 217, 217);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterMarketRoomInfoBox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterMarketRoomInfoBoxLike {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.moduleCenterMarketRoomLikeIcon {
+    width: 20px;
+    height: 22px;
+    background: url(../../assets/img/profile/like.png) no-repeat;
+}
+
+.moduleCenterMarketRoomLikeText {
+    font-size: 115%;
+    margin-left: 12px;
+}
+
+.moduleCenterMarketRoomInfoBoxUsername {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    margin-left: 4px
+}
+
+.moduleCenterMarketRoomProfileIcon {
+    height: 30px;
+    width: 30px;
+    background: url(../../assets/img/center/icon_market_player.png) no-repeat;
+}
+
+.moduleCenterMarketRoomProfileText {
+    font-size: 115%;
+    margin-left: 6px;
+}
+
+.moduleCenterMarketRoomButtonCarry {
+    margin-top: 8px;
+    margin-left: 5px;
+    height: 38px;
+    width: 91%;
+    background: #77b7e4;
+    border-width: 1px 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterMarketRoomButtonCarryIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleCenterMarketRoomButtonCarryText {
+    margin-left: 8px;
+    font-size: 125%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(50 108 149) 1px 0, rgb(50 108 149) -1px 0, rgb(50 108 149) 0 2px, rgb(50 108 149) -1px 0, rgb(50 108 149) 1px 1px, rgb(50 108 149) 0 -1px, rgb(50 108 149) 1px 2px, rgb(50 108 149) -1px -1px, rgb(50 108 149) 1px -1px, rgb(50 108 149) -1px 2px, rgb(50 108 149) -1px 1px;
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterMarketRoomBubbles {
+        width: calc(33% - 8px);
+    }
+}
+
+
+/* =========================== */
+/*        CENTER POPUP         */
+/* =========================== */
+.moduleCenterPopupObject {
+    height: 97%;
+    overflow: auto;
+}
+
+.moduleCenterPopupObject::-webkit-scrollbar {
+    width: 4px;
+}
+
+.moduleCenterPopupObject::-webkit-scrollbar-track {
+    background: #c3c3c3;
+}
+
+.moduleCenterPopupObject::-webkit-scrollbar-thumb {
+    background: #8c8c8c;
+    border-radius: 4px;
+}
+
+.moduleCenterPopupObjectLeft {
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    gap: 10px;
+}
+
+.moduleCenterPopupObjectBubble {
+    margin-top: 8px;
+    overflow: hidden;
+    width: 200px;
+    border-radius: 12px;
+    background: var(--city-grey);
+}
+
+.moduleCenterPopupObjectBubbleTitleBox {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.moduleCenterPopupObjectBubbleTypeRounder {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    padding: 3px;
+}
+
+.moduleCenterPopupObjectBubbleText {
+    width: 140px;
+    margin-left: 6px;
+    font-size: 120%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleCenterPopupObjectBubbleImageBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.moduleCenterPopupObjectBubbleImageBoxBadge {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    image-rendering: pixelated;
+    transform: scale(2);
+}
+
+.moduleCenterPopupObjectMonopolyRounder {
+    position: relative;
+    top: 21px;
+    left: 99px;
+    width: 20px;
+    height: 20px;
+    background-color: #178FFF;
+    border-radius: 25px;
+    color: var(--city-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.moduleCenterPopupObjectBubbleMonopoly {
+    height: 39px;
+    width: 200px;
+    border-radius: 8px;
+    background: #75BDFF;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectBubbleMonopolyAvatar {
+    display: flex;
+    width: 55px;
+    margin-left: -10px;
+    margin-top: 33px;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.moduleCenterPopupObjectBubbleMonopolyText {
+    height: 20px;
+    width: 140px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--city-white-forced);
+}
+
+.moduleCenterPopupObjectInformationRounder {
+    position: relative;
+    top: 34px;
+    left: 99px;
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 25px;
+    color: var(--city-white-forced);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.moduleCenterPopupObjectBubbleInformation {
+    height: 65px;
+    width: 200px;
+    border-radius: 8px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.moduleCenterPopupObjectBubbleInformationText {
+    width: 90%;
+}
+
+.moduleCenterPopupObjectRight {
+    margin-left: 215px;
+    width: calc(100% - 215px);
+    display: flex;
+    justify-content: center;
+}
+
+.moduleCenterPopupObjectRightContainer {
+    width: 96%;
+}
+
+.moduleCenterPopupObjectAuctionBubble {
+    margin-top: 8px;
+    height: 168px;
+    width: 100%;
+    border-radius: 12px;
+    background: var(--city-grey-light);
+    display: flex;
+    justify-content: center;
+}
+
+.moduleCenterPopupObjectAuctionBubbleContainer {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterPopupObjectAuctionBubbleBoxTitle {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectAuctionBubbleBoxTitleIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/navigation/icon_auction.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterPopupObjectAuctionBubbleBoxTitleText {
+    margin-left: 5px;
+    font-size: 19px;
+    color: var(--city-black);
+}
+
+.moduleCenterPopupObjectAuctionBubbleBoxPrice {
+    height: 50px;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moduleCenterPopupObjectAuctionButtonDiamonds {
+    width: 50%;
+    height: 43px;
+    border-radius: 8px;
+    background-color: #75BDFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moduleCenterPopupObjectAuctionButtonDiamondsIcon {
+    margin-left: 10px;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/diamonds24.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterPopupObjectAuctionButtonDiamondsText {
+    color: var(--city-white-forced);
+    font-size: 110%;
+}
+
+.moduleCenterPopupObjectAuctionButtonTime {
+    width: 50%;
+    height: 43px;
+    border-radius: 8px;
+    background: #F9CF00;
+    color: var(--city-white-forced);
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moduleCenterPopupObjectAuctionButtonTimeIcon {
+    margin-left: 10px;
+    margin-right: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/time.png);
+
+}
+
+.moduleCenterPopupObjectAuctionButtonTimeText {
+    color: var(--city-black-forced);
+    font-size: 110%;
+}
+
+.moduleCenterPopupObjectAuctionBubbleBoxBuy {
+    height: 73px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectAuctionBigButton {
+    margin-top: 8px;
+    height: 111px;
+    background: #A1E477;
+    min-width: 105px;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCenterPopupObjectAuctionBigButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleCenterPopupObjectAuctionBigButtonHeigh {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectAuctionBigButtonIcon {
+    margin-left: 14px;
+    margin-right: 12px;
+    height: 24px;
+    width: 24px;
+    background: url(../../assets/img/center/navigation/icon_market.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterPopupObjectAuctionBigButtonTitle {
+    font-size: 110%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(103 146 76) 1px 0, rgb(103 146 76) -1px 0, rgb(103 146 76) 0 2px, rgb(103 146 76) -1px 0, rgb(103 146 76) 1px 1px, rgb(103 146 76) 0 -1px, rgb(103 146 76) 1px 2px, rgb(103 146 76) -1px -1px, rgb(103 146 76) 1px -1px, rgb(103 146 76) -1px 2px, rgb(103 146 76) -1px 1px;
+}
+
+.moduleCenterPopupObjectAuctionBigButtonDown {
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterPopupObjectAuctionBigButtonPrice {
+    font-size: 140%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(103 146 76) 1px 0, rgb(103 146 76) -1px 0, rgb(103 146 76) 0 2px, rgb(103 146 76) -1px 0, rgb(103 146 76) 1px 1px, rgb(103 146 76) 0 -1px, rgb(103 146 76) 1px 2px, rgb(103 146 76) -1px -1px, rgb(103 146 76) 1px -1px, rgb(103 146 76) -1px 2px, rgb(103 146 76) -1px 1px;
+    margin-right: 8px;
+}
+
+.moduleCenterPopupObjectBannerValue {
+    margin-top: 8px;
+    height: 39px;
+    background-color: #F9CF00;
+    border-radius: 8px;
+    display: flex;
+}
+
+.moduleCenterPopupObjectBannerValueLeftBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectBannerValueLeft {
+    width: 75%;
+    margin-left: 10px;
+    font-size: 130%;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectBannerValueRightBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.moduleCenterPopupObjectBannerDiamondIcon {
+    width: 30px;
+    height: 24px;
+    background: url(../../assets/img/center/diamonds_18.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterPopupObjectBannerValueTextLeft {
+    margin-left: 2px;
+    font-size: 130%;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectBannerValueRight {
+    width: 68px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.moduleCenterPopupObjectOwnerBody {
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.moduleCenterPopupObjectOwnerContainer {
+    height: 45px;
+    width: calc(33% - 4px);
+    cursor: pointer;
+
+}
+
+.moduleCenterPopupObjectOwnerBubble {
+    height: 34px;
+    width: 100%;
+    background-color: var(--city-grey);
+    border-radius: 8px;
+    display: flex;
+}
+
+.moduleCenterPopupObjectOwnerAvatar {
+    display: flex;
+    margin-left: -8px;
+    margin-top: 34px;
+    align-items: center;
+
+}
+
+.moduleCenterPopupObjectBubbleOwner {
+    width: 80px;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-left: -8px;
+}
+
+.moduleCenterPopupObjectBubbleNumber {
+    position: relative;
+    top: -12px;
+    left: 47px;
+    width: 38px;
+    height: 20px;
+    background-color: rgb(0, 177, 255);
+    border-radius: 25px;
+    color: var(--city-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.moduleCenterPopupObjectTitleBox {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectTitle {
+    font-size: 19px;
+}
+
+.moduleCenterPopupObjectFamilyContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.moduleCenterPopupObjectFamilyBubble {
+    height: 58px;
+    position: relative;
+    width: 58px;
+    background: var(--city-grey);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterPopupObjectFamilyIcon {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.moduleCenterPopupObjectEconomyContainer {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moduleCenterPopupObjectEconomyBox {
+    width: 48%;
+    height: 34px;
+    border-radius: 12px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterPopupObjectEconomyBoxtext {
+    margin-left: 7px;
+    font-size: 95%;
+}
+
+.moduleCenterPopupObjectInput {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.moduleCenterPopupObjectInputs {
+    display: flex;
+}
+
+.moduleCenterPopupObjectButton {
+    height: 44px;
+    width: 174px;
+    background: #A1E477;
+    min-width: 105px;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 13px 13px 13px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterPopupObjectButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterPopupObjectButtonText {
+    font-size: 125%;
+    color: var(--city-white-forced);
+    text-shadow: rgb(103 146 76) 1px 0, rgb(103 146 76) -1px 0, rgb(103 146 76) 0 2px, rgb(103 146 76) -1px 0, rgb(103 146 76) 1px 1px, rgb(103 146 76) 0 -1px, rgb(103 146 76) 1px 2px, rgb(103 146 76) -1px -1px, rgb(103 146 76) 1px -1px, rgb(103 146 76) -1px 2px, rgb(103 146 76) -1px 1px;
+}
+
+.moduleCenterPopupObjectVisitRoom {
+    margin-top: 8px;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    background: #f174a4;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterPopupObjectVisitRoom:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* =========================== */
+/*        CENTER VALUES        */
+/* =========================== */
+.moduleCenterValue {
+    height: 100%;
+}
+
+.moduleCenterValueHighMenu {
+    padding: 0 18px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterValueHighMenuSearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.moduleCenterValueHighMenuSearchBoxIcon {
+    position: relative;
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    margin-right: 11px;
+    background: url(../../assets/img/chat/icon_search.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterValueHighMenuSearchBar {
+    border: 0;
+    background: 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: 125%;
+}
+
+.moduleCenterValueHighMenuSeparatorBar {
+    position: relative;
+    width: 1px;
+    height: 20px;
+    background: var(--city-grey);
+}
+
+.moduleCenterValueHighMenuBox {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.moduleCenterValueHighMenuButton {
+    height: 32px;
+    width: auto;
+    font-size: 140%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.moduleCenterValueHighMenuButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleCenterValueHighMenuButton[selected] {
+    border-bottom: 5px solid #dcdcdc;
+}
+
+.moduleCenterValueHighMenuButtonIconFurni {
+    width: 35px;
+    height: 30px;
+    background: url(../../assets/img/center/valeurs_items.png) no-repeat;
+
+}
+
+.moduleCenterValueHighMenuButtonIconBadge {
+    width: 35px;
+    height: 30px;
+    background: url(../../assets/img/center/valeurs_badges.png) no-repeat;
+
+}
+
+.moduleCenterValueHighMenuButtonText {
+    position: relative;
+}
+
+.moduleCenterValueHighMenuBarBox {
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCenterValueHighMenuBar {
+    width: 100%;
+    border-bottom: 1px solid var(--city-grey);
+}
+
+.moduleCenterValueContent {
+    height: calc(100% - 60px);
+}
+
+
+/* =========================== */
+/*   CENTER VALUES BADGES      */
+/* =========================== */
+.moduleCenterValueBadge {
+    height: calc(100% - 10px);
+    width: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.moduleCenterValueBadgeContainer {
+    width: calc(100% - 20px);
+    height: 98%;
+    left: 16px;
+    position: relative;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.moduleCenterValueBadgeBubbles {
+    position: relative;
+    width: calc(33% - 6px);
+    height: 160px;
+    background: var(--city-grey);
+    border-radius: 17px;
+}
+
+.moduleCenterValueBadgeBubbles:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCenterValueBadgeHeaderBox {
+    height: 40px;
+}
+
+.moduleCenterValueBadgeIcon {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    padding: 3px;
+    top: 6px;
+    left: 8px;
+}
+
+.moduleCenterValueBadgeTitle {
+    position: absolute;
+    font-size: 118%;
+    left: 42px;
+    width: 76%;
+    top: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.moduleCenterValueBadgeImage {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterValueBadgeImagePlace {
+    image-rendering: pixelated;
+    transform: scale(2);
+}
+
+.moduleCenterValueBadgeFooterBox {
+    height: 40px;
+    display: flex;
+}
+
+.moduleCenterValueBadgeExemplaryBox {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterValueBadgeTextExemplary {
+    margin-left: 8px;
+}
+
+.moduleCenterValueBadgePriceBox {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterValueBadgePriceD {
+    font-size: 135%;
+}
+
+.moduleCenterValueBadgePriceImageD {
+    width: 29px;
+    height: 27px;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterValueBadgeContainer {
+        gap: 12px;
+    }
+
+    .webContainer .moduleCenterValueBadgeBubbles {
+        width: calc(20% - 11px);
+    }
+}
+
+
+/* =========================== */
+/*   CENTER VALUES RARES       */
+/* =========================== */
+.moduleCenterValueRare {
+    height: calc(100% - 10px);
+    width: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    margin-top: 10px;
+    overflow-x: hidden;
+}
+
+.moduleCenterValueRareContainer {
+    width: calc(100% - 13px);
+    margin-left: 12px;
+}
+
+.moduleCenterValueRareBubbles {
+    position: relative;
+    width: calc(33.333% - 10px);
+    background: var(--city-grey);
+    border-radius: 17px;
+    margin-right: 10px;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+
+.moduleCenterValueRareBubbles:hover {
+    opacity: 0.7 !important;
+    cursor: pointer;
+}
+
+.moduleCenterValueRareHeaderBox {
+    height: 40px;
+}
+
+.moduleCenterValueRareIcon {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    padding: 3px;
+    top: 6px;
+    left: 8px;
+}
+
+.moduleCenterValueRareTitle {
+    position: absolute;
+    font-size: 118%;
+    left: 42px;
+    width: 76%;
+    top: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.moduleCenterValueRareImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleCenterValueRareFooterBox {
+    height: 60px;
+    display: flex;
+}
+
+.moduleCenterValueRareQuantityBox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moduleCenterValueRareTextQuantity {
+    margin-left: 8px;
+    color: #404ACD;
+}
+
+.moduleCenterValueRareTextExemplary {
+    margin-left: 8px;
+}
+
+.moduleCenterValueRarePriceC {
+    margin-right: 2px;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterValueRarePriceImageC {
+    margin-left: 5px;
+    width: 30px;
+    height: 23px;
+    background: url(../../assets/img/center/classique.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleCenterValueRarePriceBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.moduleCenterValueRarePriceD {
+    margin-right: 5px;
+    font-size: 130%;
+    display: flex;
+    align-items: center;
+}
+
+.moduleCenterValueRarePriceImageD {
+    margin-left: 5px;
+    width: 30px;
+    height: 29px;
+    background: url(../../assets/img/center/diamonds.png) no-repeat;
+
+}
+
+@media (min-width: 1330px) {
+    .webContainer .moduleCenterValueRareBubbles {
+        width: calc(20% - 12px);
+        margin-right: 12px;
+        margin-bottom: 12px;
+    }
+}

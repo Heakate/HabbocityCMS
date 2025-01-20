@@ -1,0 +1,3058 @@
+/* =========================== */
+/*          PROFILE            */
+/* =========================== */
+.moduleProfile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.moduleProfileLeft {
+    height: 100%;
+    width: 90px;
+    display: inline-block;
+}
+
+.moduleProfileLeftBannerBox {
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileLeftBanner {
+    height: 170px;
+    width: 67px;
+    background: var(--city-grey);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileLeftBannerAvatar {
+    position: absolute;
+    -webkit-filter: drop-shadow(1.5px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(0 -1px 0px #fff);
+
+}
+
+.moduleProfileLeftBadgesBox {
+    margin-top: 3px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleProfileLeftBadgesBanner {
+    background: var(--city-grey);
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moduleProfileLeftBadgesRounder {
+    margin-top: 12px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.moduleProfileLeftBadgesRounder:hover > .moduleProfileLeftBadgesRounderInfo {
+    display: block;
+}
+
+.moduleProfileLeftBadgesRounderInfo {
+    left: 75px;
+    background-color: var(--city-white);
+    max-width: 210px;
+    position: absolute;
+    display: none;
+    width: max-content;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+}
+
+.moduleProfileLeftBadgesRounderInfo::before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-right: 10px solid var(--city-white);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    top: 10px;
+    left: -10px;
+}
+
+.moduleProfileLeftBadgesRounderInfoTitle {
+    font-size: 130%;
+}
+
+.moduleProfileLeftBadgesRounderInfoDesc {
+    font-size: 90%;
+}
+
+.moduleProfileRight {
+    height: 100%;
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.moduleProfileRightCoverBox {
+    margin-top: 3px;
+    margin-left: 2px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.moduleProfileCover {
+    height: 145px;
+    width: 98%;
+    background: var(--city-grey-light);
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.moduleProfileActions {
+    height: 30px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.moduleProfileActionsButton {
+    padding: 8px 10px 8px 10px;
+    color: var(--city-white-forced);
+    background-color: #0095F6;
+    -webkit-border-radius: 5px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.moduleProfileActionsButton:hover {
+    background-color: #0095f6bd;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileActionsButtonText {
+    font-size: 17px;
+}
+
+.moduleProfileActionsButtonIcon {
+    height: 14px;
+    width: 14px;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.moduleProfileActionsButtonIconAdd {
+    background: url(../assets/img/profile/invite.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleProfileActionsButtonIconDelete {
+    background: url(../assets/img/profile/delete.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleProfileCoverBannerContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.moduleProfileCoverBannerEdit {
+    height: 32px;
+    bottom: 15px;
+    position: absolute;
+    border-radius: 20px;
+    right: 15px;
+    box-shadow: 0 0 0 2px #0000001f;
+    background: var(--city-white-forced);
+    display: flex;
+    overflow: hidden;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditButton:hover {
+    background: #efefef;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditIcon {
+    height: 14px;
+    width: 14px;
+    background: url(../assets/img/32_edit.png);
+    background-size: contain;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditDeleteIcon {
+    height: 14px;
+    width: 14px;
+    background: url(../assets/img/32_delete.png);
+    background-size: contain;
+}
+
+.moduleProfileAvatarEdit {
+    height: 32px;
+    top: 160px;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 5px;
+    box-shadow: 0 0 0 2px #0000001f;
+    background: var(--city-white-forced);
+    display: flex;
+    overflow: hidden;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarEditButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarEditButton:hover {
+    background: #efefef;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarEditIcon {
+    height: 14px;
+    width: 14px;
+    background: url(../assets/img/32_edit.png);
+    background-size: contain;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarDeleteIcon {
+    height: 14px;
+    width: 14px;
+    background: url(../assets/img/32_delete.png);
+    background-size: contain;
+}
+
+.moduleProfileAvatar {
+    height: 96px;
+    width: 96px;
+    margin: 130px 23px 0;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    border: 3px solid var(--city-white-forced);
+}
+
+.moduleProfileUserBox {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileUserFunction {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 95px;
+}
+
+.moduleProfileUsername {
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.moduleProfileUserOnline {
+    margin-left: 12px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #44CF48;
+}
+
+.moduleProfileUserOffline {
+    margin-left: 12px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ED1C24;
+}
+
+.moduleProfileUserText {
+    margin-left: 8px;
+    font-size: 14px;
+    color: rgba(141, 138, 124, 0.96);
+}
+
+.moduleProfileRightInfoBox {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileRightInfoBorder {
+    margin-top: 10px;
+    height: 90px;
+    width: 98%;
+    border-radius: 10px;
+    border: 0.1px solid var(--city-grey);
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileRightInfoLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleProfileRightInfoCenter {
+    position: relative;
+    width: 1px;
+    height: 60%;
+    background: rgb(231, 231, 231);
+}
+
+.moduleProfileRightInfoRight {
+    width: 50%;
+}
+
+.moduleProfileInfoTextBox {
+    margin-left: 15px;
+    margin-bottom: 3px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileRightInfoText {
+    margin-left: 8px;
+    font-size: 110%;
+}
+
+.moduleProfileIconRichess {
+    height: 25px;
+    width: 25px;
+    background: url(../assets/img/profile/richess.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileIconLike {
+    height: 22px;
+    width: 24px;
+    background: url(../assets/img/profile/like.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileIconTime {
+    height: 25px;
+    width: 25px;
+    background: url(../assets/img/profile/time_icon.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileIconHeart {
+    height: 25px;
+    width: 25px;
+    background: url(../assets/img/profile/relation_heart.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileIconSmile {
+    height: 25px;
+    width: 25px;
+    background: url(../assets/img/profile/relation_smile.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileIconBobba {
+    height: 25px;
+    width: 25px;
+    background: url(../assets/img/profile/relation_dead.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileRightContainerBox {
+    height: 365px;
+}
+
+.moduleProfileRightContainerBorder {
+    margin-top: 8px;
+    height: 310px;
+    width: 98%;
+    border-radius: 10px;
+    border: 0.1px solid var(--city-grey);
+}
+
+.moduleProfileMenu {
+    height: 24px;
+    margin-top: 2px;
+    display: flex;
+    gap: 10px;
+}
+@media(min-width: 768px) {
+    .moduleProfileMenu {
+        gap: 25px;
+    }
+}
+
+.moduleProfileTabs {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 19px;
+    border-bottom: 4px solid transparent;
+}
+
+.moduleProfileTabs:hover {
+    border-bottom: 4px solid var(--city-grey);
+}
+
+.moduleProfileTabs[selected] {
+    border-bottom: 4px solid #dcdcdc;
+}
+
+.moduleProfileTabsContainer {
+    height: 100%;
+    position: relative;
+}
+
+.moduleProfileRelationOpenProfile {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mobile .moduleProfileLeft {
+    display: none;
+}
+
+.mobile .moduleProfileRight {
+    width: 100%;
+}
+
+
+/* =========================== */
+/*     PROFILE FRIENDS         */
+/* =========================== */
+.moduleProfileFriends {
+    height: 95%;
+    overflow: auto;
+    margin-top: 8px;
+}
+
+.moduleProfileFriendsBody {
+    width: calc(100% - 14px);
+    position: relative;
+    gap: 10px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleProfileFriendsBox {
+    position: relative;
+    width: calc(33% - 8px);
+}
+
+.moduleProfileFriendsBox:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileFriendsContainer {
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 13px;
+    background-color: var(--city-grey);
+}
+
+.moduleProfileFriendsBoxAvatar {
+    height: 55px;
+    width: 55px;
+    margin: -20px 0 0;
+    position: absolute;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    border: 3px solid #ffffff;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.moduleProfileFriendsPseudo, .moduleProfileFriendsMotto {
+    position: relative;
+    width: 90px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleProfileFriendsPseudo {
+    margin-left: 73px;
+    top: 5px;
+    font-size: 115%;
+}
+
+.moduleProfileFriendsMotto {
+    margin-left: 73px;
+    top: 8px;
+    font-size: 12px;
+}
+
+.moduleProfileFriendsOnline {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #44cf48;
+}
+
+.moduleProfileFriendsOffline {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ED1C24;
+}
+
+.moduleProfileFriendsUnavailable {
+    flex-wrap: wrap;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleProfileFriendsUnavailableLock {
+    height: 70px;
+    width: 100%;
+    background: url(../assets/img/profile/friendslock.png) no-repeat center;
+
+}
+
+.moduleProfileFriendsUnavailableText {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 130%;
+}
+
+.mobile .moduleProfileFriendsBox {
+    width: calc(49% - 4px);
+}
+
+
+/* =========================== */
+/*      PROFILE GROUPS         */
+/* =========================== */
+.moduleProfileGroupsBody {
+    margin-top: 5px;
+    height: 300px;
+    display: flex;
+}
+
+.moduleProfileGroupsBoxLeft {
+    width: 15%;
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+    gap: 6px;
+}
+
+.moduleProfileGroupsBubble {
+    height: 55px;
+    width: 55px;
+    border-radius: 8px;
+    background: var(--city-white);
+    border: 2px solid var(--city-grey);
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleProfileGroupsBubble[selected] {
+    background: var(--city-grey);
+}
+
+.moduleProfileGroupsBubble:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBubbleFavoriteIcon {
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+    height: 30px;
+    width: 24px;
+    background: url(../assets/img/profile/group_favorite.png) no-repeat;
+
+    filter: drop-shadow(1px 0px 0 white) drop-shadow(-1px 0px 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white);
+}
+
+.moduleProfileGroupsBoxRight {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.moduleProfileGroupsBoxDetail {
+    width: 98%;
+    border-radius: 10px;
+    background: var(--city-grey);
+    display: flex;
+}
+
+.moduleProfileGroupsPartLeft {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moduleProfileGroupsBadge {
+    margin-top: 40px;
+}
+
+.moduleProfileGroupsOwner {
+    width: 150px;
+    height: 40px;
+    background: var(--city-white);
+    border-radius: 5px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsOwner:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsOwnerAvatar {
+    width: 50px;
+    height: 75px;
+    overflow: hidden;
+    margin-top: -35px;
+}
+
+.moduleProfileGroupsOwnerPseudo {
+    margin-left: 10px;
+    font-size: 116%;
+    width: 85px;
+    overflow: hidden;
+}
+
+.moduleProfileGroupsBoxFavorite {
+    height: 40px;
+    width: 150px;
+    background: #f1762f;
+    border-radius: 5px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxFavorite:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxFavoriteIcon {
+    position: relative;
+    height: 30px;
+    width: 24px;
+    margin-left: 5px;
+    background: url(../assets/img/profile/group_favorite.png) no-repeat;
+
+}
+
+.moduleProfileGroupsBoxFavoriteText {
+    font-size: 110%;
+    position: relative;
+    margin-left: 6px;
+    color: var(--city-white-forced);
+}
+
+.moduleProfileGroupsBoxIsFavorite {
+    height: 40px;
+    width: 150px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxIsFavoriteText {
+    user-select: none;
+    font-size: 112%;
+    position: relative;
+    margin-left: 6px;
+    text-decoration: underline;
+}
+
+.moduleProfileGroupsContainer {
+    width: 65%;
+    margin-top: 15px;
+}
+
+.moduleProfileGroupsBoxTitle {
+    position: relative;
+    font-size: 150%;
+}
+
+.moduleProfileGroupsBoxAlign {
+    display: flex;
+    width: 98%;
+}
+
+.moduleProfileGroupsBoxDate {
+    height: 40px;
+    width: 170px;
+    background: #FFCD00;
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.moduleProfileGroupsBoxDateIcon {
+    height: 30px;
+    width: 30px;
+    background: url(../assets/img/profile/time_icon.png) no-repeat;
+
+}
+
+.moduleProfileGroupsBoxDateText {
+    font-size: 100%;
+    color: #3D2614;
+}
+
+.moduleProfileGroupsBoxDescription {
+    height: 135px;
+    width: 98%;
+    background: var(--city-white);
+    border-radius: 8px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileGroupsBoxDescriptionText {
+    height: 125px;
+    width: 96%;
+    font-size: 100%;
+}
+
+.moduleProfileGroupsBoxQg {
+    height: 40px;
+    width: 150px;
+    background: #FB87B9;
+    border-radius: 5px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.moduleProfileGroupsBoxQg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxQgIcon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url(../assets/img/profile/room_icon.png) no-repeat;
+
+}
+
+.moduleProfileGroupsBoxQgText {
+    user-select: none;
+    font-size: 110%;
+    position: relative;
+    color: var(--city-white-forced);
+}
+
+.moduleProfileGroupsBoxLeave {
+    height: 40px;
+    width: 210px;
+    background: #8e87fb;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxLeave:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxLeaveIcon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-left: 8px;
+    margin-right: 5px;
+    background: url(../assets/img/profile/icon_group_leave.png) no-repeat;
+
+}
+
+.moduleProfileGroupsBoxDelete {
+    height: 40px;
+    width: 210px;
+    background: #ef7272;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileGroupsBoxDelete:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxDeleteIcon {
+    position: relative;
+    height: 30px;
+    width: 26px;
+    background: url(../assets/img/profile/icon_group_delete.png) no-repeat;
+
+}
+
+.moduleProfileGroupsBoxText {
+    user-select: none;
+    font-size: 105%;
+    position: relative;
+    color: var(--city-white-forced);
+}
+
+.moduleProfileGroupsBoxMembers {
+    cursor: pointer;
+    height: 40px;
+    width: 155px;
+    background: var(--city-white);
+    border-radius: 5px;
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileGroupsBoxMembersIcon {
+    height: 24px;
+    width: 23px;
+    margin-left: 6px;
+    background: url(../assets/img/profile/community.png) no-repeat;
+
+}
+
+.moduleProfileGroupsBoxMembersText {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 105%;
+    user-select: none;
+}
+
+.moduleProfileGroupsBoxJoin {
+    height: 40px;
+    width: 210px;
+    background: #26C454;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.moduleProfileGroupsBoxJoin:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileGroupsBoxJoinIcon {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: url(../assets/img/profile/icon_plus.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfileGroupsBoxJoinText {
+    user-select: none;
+    font-size: 112%;
+    position: relative;
+    color: var(--city-white-forced);
+}
+
+
+.mobile .moduleProfileGroupsBadge {
+    margin-top: 25px;
+}
+
+.mobile .moduleProfileGroupsBoxAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px
+}
+
+.mobile .moduleProfileGroupsBoxMembers {
+    width: 170px;
+    margin-left: 0;
+}
+
+.mobile .moduleProfileGroupsOwner {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.mobile .moduleProfileGroupsBoxIsFavorite {
+    height: 55px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile .moduleProfileGroupsBoxFavoriteIcon {
+    margin-left: 0;
+}
+
+.mobile .moduleProfileGroupsBoxIsFavoriteText {
+    margin-left: 0;
+}
+
+.mobile .moduleProfileGroupsBoxDescription {
+    height: 85px;
+}
+
+.mobile .moduleProfileGroupsBoxDescriptionText {
+    height: 75px;
+}
+
+.mobile .moduleProfileGroupsBoxQgText {
+    display: none;
+}
+
+.mobile .moduleProfileGroupsBoxText {
+    display: none;
+}
+
+.mobile .moduleProfileGroupsBoxJoinText {
+    display: none;
+}
+
+
+/* =========================== */
+/*      PROFILE PHOTOS         */
+/* =========================== */
+.moduleProfilePhotosBox {
+    height: 52px;
+    display: flex;
+}
+
+.moduleProfilePhotosContainerTitle {
+    display: flex;
+    margin-left: 20px;
+}
+
+.moduleProfilePhotosTitle {
+    font-size: 125%;
+    align-self: center;
+}
+
+.moduleProfilePhotosIcon {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/img/profile/icon_photo.png) no-repeat;
+    background-size: contain;
+
+    align-self: center;
+    margin-right: 12px;
+}
+
+.moduleProfilePhotosButton {
+    padding: 8px 10px 8px 10px;
+    color: var(--city-white-forced);
+    background-color: #0095F6;
+    -webkit-border-radius: 5px;
+    height: 18px;
+    width: 70px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfilePhotosButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfilePhotosButtonIcon {
+    height: 12px;
+    width: 12px;
+    background: url(../assets/img/profile/icon_plus.png) no-repeat;
+    background-size: contain;
+
+}
+
+.moduleProfilePhotosButtonText {
+    font-size: 17px;
+    margin-left: 6px;
+}
+
+.moduleProfilePhotosScroll {
+    margin-top: 10px;
+    height: 95%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.moduleProfilePhotosContainer {
+    width: 178px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.moduleProfilePhotosContainer:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    background: #4A4A4A;
+}
+
+
+/* =========================== */
+/*      PROFILE ROOMS          */
+/* =========================== */
+.moduleProfileRooms {
+    height: 95%;
+    overflow: auto;
+    margin-top: 8px;
+}
+
+.moduleProfileRoomsBody {
+    width: calc(100% - 20px);
+    display: inline-flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.moduleProfileRoomsBox {
+    position: relative;
+    width: calc(50% - 12px);
+    height: 110px;
+    display: flex;
+}
+
+.moduleProfileRoomsBox:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileRoomsTitleBox {
+    position: absolute;
+    height: 35px;
+    width: 100%;
+}
+
+.moduleProfileRoomsTitle {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 118px;
+    font-size: 120%;
+    color: var(--city-black);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleProfileRoomsInfoBox {
+    position: relative;
+    height: 75px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 35px;
+    background-color: var(--city-grey);
+}
+
+.moduleProfileRoomsDescription {
+    position: absolute;
+    width: 140px;
+    margin-top: 40px;
+    margin-left: 116px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.moduleProfileRoomsLikes {
+    position: absolute;
+    height: 22px;
+    width: 20px;
+    margin-top: 80px;
+    margin-left: 116px;
+    background: url(../assets/img/profile/like.png) no-repeat;
+
+}
+
+.moduleProfileRoomsLikesText {
+    position: absolute;
+    width: 70px;
+    margin-top: 80px;
+    margin-left: 145px;
+    font-size: 20px;
+}
+
+.moduleProfileRoomsPicture {
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    height: 110px;
+    width: 110px;
+    overflow: hidden;
+}
+
+.mobile .moduleProfileRoomsBox {
+    width: 100%;
+}
+
+
+/* =========================== */
+/*      PROFILE TOPICS         */
+/* =========================== */
+.moduleProfileTopics {
+    height: 94%;
+    overflow: auto;
+    margin-top: 8px;
+}
+
+.moduleProfileTopicsBox {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.moduleProfileTopicsContainer {
+    position: relative;
+    width: 100%;
+    height: 76px;
+    border-radius: 13px;
+    background-color: var(--city-grey);
+}
+
+.moduleProfileTopics a {
+    width: calc(33.33% - 18px);
+    color: var(--city-black);
+    text-decoration: none;
+}
+
+.moduleProfileTopicsContainer:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileTopicsContainer:hover .moduleProfileStatutOpen {
+    top: -16px;
+    transition: 0.5s;
+}
+
+.moduleProfileTopicsContainer:hover .moduleProfileStatutClosed {
+    top: -16px;
+    transition: 0.5s;
+}
+
+.moduleProfileTopicsTitle {
+    position: relative;
+    width: 155px;
+    margin-left: 10px;
+    top: 8px;
+    font-size: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleProfileTopicsViewIcon {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: url(../assets/img/profile/community.png) no-repeat;
+
+}
+
+.moduleProfileTopicsView {
+    position: relative;
+    width: 110px;
+    margin-left: 40px;
+    top: -14px;
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 1rem;
+}
+
+.moduleProfileTopicsTimeIcon {
+    background: url(../assets/img/profile/time.png) no-repeat;
+    width: 25px;
+    height: 24px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+.moduleProfileStatutOpen {
+    background: url(../assets/img/profile/topic_open.png) no-repeat;
+    width: 30px;
+    height: 36px;
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 47px;
+}
+
+.moduleProfileStatutClosed {
+    background: url(../assets/img/profile/topic_close.png) no-repeat;
+    width: 30px;
+    height: 36px;
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 50px;
+}
+
+.moduleProfileTopicsTime {
+    position: relative;
+    width: 110px;
+    margin-left: 40px;
+    top: -18px;
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 1rem;
+}
+
+
+/* =========================== */
+/*          HELP               */
+/* =========================== */
+.moduleHelpContainer {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleHelpTitle {
+    font-size: 22px;
+    color: var(--city-black);
+}
+
+.moduleHelpSection {
+    margin-top: 10px;
+    height: auto;
+    border-radius: 18px;
+    background: #E0FFF9;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleHelpSectionContainer {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.moduleHelpSectionTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--city-black-forced);
+}
+
+.moduleHelpSectionCategory {
+    margin-bottom: 5px;
+    color: #6E6E6E;
+    text-decoration: underline;
+}
+
+.moduleHelpSectionCategory:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.moduleHelpRulesButton {
+    margin-top: 8px;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    color: var(--city-white-forced);
+    background: #0095F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleHelpRulesButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleHelpUtilsButton {
+    margin-top: 8px;
+    height: 50px;
+    border-radius: 15px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleHelpUtilsButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleHelpIconEnable {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+    background: url(../assets/img/help/icon_enable.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleHelpVersionText {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--city-black);
+}
+
+.moduleHelpPopup {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+@media (min-width: 768px) {
+    .moduleHelpPopup {
+        height: auto;
+    }
+}
+
+.moduleHelpPopupContainer {
+    padding: 18px;
+    height: 95%;
+    color: var(--city-black);
+    font-size: 115%;
+}
+@media (min-width: 768px) {
+    .moduleHelpPopupContainer {
+        height: 425px;
+    }
+}
+
+.moduleHelpPopupCenterImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleHelpPopupTitle {
+    margin-top: 5px;
+    font-size: 180%;
+    margin-bottom: 10px;
+}
+
+.moduleHelpPopupSubtitle {
+    margin-top: 25px;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.moduleHelpPopupTitleCommands {
+    margin-top: 5px;
+    font-size: 180%;
+    margin-bottom: 10px;
+    color: #ff7f00;
+}
+
+.moduleHelpPupupImage {
+    -webkit-font-smoothing: antialiased;
+    border: 0;
+    box-sizing: border-box;
+    margin: 12px 0 12px 24px;
+    vertical-align: middle
+}
+@media (min-width: 768px) {
+    .moduleHelpPupupImage {
+        float: right;
+    }
+}
+
+/* =========================== */
+/*       NOTIFICATIONS         */
+/* =========================== */
+.moduleNotificationBorder {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleNotificationBubbleTitle {
+    font-size: 24px;
+    color: var(--city-black);
+    padding: 12px;
+}
+
+.moduleNotificationContainer {
+    height: 87%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.moduleNotificationBubble {
+    width: calc(100% - 20px);
+    border-radius: 20px;
+}
+
+.moduleNotificationBubbleReward {
+    border: 2px solid #8463BE;
+    background: #EFE3FB;
+}
+
+.moduleNotificationBubbleCenter {
+    border: 2px solid #B85E11;
+    background: #FFF3D6;
+}
+
+.moduleNotificationBubbleForum {
+    border: 2px solid #4CA7AB;
+    background: #E0FFF9;
+}
+
+.moduleNotificationBubbleMention {
+    border: 2px solid #ADADAD;
+    background: #EBEBEB;
+}
+
+.moduleNotificationBubbleVip {
+    border: 2px solid #ADADAD;
+    background: #EBEBEB;
+}
+
+.moduleNotificationBubbleWarning {
+    border: 2px solid #FF5942;
+    background: #FFEAE3;
+}
+
+.moduleNotificationBubbleHigh {
+    padding: 10px;
+    display: flex;
+}
+
+.moduleNotificationBubbleHighLeft {
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.moduleNotificationBubbleHighRight {
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.moduleNotificationBubbleHighRightTextBox {
+    width: 95%;
+    font-size: 19px;
+    color: black;
+}
+
+.moduleNotificationBubbleHighRightTextDescription {
+    width: 95%;
+    font-size: 14px;
+    color: black;
+}
+
+.moduleNotificationBubbleBubbleTime {
+    margin-left: auto;
+    width: auto;
+    padding: 0 8px;
+    height: 36px;
+    border-radius: 21px;
+    font-size: 19px;
+    background: #fff;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleNotificationBubbleBubbleTimeIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../assets/img/home/icon_time.png) no-repeat;
+}
+
+.moduleNotificationBubbleHighRightTextBoxLittle {
+    color: #6F6F6F;
+    font-size: 15px;
+}
+
+.moduleNotificationBubbleIconReward {
+    background: url(../assets/img/notifications/icon_rewards.png) no-repeat;
+    height: 35px;
+    width: 35px;
+}
+
+.moduleNotificationBubbleIconCenter {
+    background: url(../assets/img/notifications/icon_center.png) no-repeat;
+    height: 35px;
+    width: 27px;
+}
+
+.moduleNotificationBubbleIconForum {
+    background: url(../assets/img/notifications/icon_forum.png) no-repeat;
+    height: 35px;
+    width: 27px;
+}
+
+.moduleNotificationBubbleIconMention {
+    background: url(../assets/img/notifications/icon_arobase.png) no-repeat;
+    background-size: contain;
+    height: 35px;
+    width: 34px;
+}
+
+.moduleNotificationBubbleIconVip {
+    background: url(../assets/img/notifications/icon_vip.png) no-repeat;
+    height: 35px;
+    width: 40px;
+}
+
+.moduleNotificationBubbleIconWarning {
+    background: url(../assets/img/notifications/icon_warning.png) no-repeat;
+    height: 35px;
+    width: 35px;
+}
+
+.moduleNotificationBubbleDown {
+    padding: 0 0 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: var(--city-white-forced);
+}
+
+.moduleNotificationBubbleDown:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleNotificationBubbleButton {
+    margin-right: 11px;
+    width: 87px;
+    height: 36px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleNotificationBubbleButtonReward {
+    background: #8463BE;
+}
+
+.moduleNotificationBubbleButtonCenter {
+    background: #B85E11;
+}
+
+.moduleNotificationBubbleButtonForum {
+    background: #4CA7AB;
+}
+
+.moduleNotificationBubbleButtonCheck {
+    margin-right: 11px;
+    width: 46px;
+    height: 36px;
+    border-radius: 14px;
+    background-color: var(--green-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleNotificationBubbleButtonCheckIcon {
+    height: 19px;
+    width: 25px;
+}
+
+.moduleNotificationEmptyTitle {
+    margin-top: 45px;
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+}
+
+.moduleNotificationEmptyBody {
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* =========================== */
+/*          GAMER              */
+/* =========================== */
+.moduleGamer {
+    padding: 10px 0;
+    position: relative;
+}
+
+.moduleGamer .CompLoader {
+    height: 300px !important;
+}
+
+.moduleGamerMenu {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.moduleGamerMenuLeft {
+    width: 50%;
+}
+
+.moduleGamerMenuTitle {
+    color: var(--palmares-text);
+    font-size: 28px;
+}
+
+.moduleGamerMenuRight {
+    width: 50%;
+    gap: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moduleGamerMenuButton {
+    border-radius: 14px;
+    border: 1px solid var(--city-grey-contour);
+    width: 115px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleGamerMenuButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.moduleGamerMenuButton[selected] {
+    background: var(--city-grey);
+}
+
+.moduleGamerMenuButtonText {
+    color: var(--forum-title);
+    font-size: 22px;
+}
+
+.moduleGamerMenuIcon {
+    height: 35px;
+    width: 35px;
+    margin-left: 3px;
+}
+
+.moduleGamerMenuIconGamer {
+    background: url(../assets/img/gamers/icon_gamers.png) no-repeat;
+}
+
+.moduleGamerMenuIconRiches {
+    background: url(../assets/img/gamers/icon_riches.png) no-repeat;
+}
+
+.moduleGamerMenuIconForum {
+    background: url(../assets/img/gamers/icon_forum.png) no-repeat;
+}
+
+.moduleGamerInformation {
+    margin-top: 6px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.moduleGamerInformationLeft {
+    width: calc(100% - 130px);
+    border-radius: 20px;
+    background: var(--city-grey);
+    border: 1px solid var(--city-grey-contour);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleGamerInformationText {
+    padding: 18px;
+    font-size: 17px;
+    color: var(--palmares-text);
+}
+
+.moduleGamerInformationRight {
+    width: 130px;
+    background: var(--city-grey);
+    border: 1px solid var(--city-grey-contour);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleGamerInformationImage {
+    height: 35px;
+    width: 35px;
+    background: url(../assets/img/gamers/icon_gamers.png) no-repeat;
+    image-rendering: pixelated;
+    transform: scale(2);
+}
+
+.moduleGamerContainer {
+    overflow: auto;
+    margin-top: 10px;
+    height: 422px;
+    gap: 20px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.moduleGamerBox {
+    width: calc(33% - 12px);
+    display: inline;
+}
+
+.moduleGamerBubbleTime {
+    margin-top: 3px;
+    height: 45px;
+    border: 1px solid var(--city-grey-contour);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.moduleGamerBubbleTimeTitle {
+    color: var(--palmares-text);
+    font-size: 25px;
+}
+
+.moduleGamerBubbleTimeIcon {
+    margin-left: 15px;
+    height: 32px;
+    width: 31px;
+    background: url(../assets/img/gamers/icon_time.png) no-repeat;
+}
+
+.moduleGamerTopAvatar {
+    height: 65px;
+    position: absolute;
+    clip-path: circle(35px at center)
+}
+
+.moduleGamerTopPointsBox {
+    display: flex;
+}
+
+.moduleGamerClassementTopUsernameBrown {
+    color: #AE6943;
+}
+
+.moduleGamerClassementTopUsernameOr {
+    color: #CEA658;
+}
+
+.moduleGamerClassementTopUsernameArgent {
+    color: #969FB1;
+}
+
+.moduleGamerClassementTopPointsBrown {
+    font-size: 13px;
+    color: #AE6943;
+}
+
+.moduleGamerClassementTopPointsOr {
+    font-size: 13px;
+    color: #CEA658;
+}
+
+.moduleGamerClassementTopPointsArgent {
+    font-size: 13px;
+    color: #969FB1;
+}
+
+.moduleGamerClassementTopPointsIcon {
+    margin-right: 4px;
+    height: 16px;
+    width: 16px;
+    background: url(../assets/img/gamers/icon_points.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleGamerBubbleClassement {
+    border: 1px solid var(--city-grey-contour);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.moduleGamerClassementBox {
+    width: 90%;
+}
+
+.moduleGamerClassement {
+    border-bottom: 2px solid var(--city-grey);
+    height: 58px;
+    display: flex;
+    gap: 10px;
+}
+
+.moduleGamerClassement:hover {
+    opacity: 0.7;
+}
+
+.moduleGamerClassementLeft {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleGamerClassementAvatar {
+    margin-top: -10px;
+    height: 68px;
+    position: relative;
+    overflow: hidden;
+}
+
+.moduleGamerClassementCenter {
+    width: calc(100% - 90px);
+    display: inline;
+}
+
+.moduleGamerClassementUsername {
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 24px;
+}
+
+.moduleGamerClassementPointsBox {
+    margin-left: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleGamerClassementPointsIcon {
+    margin-right: 5px;
+    height: 19px;
+    width: 19px;
+}
+
+.moduleGamerClassementPointsIconGamers {
+    background: url(../assets/img/gamers/icon_points.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleGamerClassementPointsIconWealth {
+    background: url(../assets/img/profil/icon_diamant.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleGamerClassementPointsIconForum {
+    background: url(../assets/img/gamers/icon_topforum.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleGamerClassementPointsText {
+    color: var(--forum-title);
+    font-size: 15px;
+}
+
+.moduleGamerClassementRight {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleGamerClassementRounder {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.center .moduleGamerContainer {
+    height: fit-content;
+}
+
+.center .moduleGamer {
+    overflow-x: hidden;
+    min-height: 500px;
+}
+
+.mobile .moduleGamerMenuButton {
+    padding: 0 8px;
+}
+
+.mobile .moduleGamerContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobile .moduleGamerInformation {
+    display: none;
+}
+
+.mobile .moduleGamerMenuTitle {
+    display: none;
+}
+
+.mobile .moduleGamerBox {
+    width: 100%;
+}
+
+
+/* =========================== */
+/*          CHAT               */
+/* =========================== */
+.moduleChat {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: var(--city-white);
+}
+
+.moduleChatWebsite .moduleChatMessagesView {
+    width: 175px;
+}
+
+.moduleChatWebsite .moduleChatMessagesNotView {
+    width: 187px;
+}
+
+.moduleChatWebsite .moduleChatRight {
+    position: absolute;
+    display: none !important;
+    left: 0;
+    opacity: 1 !important;
+    top: 0 !important;
+    background: var(--city-white);
+    width: 100%;
+    height: calc(100% - 0px);
+    overflow: hidden;
+}
+
+.moduleChatWebsite .moduleChatRightOpened {
+    display: block !important;
+}
+
+.moduleChatWebsite .moduleChatRightOpenedClose {
+    position: absolute;
+    font-size: 12px;
+    border-radius: 8px;
+    left: 2px;
+    z-index: 9;
+    height: 16px;
+    width: 16px;
+    top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.moduleChatWebsite .moduleChatRightOpenedClose:hover {
+    background: var(--city-grey);
+}
+
+.moduleChatWebsite .moduleChatRightOpenedClose .icon {
+    height: 12px;
+    width: 12px;
+    background: url(../assets/img/32_left_arrow.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleChatWebsite .moduleChatLeft {
+    width: calc(100% - 5px);
+    flex: unset;
+    border-right: unset;
+}
+
+.moduleChatLeft {
+    flex: 0 0 216px;
+    width: 216px;
+    position: relative;
+    border-right: 1px solid #E9E9E9;
+}
+
+.moduleChatSearchBox {
+    height: 32px;
+    width: 93%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    background: var(--city-grey);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.moduleChatSearchBoxIcon {
+    position: relative;
+    margin-left: 10px;
+    height: 14px;
+    width: 14px;
+    top: 2px;
+    margin-right: 6px;
+    background: url(../assets/img/chat/icon_search.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleChatSearchBar {
+    border: 0;
+    background: 0 0;
+    width: 90%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.moduleChatButtonsBox {
+    margin-top: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.moduleChatButtonMessages {
+    padding: 0 6px;
+    border-radius: 20px;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 28px;
+    margin-right: 1px;
+}
+
+.moduleChatButtonMessagesRequests {
+    background: #eb0000;
+    height: 16px;
+    font-size: 14px;
+    width: 16px;
+    margin-top: 1px;
+    margin-left: 4px;
+    border-radius: 100%;
+    color: var(--city-white-forced);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleChatButtonMessages:hover {
+    background: var(--city-grey);
+}
+
+.moduleChatButtonMessagesSelected {
+    background: var(--city-grey);
+}
+
+.moduleChatMessagesBox {
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-top: 10px;
+    position: relative;
+    overflow: auto;
+}
+
+.moduleChatMessagesBoxReq .moduleChatMessagesListNormal {
+    display: none;
+}
+
+.moduleChatMessagesBoxMsg .moduleChatMessagesListRequest {
+    display: none;
+}
+
+.moduleChatMessageBoxSearch {
+    position: absolute;
+    height: 100%;
+    background: var(--city-white);
+    overflow: auto;
+    z-index: 1;
+    display: none;
+    box-shadow: 0 0 11px #00000036;
+    border-radius: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    top: 8px;
+}
+
+.moduleChatMessageBoxInvites {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--city-white);
+    overflow-x: hidden;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.moduleChatMessagesList {
+    height: 54px;
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatMessagesList:hover {
+    background-color: var(--city-grey);
+}
+
+.moduleChatMessagesList:hover .moduleChatMessagesHide {
+    display: flex;
+}
+
+.moduleChatMessagesListNewMessages {
+    background-color: var(--city-blue);
+}
+
+.moduleChatMessagesAvatarBox {
+    height: 100%;
+    width: 48px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleChatMessagesAvatar {
+    height: 38px;
+    overflow: hidden;
+    width: 38px;
+    border-radius: 50%;
+    background: var(--city-grey);
+    position: absolute;
+}
+
+.moduleChatMessagesCardBox {
+    margin-left: 2px;
+}
+
+.moduleChatMessagesHide {
+    height: 24px;
+    width: 24px;
+    background: var(--city-white-forced);
+    position: absolute;
+    margin-top: -15px;
+    margin-right: 10px;
+    right: 5px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #00000038;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleChatMessagesHide .icon {
+    height: 14px;
+    width: 14px;
+    background: url(../assets/img/32_delete.png);
+    background-size: contain;
+}
+
+.moduleChatMessagesPseudo {
+    font-size: 19px;
+    width: 130px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleChatMessagesText {
+}
+
+.moduleChatMessagesView {
+    width: 65px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    color: #969ba5;
+}
+
+.moduleChatMessagesNotView {
+    width: 82px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 17px;
+}
+
+.moduleChatMessagesTime {
+    color: #969ba5;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 3px;
+    right: 15px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.moduleChatMessagesNotification {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #4D9BFB;
+    right: 14px;
+    top: calc(50% - 18px);
+    color: var(--city-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.moduleChatMessagesPlayerOnline {
+    position: relative;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #44cf48;
+    top: -20px;
+    right: -20px;
+}
+
+.moduleChatMessagesPlayerOffline {
+    position: relative;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #ED1C24;
+    top: -14px;
+    right: -16px;
+}
+
+.moduleChatInvite {
+    padding: 10px;
+    display: flex;
+    background: #97dfff;
+    color: #00b1ff;
+    position: relative;
+    margin: 5px 17px;
+    border-radius: 10px;
+}
+
+.moduleChatInviteImg {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: -7px;
+    right: -9px;
+    background: url(../assets/img/chat/icon_invite.png);
+    -webkit-filter: drop-shadow(1.5px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(0 -1px 0px #fff);
+}
+
+.moduleChatInviteAvatar {
+    height: 30px;
+    width: 30px;
+    flex: 0 0 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    background: var(--city-grey);
+}
+
+.moduleChatInviteTexts {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.moduleChatInviteContent {
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatInviteDate {
+    text-align: right;
+    margin-left: auto;
+}
+
+.moduleChatInviteBottom {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatInviteBottomButton {
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+    background: #0000001a;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moduleChatInviteJoinIcon {
+    height: 27px;
+    width: 27px;
+    background: url(../assets/img/chat/icon_follow.png);
+}
+
+.moduleChatRight {
+    width: calc(100% - 216px);
+    position: relative;
+}
+
+
+/* =========================== */
+/*       CHAT MESSAGES         */
+/* =========================== */
+.moduleChatMessage {
+    height: 100%;
+}
+
+.moduleChatMessage .moduleChatConversationHead {
+    height: 72px;
+    display: flex;
+}
+
+.moduleChatMessage .moduleChatConversationHeadLeft {
+    width: 60%;
+}
+
+.moduleChatMessage .moduleChatConversationHeadLeftClickContent {
+    display: flex;
+}
+
+.moduleChatMessage .moduleChatConversationHeadLeftClickContent:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.moduleChatMessage .moduleChatConversationAvatarBox {
+
+}
+
+.moduleChatMessage .moduleChatConversationAvatar {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    position: relative;
+    background: var(--city-grey);
+    padding: 3px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.moduleChatMessage .moduleChatConversationAvatarInfoBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 12px;
+    width: calc(100% - 66px);
+}
+
+.moduleChatMessage .moduleChatConversationPseudo {
+    color: var(--city-black);
+    font-size: 22px;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    position: relative;
+}
+
+.moduleChatMessage .moduleChatConversationMotto {
+    font-size: 15px;
+    color: #848587;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.moduleChatMessage .moduleChatConversationMotto .moderation {
+    background: #ffc93c;
+    padding: 5px;
+    border-radius: 8px;
+    color: #5d5d5d;
+}
+
+.moduleChatMessage .moduleChatConversationHeadRight {
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn {
+    position: relative;
+    height: 24px;
+    flex: 0 0 24px;
+    background: var(--city-grey);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn:hover {
+    background: #d0d0d0;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn:hover .moduleChatConversationRoundBtnText {
+    display: block;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .moduleChatConversationRoundBtnText {
+    z-index: 9999999;
+    background-color: var(--city-white-light);
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    display: none;
+    width: max-content;
+    font-size: 14px;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .moduleChatConversationRoundBtnText::before {
+    position: absolute;
+    content: " ";
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--city-white-light);
+    border-left: 10px solid transparent;
+    top: -7px;
+    right: 3px;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .icon {
+    height: 12px;
+    width: 12px;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .iconFlag {
+    background: url(../assets/img/chat/icon_flag.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .iconBlock {
+    background: url(../assets/img/chat/icon_block.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .iconJoin {
+    background: url(../assets/img/chat/icon_join.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .iconGroup {
+    background: url(../assets/img/chat/icon_group.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationRoundBtn .iconGroupUsers {
+    background: url(../assets/img/chat/icon_group_users.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationCallIcon {
+    height: 25px;
+    width: 25px;
+    display: none;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 40px;
+    background: url(../assets/img/chat/icon_call.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationBody {
+    height: calc(100% - 116px);
+    overflow: auto;
+    position: relative;
+}
+
+
+.moduleChatMessage .moduleChatGroupUsers {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--city-white);
+    height: 100%;
+    width: calc(100% - 20px);
+    box-shadow: 0 0 black;
+    left: 10px;
+    margin-left: 10px;
+    display: none;
+    border-bottom: 1px solid var(--city-grey);
+    overflow: auto;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .title {
+    margin-bottom: 10px;
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .title .delete {
+    background: red;
+    margin-left: auto;
+    color: white;
+    padding: 6px 9px;
+    font-size: 13px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .title .delete:hover {
+    background: #b50000;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--city-grey);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .avatar {
+    height: 40px;
+    width: 40px;
+    background: var(--city-grey);
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .avatar .AvatarFigureCustom {
+    margin-left: -7px;
+    margin-top: -14px;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .username {
+    font-size: 18px;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .buttons .button {
+    height: 25px;
+    width: 25px;
+    background: var(--city-grey);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .buttons .button:hover {
+    background: var(--city-grey-dark);
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .buttons .button .icon {
+    height: 14px;
+    width: 14px;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .buttons .button .iconKing {
+    background: url(../assets/img/chat/icon_king.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatGroupUsers .member .buttons .button .iconDelete {
+    background: url(../assets/img/32_delete.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatGroupCreate {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--city-white);
+    height: 100%;
+    display: none;
+    width: calc(100% - 20px);
+    box-shadow: 0 0 var(--city-black);
+    left: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid var(--city-grey);
+}
+
+.moduleChatMessage .moduleChatGroupCreate .title {
+    display: flex;
+    align-items: center;
+}
+
+.moduleChatMessage .moduleChatGroupCreate .title .close {
+    height: 24px;
+    width: 24px;
+    margin-left: auto;
+    background: url(../assets/img/close_24.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatGroupCreate .moduleChatGroupCreateList {
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+
+.moduleChatMessage .moduleChatGroupCreate .moduleChatGroupCreateSearch {
+    font-size: 15px;
+    border: unset;
+    border-bottom: var(--city-grey) 1px solid;
+    background-color: var(--city-white);
+    width: 100%;
+    margin-top: 10px;
+    padding: 4px 0px;
+}
+
+.moduleChatMessage .moduleChatConversationBox {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.moduleChatMessage .moduleChatConversationImageUpload {
+    max-width: 90%;
+    max-height: 300px;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    border: 2px solid #00000029;
+}
+
+.moduleChatMessage .moduleChatConversationAvatarMiniature {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: var(--city-grey);
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.moduleChatMessage .moduleChatConversationContent {
+    margin-left: 10px;
+    width: calc(100% - 78px);
+}
+
+.moduleChatMessage .moduleChatConversationBubble {
+    position: relative;
+    height: fit-content;
+    max-width: 100%;
+    width: fit-content;
+    background-color: var(--city-grey);
+    padding: 6px 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+}
+
+.moduleChatMessage .moduleChatConversationBubbleSender {
+    position: relative;
+    height: fit-content;
+    max-width: calc(100% - 34px);
+    width: fit-content;
+    color: var(--city-white-forced);
+    background-color: #4D9BFB;
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.moduleChatMessage .moduleChatConversationFooter {
+    height: 10%;
+    display: flex;
+}
+
+.moduleChatMessage .moduleChatConversationFooter .unBlockContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moduleChatMessage .moduleChatConversationFooter .unBlock {
+    padding: 10px 20px;
+    background: var(--city-grey);
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 18px;
+}
+
+.moduleChatMessage .moduleChatConversationPictureButton {
+    height: 34px;
+    margin-top: 4px;
+    margin-left: 10px;
+    position: relative;
+    width: 34px;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationPictureButton:hover {
+    background: var(--city-grey);
+}
+
+.moduleChatMessage .moduleChatConversationPictureIcon {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: url(../assets/img/chat/icon_picture.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatBox {
+    height: 32px;
+    position: relative;
+    width: calc(100% - 80px);
+    margin-left: 10px;
+    top: 6px;
+    background: var(--city-grey);
+    border-radius: 20px;
+}
+
+.moduleChatMessage .moduleChatWrite {
+    border: 0;
+    background: 0 0;
+    width: calc(100% - 60px);
+    height: 100%;
+    color: var(--city-black);
+    font-size: 16px;
+    position: relative;
+    left: 12px;
+}
+
+.moduleChatMessage .moduleChatConversationSendButton {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: 3px;
+    right: 3px;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moduleChatMessage .moduleChatConversationSendButton:hover {
+    background: #d0d0d0;
+}
+
+.moduleChatMessage .moduleChatConversationSendIcon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background: url(../assets/img/chat/icon_send.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+/* =========================== */
+/*        CALENDAR             */
+/* =========================== */
+.moduleCalendar {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 15px;
+}
+
+.moduleCalendar .banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.moduleCalendar .banner .image {
+    height: 51px;
+    width: 60px;
+    background: url(../assets/img/calendar/icon_advent.png) no-repeat;
+}
+
+.moduleCalendar .banner .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleCalendar .banner .box .title {
+    font-size: 28px;
+}
+
+.moduleCalendar .banner .box .text {
+    font-size: 18px;
+}
+
+.moduleCalendar .container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 310px;
+}
+
+.moduleCalendar .container .arrow {
+    width: 40px;
+    height: 172px;
+    border-radius: 11px;
+    background: var(--city-grey-contour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.moduleCalendar .container .arrow:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleCalendar .container .bubbles {
+    width: calc(100% - 104px);
+    overflow: hidden;
+    height: 100%;
+}
+
+.moduleCalendar .container .bubbles .scroll {
+    display: flex;
+    gap: 12px;
+    height: 100%;
+}
+
+.moduleCalendar .container .bubbleContainer {
+    width: 130px;
+    flex: 0 0 130px;
+    height: 100%;
+    position: relative;
+}
+
+.moduleCalendar .container .bubbleContainer .background {
+    position: absolute !important;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background: url(../assets/img/center/coffers/back_coffer.png);
+
+    opacity: 0.2;
+    zoom: 0.6;
+}
+
+.moduleCalendar .container .bubble {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.moduleCalendar .container .bubble * {
+    position: relative;
+}
+
+.moduleCalendar .container .bubble .title {
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: center;
+    color: var(--city-black-forced);
+}
+
+.moduleCalendar .container .grey {
+    background: #C0C0C0;
+}
+
+.moduleCalendar .container .yellow {
+    background: #FDC014;
+}
+
+.moduleCalendar .container .bubble .box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    border-width: 2px 0 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 12px 12px;
+    background: #F2A40F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    text-shadow: 1px 0 #6f4b07, -1px 0 #6f4b07, 0 2px #6f4b07, -1px 0 #6f4b07, 1px 1px #6f4b07, 0 -1px #6f4b07, 1px 2px #6f4b07, -1px -1px #6f4b07, 1px -1px #6f4b07, -1px 2px #6f4b07, -1px 1px #6f4b07;
+}
+
+.mobile .moduleCalendar .container {
+    height: 180px !important;
+}

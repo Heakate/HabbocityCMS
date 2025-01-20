@@ -1,0 +1,294 @@
+.orgaModule {
+    padding: 18px;
+    position: relative;
+    height: calc(100% - 35px);
+}
+
+.orgaModule .orgaModuleContainer {
+    margin-bottom: 5px;
+}
+
+.orgaModule .orgaModuleMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation {
+    display: block;
+}
+@media (min-width: 768px) {
+    .orgaModule .orgaModuleMenu .orgaModuleMenuNavigation {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation .orgaModuleMenuNavigationBubble {
+    height: 35px;
+    border-radius: 26px;
+    border: 1px solid var(--city-grey-contour);
+    color: var(--forum-title);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px 0 5px;
+}
+
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation .orgaModuleMenuNavigationBubble[selected] {
+    background: var(--city-grey);
+}
+
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation .orgaModuleMenuNavigationBubble:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation .orgaModuleMenuNavigationBubble .orgaModuleMenuNavigationBubbleIcon {
+    height: 26px;
+    width: 26px;
+    background: #2c73dc;
+    border-radius: 100%;
+}
+
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation .orgaModuleMenuNavigationBubble .orgaModuleMenuNavigationBubbleIcon2 {
+    height: 26px;
+    width: 26px;
+    background: #59c836;
+    border-radius: 100%;
+}
+.orgaModule .orgaModuleMenu .orgaModuleMenuNavigation .orgaModuleMenuNavigationBubble .orgaModuleMenuNavigationBubbleIcon3 {
+    height: 26px;
+    width: 26px;
+    background: #ff4d83;
+    border-radius: 100%;
+}
+
+.orgaModule .orgaModuleHead {
+    display: flex;
+    border-bottom: 1px solid #EFEFEF;
+    height: 225px;
+    margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+    .orgaModule .orgaModuleHead {
+        height: 120px;
+    }
+}
+
+.orgaModule .orgaModuleHead .orgaModuleHeadText {
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.orgaModule .orgaModuleHead .orgaModuleHeadIcon {
+    display: none;
+}
+@media (min-width: 768px) {
+    .orgaModule .orgaModuleHead .orgaModuleHeadIcon {
+        display: block;
+        height: 160px;
+        width: 160px;
+        flex: 0 0 160px;
+    }
+}
+
+.orgaModule .orgaModuleHead .orgaModuleHeadIconList {
+    background: url(../../assets/img/orga/head_list.png) no-repeat;
+}
+
+.orgaModule .orgaModuleHead .orgaModuleHeadIconRoles {
+    background: url(../../assets/img/orga/head_roles.png) no-repeat;
+}
+
+.orgaModuleContainer {
+    height: calc(100% - 34px);
+    overflow: auto;
+}
+
+.orgaModuleList {
+
+    .orgaModuleListContainer {
+        margin-bottom: 25px;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerTop {
+        display: block;
+        margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+        .orgaModuleListContainer .orgaModuleListContainerTop {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerTop .orgaModuleListContainerTopLogo {
+        height: 59px;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerTop .orgaModuleListContainerTopLine {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .orgaModuleListContainer .orgaModuleListContainerTop .orgaModuleListContainerTopLine {
+            display: block;
+            height: 36px;
+            background: #E5E5E5;
+            width: 1px;
+        }
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerTop .orgaModuleListContainerTopText {
+        font-size: 24px;
+        color: #909090;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerBody {
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerBody .orgaModuleListContainerBodyTitle {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerBody .orgaModuleListContainerBodyContent {
+        font-size: 18px;
+        margin-bottom: 18px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerBody .orgaModuleListContainerBodyButtons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerBody .orgaModuleListContainerBodyButtons .orgaModuleListContainerBodyButtonsButton {
+        width: fit-content;
+        font-size: 18px;
+        background: #F4F4F4;
+        padding: 10px;
+        border-radius: 8px;
+        color: black;
+    }
+    @media (min-width: 768px) {
+        .orgaModuleListContainer .orgaModuleListContainerBody .orgaModuleListContainerBodyButtons .orgaModuleListContainerBodyButtonsButton {
+            padding: 10px 20px;
+        }
+    }
+
+    .orgaModuleListContainer .orgaModuleListContainerBody .orgaModuleListContainerBodyButtons .orgaModuleListContainerBodyButtonsButton:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 768px) {
+    .websiteOnClient .orgaModuleStaff .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox {
+        width: calc(33.33% - 15px);
+    }
+}
+.orgaModuleStaff {
+    .orgaModuleStaffContainer {
+        margin-bottom: 10px;
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerTitle {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs {
+        display: grid;
+    }
+    @media (min-width: 768px) {
+        .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox {
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+        .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox {
+            width: calc(20% - 15px);
+        }
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox:hover {
+        opacity: 0.7;
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxImage {
+        position: absolute;
+        top: -18px;
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxStatut {
+        display: flex;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxStatut .orgaModuleStaffContainerStaffsBoxStatutRole {
+        font-size: 14px;
+        background: #5FD96E;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 10px;
+    }
+
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxUsername {
+        height: 46px;
+        background: var(--city-grey-light);
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding-left: 68px;
+        margin-top: 35px;
+    }
+    @media (min-width: 768px) {
+        .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxUsername {
+            height: 46px;
+            width: calc(100% - 68px);
+            background: var(--city-grey-light);
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            padding-left: 68px;
+            margin-top: 35px;
+        }
+    }
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxStatut .orgaModuleStaffContainerStaffsBoxStatutOnline {
+        height: 16px;
+        width: 16px;
+        background: #00DB4C;
+        border-radius: 50%;
+        margin-right: 6px;
+        margin-top: 4px;
+    }
+    
+    .orgaModuleStaffContainer .orgaModuleStaffContainerStaffs .orgaModuleStaffContainerStaffsBox .orgaModuleStaffContainerStaffsBoxStatut .orgaModuleStaffContainerStaffsBoxStatutOffline {
+        height: 16px;
+        width: 16px;
+        background: #FF5942;
+        border-radius: 50%;
+        margin-right: 6px;
+        margin-top: 4px;
+    }
+}

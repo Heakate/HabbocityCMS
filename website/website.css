@@ -1,0 +1,4188 @@
+@font-face {
+    font-family: 'Ubuntu X';
+    src: url('../assets/fonts/ubuntu-condensed.ttf');
+    font-display: swap;
+}
+
+.webBody {
+    overflow: auto;
+    color: var(--city-black);
+    background: var(--background);
+    font-size: unset;
+    user-select: text;
+    /*
+      background-image: url(../assets/img/background.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+     */
+}
+
+@media (max-width: 767px) {
+    .webBody {
+        margin-bottom: 75px;
+    }
+}
+
+.webBody a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.webBody div {
+    line-height: normal;
+    box-sizing: unset;
+}
+
+.webBody img {
+    object-fit: unset;
+}
+
+.webContainer {
+    position: relative;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+.webContainerOnClient {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .webContainer {
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .webContainer {
+        max-width: 1300px;
+        left: calc(50% - 650px);
+    }
+}
+
+.webContainer .center {
+    padding-top: 86px;
+    display: block;
+    width: calc(100% - 706px);
+}
+
+@media (min-width: 768px) {
+    .webContainer .center {
+        margin-left: 352px;
+    }
+}
+
+.webContainer .centerLarge {
+    width: calc(100% - 352px);
+    position: relative;
+}
+
+.webContainer .centerFull {
+    width: 100%;
+    margin-left: 0;
+}
+
+.webContainer .centerLarge .content {
+    background: var(--city-white);
+    border: 1px solid var(--city-grey-contour);
+    height: calc(100% - 115px);
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 1400px) {
+    .webContainer .center {
+        width: 594px;
+    }
+
+    .webContainer .centerLarge {
+        width: 948px;
+    }
+
+    .webContainer .centerFull {
+        width: 100%;
+    }
+}
+
+.webContainer .floater {
+    position: initial;
+    height: calc(100% - 86px);
+    width: calc(100% - 40px);
+    top: 86px;
+    left: 20px;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .webContainer .floater {
+        position: fixed;
+    }
+}
+
+@media (min-width: 1400px) {
+    .webContainer .floater {
+        max-width: 1300px;
+        left: calc(50% - 650px);
+    }
+}
+
+.webContainer .floater .left {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: calc(100% - 20px);
+    pointer-events: auto;
+    width: 330px;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    background-color: var(--city-white);
+}
+
+.webContainer .floater .leftNoBorder {
+    border: unset;
+    background-color: unset;
+    height: 100%;
+    border-radius: 0;
+}
+
+.webHtmlThread {
+    font-family: habbofont, Ubuntu X, sans-serif !important;
+}
+
+img {
+    display: block;
+}
+
+.webHtmlThread img {
+    display: inline-block;
+    max-width: 100% !important;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.webHtmlThread p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.webHtmlThread strong {
+    font-weight: bold;
+}
+
+.webHtmlThread h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.webHtmlThread h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.webHtmlThread h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.webHtmlThread li {
+    list-style-type: initial;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.webHtmlThread tbody {
+    border-color: #dadada;
+}
+
+.webHtmlThread td {
+    padding: 8px;
+}
+
+.webHtmlThread a {
+    color: #59a8ff;
+}
+
+.webHtmlThread hr {
+    border: 1px solid #efefef;
+}
+
+@media (max-width: 500px) {
+    .mobile .webContainer .center {
+        width: calc(100% - 352px);
+    }
+
+    .mobile .webContainer .centerFull {
+        width: 100%;
+    }
+
+    .mobile .webContainer .center .content {
+        border: 1px solid var(--city-grey-contour);
+        height: calc(100% - 115px);
+        border-radius: 14px;
+    }
+
+    .mobile .floater {
+        z-index: 1;
+    }
+
+    .mobile .floater .left {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .mobile .centerLarge {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+.websiteOnClient div[data-s="launcher"] {
+    top: 14px !important;
+    height: 36px !important;
+    width: 36px !important;
+    left: 422px !important;
+    z-index: 999 !important;
+}
+
+.mobile .websiteOnClient div[data-s="launcher"] {
+    left: 256px !important;
+}
+
+
+/* =========================== */
+/*       INDEX & REGISTER      */
+/* =========================== */
+.indexLeftBubble {
+    top: 75px;
+    left: 0;
+    position: absolute;
+    pointer-events: auto;
+    width: 90vw;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    background-color: var(--city-white);
+}
+
+@media (min-width: 768px) {
+    .indexLeftBubble {
+        width: 330px;
+        top: 15px;
+    }
+}
+
+.indexLeftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 25px;
+}
+
+@media (min-width: 768px) {
+    .indexLeftContainer {
+        gap: 14px;
+    }
+}
+
+.indexLogoBannerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.indexLogo {
+    position: relative;
+    top: 10px;
+    left: -12px;
+    width: 283px;
+    height: 45px;
+    background: url(../assets/img/index/logo_habbocity.png) no-repeat;
+    background-size: contain;
+}
+
+.indexLogoBanner {
+    width: 100%;
+    height: 24px;
+    border-radius: 8px;
+    background: #ECECEC;
+}
+
+.indexWelcomeTitle {
+    font-size: 22px;
+}
+
+.indexPlayButton {
+    height: 60px;
+    border-radius: 14px;
+    background: #0095F6;
+    font-size: 24px;
+    color: #FFF !important;
+    display: flex;
+    align-items: center;
+}
+
+.indexPlayButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexPlayButtonIcon {
+    height: 73px;
+    width: 73px;
+    margin: 0 12px;
+    image-rendering: pixelated;
+}
+
+.indexSeparatorBar {
+    width: 302px;
+    height: 1px;
+    background: #B4B4B4;
+}
+
+.indexAccountTitle {
+    font-size: 19px;
+}
+
+.indexPseudo {
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid #CBCBCB;
+    display: flex;
+}
+
+.indexPseudoIcon {
+    background: center -7px no-repeat url(https://avatar.habbocity.me/?figure=hr-3260-1427.cc-3405-73-66.hd-180-1.ha-3129-100.fa-1206-1427.lg-285-73.sh-290-92&direction=2&head_direction=2&headonly=1);
+    width: 34px;
+    height: 37px;
+    padding: 8px 15px;
+}
+
+.indexPassword {
+    height: 22px;
+    color: #818181;
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+
+.indexPassword:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.indexPasswordIcon {
+    width: 34px;
+    height: 37px;
+    padding: 8px 15px;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.indexInput {
+    border: 0;
+    background: 0 0;
+    width: 98%;
+    height: 70%;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 19px;
+    font-family: 'Ubuntu X', sans-serif !important;
+}
+
+.indexLoginButton {
+    font-size: 24px;
+    height: 60px;
+    background: #00E07D;
+    border-radius: 14px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexLoginButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexRight {
+    margin-top: 15px;
+    background-color: var(--city-white);
+    padding: 10px;
+    border: 1px solid var(--city-grey-contour);
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .indexRight {
+        display: flex;
+    }
+}
+
+.indexInformations {
+    height: 190px;
+    gap: 10px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .indexInformations {
+        display: flex;
+    }
+}
+
+.indexInformationsBubble {
+    float: left;
+    width: calc(50%);
+    height: 185px;
+    background: #ececec;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.indexNewsTitle {
+    font-size: 22px;
+}
+
+.indexNews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.indexNewsBubble {
+    position: relative;
+    width: calc(32%);
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indexNewsBubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indexNewsBubble:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexNewsBubbleTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+    z-index: 1;
+}
+
+.indexFooter {
+    width: 80vw;
+    height: 50px;
+    border-radius: 12pc;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 675px;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .indexFooter {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+.indexRegisterLeftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 14px;
+}
+
+.indexRegisterText {
+    font-size: 19px;
+}
+
+.indexRegisterSpace {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.indexRegisterGender {
+    display: flex;
+    gap: 12px
+}
+
+.indexGenderBubble {
+    width: 50%;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indexGenderBubble.active {
+    opacity: 0.7 !important;
+}
+
+.indexGenderBubble:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexGenderBubble:checked {
+    opacity: 0.7 !important;
+    cursor: pointer;
+}
+
+.indexGenderBubbleBlue {
+    background: #33b8ff;
+}
+
+.indexGenderBubblePink {
+    background: #ee84ff;
+}
+
+.indexRegisterButton {
+    font-size: 24px;
+    height: 60px;
+    background: #0095F6;
+    border-radius: 14px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.indexRegisterButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* =========================== */
+/*         PASSWORD            */
+/* =========================== */
+.password {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.passwordSeparatorBar {
+    width: 100%;
+    height: 1px;
+    background: #B4B4B4;
+}
+
+.passwordValidate {
+    width: 100%;
+    display: flex;
+    gap: 14px;
+}
+
+.passwordInputs {
+    width: 100%;
+    border: 1px solid var(--city-grey-dark);
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    border-radius: 8px;
+}
+
+.passwordButton {
+    font-size: 20px;
+    background: #00E07D;
+    border-radius: 14px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    border: none;
+    font-family: ubuntu x, sans-serif;
+    width: 100%;
+}
+
+.passwordButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.passwordButtonBlue {
+    background: #0095F6;
+}
+
+.passwordButtonGreen {
+    background: #00E07D;
+}
+
+
+/* =========================== */
+/*          HOME               */
+/* =========================== */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.homeInformation {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #ffc425;
+    background-color: var(--city-white);
+    display: flex;
+    gap: 10px;
+}
+
+.homeInformationAvatar {
+    padding: 10px 0 0 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.homeInformationAvatarImage {
+    height: 56px;
+    width: 56px;
+    background: url(../assets/img/home/city_staff.png) no-repeat;
+}
+
+.homeInformationContainer {
+    padding: 16px 0 16px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.homeInformationContainerTitle {
+    font-size: 25px;
+}
+
+.homeNews {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    background-color: var(--city-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.homeNewsHead {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+}
+
+.homeNewsHeadTitle {
+    font-size: 25px;
+}
+
+.homeNewsHeadImage {
+    height: 56px;
+    width: 56px;
+    background: url(../assets/img/home/city_staff.png) no-repeat;
+}
+
+.homeNewsBody {
+    display: block;
+    padding: 0 16px;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .homeNewsBody {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+.homeNewsBodyBar {
+    width: 1px;
+    height: 145px;
+    border-right: 1px solid var(--city-grey);
+}
+
+.homeNewsBodyContainer {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeNewsBodyContainer:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .homeNewsBodyContainer {
+        width: calc(50% - 0.5px);
+    }
+}
+
+.homeNewsBodyContainerBubble {
+    position: relative;
+    width: 75vw;
+    height: 101px;
+    border-radius: 15px;
+    background: #0a7ee1;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .homeNewsBodyContainerBubble {
+        width: 100%;
+    }
+}
+
+.homeNewsBodyContainerBubbleImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .homeNewsBodyContainerBubbleImage {
+        width: 100%;
+    }
+}
+
+.homeNewsBodyContainerBubbleImageTime {
+    position: relative;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 65px;
+    height: 36px;
+    border-radius: 21px;
+    font-size: 19px;
+    background: #FFF;
+    color: black;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeNewsBodyContainerBubbleImageTimeIcon {
+    height: 24px;
+    width: 24px;
+    background: url(../assets/img/home/icon_time.png) no-repeat;
+}
+
+.homeNewsBodyContainerBox {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .homeNewsBodyContainerBox {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.homeNewsBodyContainerBoxTitle {
+    font-size: 19px;
+}
+
+.homeNewsEconomy {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.homeNewsEconomyBubble {
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    background: #FFC425;
+}
+
+.homeForum {
+    height: 86px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    background-color: var(--city-white);
+    display: flex;
+}
+
+.homeForum:hover {
+    cursor: pointer;
+    box-shadow: 0 7px 9px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.1s;
+}
+
+.homeForumAvatar {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeForumAvatarImage {
+    height: 46px;
+    width: 46px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background: var(--city-grey);
+    border: 3px solid #d9d9d9;
+    padding: 3px;
+}
+
+.homeForumData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeForumDataTitle {
+    width: 90%;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--forum-title);
+    word-break: break-word;
+}
+
+@media (min-width: 768px) {
+    .homeForumDataTitle {
+        width: 100%;
+        font-size: 19px;
+    }
+}
+
+.homeForumDataActivity {
+    margin-top: 4px;
+    color: #9E9E9E;
+    font-size: 13px;
+}
+
+.homeForumView {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .homeForumView {
+        margin-left: 10px;
+        margin-right: 15px;
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.homeForumViewBar {
+    width: 1px;
+    height: 20px;
+    background: var(--city-grey);
+}
+
+@media (min-width: 576px) {
+    .homeForumViewBar {
+        height: 34px;
+    }
+}
+
+.homeForumViewIcon {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .homeForumViewIcon {
+        gap: 5px;
+    }
+}
+
+.homeForumViewIconChat {
+    height: 16px;
+    width: 24px;
+    background: url(../assets/img/home/icon_chat.png) no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 576px) {
+    .homeForumViewIconChat {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+.homeForumViewIconEyes {
+    height: 20px;
+    width: 24px;
+    background: url(../assets/img/home/icon_eyes.png) no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 576px) {
+    .homeForumViewIconEyes {
+        height: 24px;
+    }
+}
+
+.homeForumViewIconText {
+    color: #B2B2B2;
+    font-size: 17px;
+}
+
+.homeMore {
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    color: var(--city-white-forced) !important;
+    background-color: #4d9bfb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .homeMore {
+        margin-bottom: 15px;
+    }
+}
+
+.homeMore:hover {
+    opacity: 0.7;
+}
+
+.mobile .homeProfileFloater {
+    display: none;
+}
+
+.mobile .homeProfileCenter {
+    margin-left: 0;
+    width: 100% !important;
+}
+
+.homeProfileFloater {
+    z-index: 2;
+}
+
+
+/* =========================== */
+/*       HOME PICTURE          */
+/* =========================== */
+.homePicture {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homePictureTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.homePictureContainer {
+    max-width: 502px;
+    margin-bottom: 10px;
+}
+
+.homePictureBox {
+    min-height: 150px;
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.homePictureDate {
+    color: #CACACA;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.homePictureBubble {
+    height: 241px;
+    width: 241px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.homePictureBubble img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================== */
+/*          CGU                */
+/* =========================== */
+.cguTitle {
+    font-size: 190%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cguSubtitle {
+    font-size: 135%;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.cguContainer {
+    display: block;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .cguContainer {
+        width: 100%;
+    }
+}
+
+.cguIntro {
+    font-size: 120%;
+}
+
+
+/* =========================== */
+/*          PROFIL             */
+/* =========================== */
+.profilContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+    height: calc(100% - 24px);
+}
+
+.profilInfos {
+    position: relative;
+}
+
+.profilAvatar {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    border: 3px solid var(--city-white);
+    padding: 3px;
+    left: 20px;
+    bottom: 0;
+}
+
+.profilCoverBox {
+    height: 95px;
+    justify-content: center;
+}
+
+.profilCover {
+    height: 100%;
+    background: var(--city-grey-light);
+    border-radius: 14px;
+}
+
+.profilCoverContainer {
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.profilUserBox {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.profilUserBoxUsername {
+    margin-left: 85px;
+    font-size: 20px;
+}
+
+.profilUserButton {
+    margin-left: auto;
+    border: 1px solid var(--city-grey);
+    padding: 2px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+.profilInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilInfoBox {
+    width: 100%;
+    display: flex;
+}
+
+.profilInfoIconRichess {
+    height: 18px;
+    width: 17px;
+    background: url(../assets/img/profil/icon_richess.png) no-repeat;
+    background-size: contain;
+}
+
+.profilInfoIconRespect {
+    height: 19px;
+    width: 17px;
+    background: url(../assets/img/profil/icon_respect.png) no-repeat;
+    background-size: contain;
+}
+
+.profilInfoIconTime {
+    height: 18px;
+    width: 17px;
+    background: url(../assets/img/profil/icon_time.png) no-repeat;
+    background-size: contain;
+}
+
+.profilInfoIconHeart {
+    margin-left: 8px;
+    height: 18px;
+    width: 17px;
+    background: url(../assets/img/profil/icon_heart.png) no-repeat;
+    background-size: contain;
+}
+
+.profilInfoIconSmile {
+    margin-left: 8px;
+    height: 18px;
+    width: 17px;
+    background: url(../assets/img/profil/icon_smile.png) no-repeat;
+    background-size: contain;
+}
+
+.profilInfoIconBobba {
+    margin-left: 8px;
+    height: 18px;
+    width: 17px;
+    background: url(../assets/img/profil/icon_bobba.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleProfileRelationOpenProfile {
+    text-decoration: underline !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profilInfoBoxLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profilInfoBubble {
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.profilInfoBubbleText {
+    margin-left: 10px;
+}
+
+.profilInfoBoxCenter {
+    margin-right: 8px;
+    height: 85px;
+    width: 2px;
+    background: var(--city-grey);
+}
+
+.profilInfoBoxRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profilData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilDataBox {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+.profilDataBoxBubble {
+    height: 38px;
+    width: 100%;
+    border-radius: 14px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.profilDataIconDiamond {
+    margin-left: 12px;
+    height: 17px;
+    width: 19px;
+    background: url(../assets/img/profil/icon_diamant.png) no-repeat;
+    background-size: contain;
+
+}
+
+.profilDataIconWinwin {
+    margin-left: 12px;
+    height: 17px;
+    width: 19px;
+    background: url(../assets/img/profil/icon_winwin.png) no-repeat;
+    background-size: contain;
+
+}
+
+.profilDataIconVip {
+    margin-left: 12px;
+    height: 23px;
+    width: 23px;
+    background: url(../assets/img/profil/icon_vip.png) no-repeat;
+    background-size: contain;
+    margin-right: -4px;
+}
+
+.profilDataIconCitycash {
+    margin-left: 12px;
+    height: 16px;
+    width: 19px;
+    background: url(../assets/img/profil/icon_citycash.png) no-repeat;
+    background-size: contain;
+
+}
+
+.profilDataIconGaming {
+    margin-left: 12px;
+    height: 18px;
+    width: 19px;
+    background: url(../assets/img/profil/icon_gamer.png) no-repeat;
+    background-size: contain;
+}
+
+.profilDataIconCityRun {
+    margin-left: 12px;
+    height: 19px;
+    width: 19px;
+    background: url(../assets/img/profil/icon_cityrun.png) no-repeat;
+    background-size: contain;
+}
+
+.profilDataBoxBubbleText {
+    margin-left: 12px;
+}
+
+.profilDataBoxContent {
+    gap: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profilBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilBadgeBox {
+    display: flex;
+    height: fit-content;
+    gap: 16px;
+    column-gap: 26px;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 312px;
+    border-radius: 12px;
+    background: var(--city-grey);
+}
+
+.profilBadgeImage {
+
+    clip-path: circle(26px at center);
+}
+
+.profilBadgeImage:hover {
+    cursor: pointer;
+}
+
+.profilBadgeHover {
+    position: relative;
+    background: #d4d4d4;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.profilBadgeHover:hover > .profilBadgeInfo {
+    display: block;
+}
+
+.profilBadgeInfo {
+    top: 0;
+    left: 50px;
+    background-color: var(--city-white);
+    max-width: 150px;
+    word-break: break-word;
+    position: absolute;
+    display: none;
+    width: max-content;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+}
+
+.profilBadgeInfo::before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-right: 10px solid var(--city-white);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    top: 10px;
+    left: -10px;
+}
+
+.profilBadgeInfoTitle {
+    font-size: 130%;
+}
+
+.profilBadgeInfoDesc {
+    font-size: 90%;
+}
+
+.profilBadgeBubble {
+    height: 52px;
+    width: 52px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #CACACA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilBadgeBoxIcon {
+    height: 14px;
+    width: 14px;
+    background: url(../assets/img/profile/icon_plus.png) no-repeat;
+    background-size: contain;
+    filter: invert(0.5);
+}
+
+.profilMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.profilMenuBox {
+    width: 100%;
+    display: flex;
+    gap: 7px;
+}
+
+.profilMenuButton {
+    height: 29px;
+    width: calc(100% - 14px);
+    border-radius: 12px;
+    background-color: var(--city-grey);
+    border: 1px solid #CACACA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.profilMenuButton:hover {
+    opacity: 0.7;
+}
+
+.profilMenuIconPhoto {
+    height: 14px;
+    width: 20px;
+    background: url(../assets/img/profil/icon_photo.png) no-repeat;
+    background-size: contain;
+}
+
+.profilMenuIconPost {
+    height: 20px;
+    width: 20px;
+    background: url(../assets/img/profil/icon_post.png) no-repeat;
+    background-size: contain;
+}
+
+.profilMenuIconText {
+    font-size: 16px;
+}
+
+.profilDownContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.profilDownBox {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.profilSearchBubble {
+    border-radius: 14px;
+    border: 1px solid var(--city-grey-contour);
+    width: 100%;
+    height: 51px;
+    display: flex;
+}
+
+.profilSearchBubbleLeft {
+    width: calc(100% - 45px);
+}
+
+.profilSearchBubbleRight {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilSearchWrite {
+    margin-left: 10px;
+    border: 0;
+    background: 0 0;
+    width: 98%;
+    height: 100%;
+    font-size: 19px;
+}
+
+.profilSearchBoxIcon {
+    height: 30px;
+    width: 30px;
+    background: url(../assets/img/profil/icon_search.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+@media (max-height: 780px) {
+    .profilCoverBox {
+        height: 85px;
+    }
+
+    .profilContainer {
+        gap: 10px;
+        border-radius: 15px;
+    }
+
+    .profilDataBoxBubble {
+        height: 30px;
+    }
+}
+
+@media (max-height: 715px) {
+    .profilContainer {
+        overflow: auto;
+    }
+}
+
+
+/* =========================== */
+/*          SETTINGS           */
+/* =========================== */
+.settings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.settingsPopup {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.settingsBoxContainer {
+    width: 100%;
+}
+
+.settingsBox {
+    min-height: 150px;
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.settingsBubble {
+    height: 150px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    .settingsBubble {
+        width: 154px;
+    }
+}
+
+.settingsBubbleBoxHigh {
+    height: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.settingsBubbleBoxCenter {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsBubbleBoxDown {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsBubbleColorYellow {
+    background: #FEE281;
+}
+
+.settingsBubbleColorRed {
+    background: #FF8C8C;
+}
+
+.settingsBubbleColorOrange {
+    background: #FFB672;
+}
+
+.settingsBubbleColorLavande {
+    background: #9296F3;
+}
+
+.settingsBubbleColorBrown {
+    background: #B89A77;
+}
+
+.settingsBubbleColorTurquoise {
+    background: #8AD3D8;
+}
+
+.settingsBubbleColorPink {
+    background: #EF99F6;
+}
+
+.settingsBubbleColorGreen {
+    background: #8DEEA2;
+}
+
+.settingsBubbleColorPurple {
+    background: #C496FF;
+}
+
+.settingsBubbleVip {
+    background: url(../assets/img/settings/background_vip.png) no-repeat;
+}
+
+.settingsBubbleTitle {
+    margin-top: 25px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.settingsBubbleText {
+    width: 135px;
+    color: #643023;
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.settingsAdvanceBox {
+    width: 100%;
+    min-height: 90px;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+.settingsAdvanceBubble, .settingsAdvanceBubbleSimple {
+    height: 84px;
+    min-width: 100%;
+    background: var(--city-grey);
+    border-radius: 20px;
+    border: 2px #D2D2D2 solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 576px) {
+    .settingsAdvanceBubble, .settingsAdvanceBubbleSimple {
+        min-width: 150px;
+    }
+}
+
+.settingsAdvanceBubble:hover, .settingsAdvanceBubbleSimple:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.settingsAdvanceBubbleHeigh {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsAdvanceBubbleDown {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.settingsAdvanceBubbleText {
+    font-size: 18px;
+}
+
+.settingsIconConsole {
+    height: 35px;
+    width: 27px;
+    background: url(../assets/img/settings/icon_console.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconArobase {
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/settings/icon_arobase.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconEmail {
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/settings/icon_email.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconFriends {
+    height: 35px;
+    width: 35px;
+    background: url(../assets/img/settings/icon_friends.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconHideonline {
+    height: 35px;
+    width: 35px;
+    background: url(../assets/img/settings/icon_hideonline.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconMention {
+    height: 35px;
+    width: 41px;
+    background: url(../assets/img/settings/icon_mention.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconMode {
+    height: 35px;
+    width: 38px;
+    background: url(../assets/img/settings/icon_mode.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconNotification {
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/settings/icon_notification.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconChat {
+    height: 35px;
+    width: 44px;
+    background: url(../assets/img/settings/icon_chat.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconPassword {
+    height: 35px;
+    width: 28px;
+    background: url(../assets/img/settings/icon_password.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconPin {
+    height: 35px;
+    width: 28px;
+    background: url(../assets/img/settings/icon_pin.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconVersion {
+    height: 35px;
+    width: 33px;
+    background: url(../assets/img/settings/icon_version.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconVip {
+    position: absolute;
+    height: 35px;
+    width: 40px;
+    background: url(../assets/img/settings/icon_vip.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconVip {
+    position: absolute;
+    height: 35px;
+    width: 40px;
+    background: url(../assets/img/settings/icon_vip.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconMimic {
+    position: absolute;
+    height: 35px;
+    width: 40px;
+    background: url(../assets/img/settings/icon_mimic.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconPush {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/settings/icon_push.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsForumBubbleText {
+    width: 135px;
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.settingsForumBubble {
+    height: 125px;
+    border-radius: 20px;
+    width: 100%;
+    background: var(--city-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 577px) {
+    .settingsForumBubble {
+        width: 154px;
+    }
+}
+
+.settingsForumBubbleBoxCenter {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsIconStaff {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_annonce.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconAnimation {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_game.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconGame {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_animation.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconEconomy {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_economy.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconOrganisation {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_organisation.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconDiscussion {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_discussion.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconIdea {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_idea.png?1) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconCreation {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_creation.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconHelp {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_help.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsIconTuto {
+    position: absolute;
+    height: 35px;
+    width: 34px;
+    background: url(../assets/img/forum/icon_tuto.png) no-repeat;
+    background-size: contain;
+}
+
+.settingsChoiceBubble {
+    margin-top: 10px;
+    min-width: 73px;
+    height: 33px;
+    border-radius: 100px;
+    background: var(--city-white);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.settingsChoiceBubble:hover {
+    opacity: 0.8;
+}
+
+.settingsChoiceBubbleOn {
+    width: 32px;
+    height: 24px;
+    border-radius: 100px;
+    background: #00DB4C;
+    margin-left: auto;
+    margin-right: 4px;
+}
+
+.settingsChoiceBubbleOff {
+    width: 32px;
+    height: 24px;
+    border-radius: 100px;
+    background: #ACACAC;
+    margin-left: 4px;
+    margin-right: auto;
+}
+
+.settingsButtonContainer {
+    height: 100px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+    .settingsButtonContainer {
+        display: flex;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .settingsButtonContainer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.settingsButtonDisabled {
+    height: 72px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #C40707;
+    color: var(--city-white-forced);
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsButtonDisabled:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.mobile .settingsCenter {
+    margin-left: 0;
+    width: 100% !important;
+}
+
+.mobile .settingsFloater {
+    display: none;
+}
+
+.settingsPopupObject {
+    padding: 10px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.settingsPopupObjectContainer {
+    padding: 10px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.settingsPopupObjectTitle {
+    font-size: 18px;
+}
+
+.settingsPopupObjectContentInput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.settingsPopupObjectContentInput input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid var(--city-grey-dark);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.settingsPopupObjectContentInput input:focus {
+    outline: none;
+}
+
+.settingsPopupObjectButton {
+    color: var(--city-white-forced);
+    background: #0095F6;
+    padding: 10px;
+    width: fit-content;
+    margin-left: auto;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.settingsPopupObjectButton:hover {
+    opacity: 0.7;
+}
+
+.settingsDisabled {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 366px;
+    width: 610px;
+    border-radius: 25px;
+    background: #882020;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.20);
+}
+
+.settingsDisabledHeigh {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsDisabledClose {
+    position: absolute;
+    margin-left: 545px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.settingsDisabledTitle {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.settingsDisabledMiddle {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsDisabledText {
+    color: #FFF;
+    font-size: 18px;
+    width: 90%;
+}
+
+.settingsDisabledDown {
+    height: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.settingsDisabledDownContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settingsDisabledButtonCancel {
+    width: 250px;
+    height: 75px;
+    border-radius: 20px;
+    background: var(--city-white-forced);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 22px;
+}
+
+.settingsDisabledButtonCancel:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.settingsDisabledButtonDisabled {
+    width: 265px;
+    height: 75px;
+    border-radius: 20px;
+    background: #FF123B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFF;
+    font-size: 22px;
+}
+
+.settingsDisabledButtonDisabled:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.settingsDisabledButtonDisabledContainer {
+    width: 75%;
+}
+
+/* =========================== */
+/*           NEWS              */
+/* =========================== */
+.news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.newsBox {
+    width: 100%;
+    overflow: auto;
+    height: calc(100% - 90px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsSearchBox {
+    height: 90px;
+    width: 338px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.newsSearchBoxBubble {
+    height: 55px;
+    width: 326px;
+    border-radius: 14px;
+    border: 2px solid #BFBFBF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.newsSearchBoxBubbleLeft {
+    width: calc(100% - 50px);
+}
+
+.newsSearchBoxBubbleRight {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsSearchBoxWrite {
+    margin-left: 10px;
+    border: 0;
+    background: 0 0;
+    width: 98%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.newsSearchBoxIcon {
+    height: 30px;
+    width: 30px;
+    background: url(../assets/img/icon_search.png) no-repeat;
+    background-size: contain;
+}
+
+.newsBubbleNews {
+    position: relative;
+    height: 160px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    background: black;
+    transition: 0.05s;
+}
+
+.newsBubbleNews:hover {
+    cursor: pointer;
+    overflow: hidden;
+    background: transparent;
+}
+
+.newsBubbleNewsHigh {
+    height: 100%;
+    border-color: #FFA334;
+    border-radius: 14px 14px 0 0;
+    border-bottom: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsBubbleNewsHigh img {
+    opacity: 0.6;
+}
+
+.newsBubbleNewsDate {
+    border-radius: 20px;
+    background: #FFF;
+    font-size: 18px;
+    padding: 0 10px;
+    position: absolute;
+    height: 36px;
+    display: flex;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-top: 8px;
+    gap: 6px;
+}
+
+.newsBubbleNewsDate > span {
+    color: black;
+    font-size: 20px;
+}
+
+.newsBubbleNewsDown {
+    height: 50px;
+    border-radius: 0 0 12px 12px;
+    width: 100%;
+    background: #faaa3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsBubbleNewsDownText {
+    width: 295px;
+    color: var(--city-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.newsArticleContainer {
+    background: var(--city-white);
+    border: 1px solid var(--city-grey);
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsArticleBackground {
+    position: relative;
+    border-bottom: 2px solid var(--city-grey-contour);
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 15px;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+.newsArticleBackgroundTitle {
+    text-shadow: 0 0 8px rgb(0 0 0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--city-white-forced);
+}
+
+.newsArticleBackgroundAuthor {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--city-white-forced);
+    font-size: 180%;
+    text-shadow: 0 0 8px rgb(0 0 0);
+}
+
+.newsArticleBackgroundAuthorAvatar {
+    height: 70px;
+    width: 70px;
+    background: no-repeat center -35px;
+    margin-right: 5px;
+}
+
+.newsArticle {
+    width: 95%;
+    max-width: 700px;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.newsArticle img {
+    max-width: 100%
+}
+
+.newsArticle strong {
+    font-weight: bold;
+}
+
+.newsArticle span {
+    font-size: 100% !important;
+}
+
+.newsArticleDate {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    margin: 20px;
+    font-size: 120%;
+}
+
+.newsArticleDateIcon {
+    background: url(../assets/img/horloge.png);
+    height: 32px;
+    width: 31px;
+    margin-right: 5px;
+}
+
+
+/* =========================== */
+/*            TEAM             */
+/* =========================== */
+.teamLeftStaffBox {
+    width: calc(100% - 30px);
+    margin-bottom: 15px;
+    height: 130px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: var(--city-white);
+    display: flex;
+    cursor: pointer;
+}
+
+.teamLeftStaffBoxRed {
+    border-color: #FF5942;
+    color: #FF5942;
+}
+
+.teamLeftStaffBoxRed:hover {
+    background: #FF5942;
+    color: var(--city-white);
+}
+
+.teamLeftStaffBoxGreen {
+    border-color: #00D264;;
+    color: #00D264;
+}
+
+.teamLeftStaffBoxGreen:hover {
+    background: #00D264;
+    color: var(--city-white);
+}
+
+.teamLeftStaffBoxOrange {
+    border-color: #FFA334;
+    color: #FFA334;
+}
+
+.teamLeftStaffBoxOrange:hover {
+    background: #FFA334;
+    color: var(--city-white);
+}
+
+.teamLeftStaffBoxBlue {
+    border-color: #6D95F3;
+    color: #6D95F3;
+}
+
+.teamLeftStaffBoxBlue:hover {
+    background: #6D95F3;
+    color: var(--city-white);
+}
+
+.teamLeftStaffBoxLeft {
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamLeftStaffBoxIcon {
+    height: 42px;
+    width: 42px;
+    image-rendering: pixelated;
+    scale: 2;
+}
+
+.teamLeftStaffBoxManageIcon {
+    background: url(../assets/img/team/icon_gestion.png) no-repeat;
+}
+
+.teamLeftStaffBoxSecurityIcon {
+    background: url(../assets/img/team/icon_security.png) no-repeat;
+}
+
+.teamLeftStaffBoxEventIcon {
+    background: url(../assets/img/team/icon_event.png) no-repeat;
+}
+
+.teamLeftStaffBoxEventIcon {
+    background: url(../assets/img/team/icon_event.png) no-repeat;
+}
+
+.teamLeftStaffBoxDevIcon {
+    background: url(../assets/img/team/icon_dev.png) no-repeat;
+}
+
+.teamLeftStaffBoxText {
+    font-size: 24px;
+}
+
+.teamLeftStaffBoxRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.teamRightCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.teamRightTitleBox {
+    width: 100%;
+    height: 35px;
+}
+
+.teamRightTitle {
+    font-size: 28px;
+}
+
+.teamRightMembersContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.teamRightMembersBox {
+    position: relative;
+    width: calc(25% - 8px);
+    float: left;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.teamRightMembersBox:hover > .teamRightMembersBoxFonction {
+    display: block;
+}
+
+.teamRightMembersBoxFonction {
+    z-index: 999;
+    background-color: var(--city-white-light);
+    padding: 5px;
+    position: absolute;
+    bottom: 60px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .25);
+    display: none;
+}
+
+.teamRightMembersBoxFonction::before {
+    position: absolute;
+    content: " ";
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--city-white-light);
+    border-left: 10px solid transparent;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teamRightMembersBubble {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teamRightMembersBubble:hover {
+    opacity: 0.7;
+}
+
+.teamRightMembersBubbleHeight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.teamRightMembersBubbleDown {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.teamRightAvatarImage {
+    position: absolute;
+    margin-top: -11px;
+    width: 55px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.teamRightBubbleOnline {
+    height: 16px;
+    width: 16px;
+    background: #00DB4C;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.teamRightBubbleOffline {
+    height: 16px;
+    width: 16px;
+    background: #FF5942;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.teamRightRank {
+    min-width: 50px;
+    color: var(--city-white-forced);
+    font-size: 14px;
+    padding: 2px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamRightMembersRounder {
+    height: 42px;
+    width: 100%;
+    background: var(--city-white);
+    border: 1px solid var(--city-grey-contour);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.teamRightMembersPseudo {
+    font-size: 22px;
+    margin-left: 60px;
+    color: var(--city-black);
+}
+
+.teamRightMembersBadge {
+    height: 42px;
+    width: 42px;
+    margin-left: auto;
+    margin-right: 3px;
+}
+
+@media (max-width: 576px) {
+    .mobile .teamLeftStaffBox {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .teamRightMembersBox {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    .teamRightMembersBox {
+        width: calc(50% - 5px) !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .teamRightMembersBox {
+        width: calc(33% - 5px) !important;
+    }
+}
+
+
+/* =========================== */
+/*            FORUM            */
+/* =========================== */
+.forum {
+    padding-top: 86px;
+    display: block;
+    width: 100%;
+}
+
+.forumHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.forumInformation {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #9febe5;
+    background-color: var(--city-white);
+    display: flex;
+    gap: 10px;
+
+    .forumInformationAvatar {
+        padding: 10px 0 0 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .forumInformationContainer {
+        padding: 16px 0 16px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .forumInformationContainerTitle {
+            font-size: 25px;
+            padding-right: 15px;
+        }
+        .forumInformationContainerText {
+            padding-right: 15px;
+        }
+    }
+}
+
+.forumHeaderLeft {
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+@media (min-width: 576px) {
+    .forumHeaderLeft {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.forumHeaderPicker {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    background: var(--city-white);
+    box-shadow: 0 0 52px -5px #00000045;
+    border-radius: 14px;
+    overflow: auto;
+    z-index: 3;
+    padding: 10px;
+    border: 1px solid var(--city-grey-contour);
+}
+
+@media (min-width: 576px) {
+    .forumHeaderPicker {
+        width: 250px;
+    }
+}
+
+.forumHeaderBubbleCategory {
+    height: 50px;
+    width: 90vw;
+    border-radius: 18px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    order: 2;
+}
+
+@media (min-width: 576px) {
+    .forumHeaderBubbleCategory {
+        width: 250px;
+        order: 0;
+        margin-top: 0;
+    }
+}
+
+.forumHeaderBubbleCategory:hover {
+    background: var(--city-grey-dark);
+}
+
+.forumHeaderBubbleCategoryIcon {
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.forumHeaderBubbleCategoryIconTopics {
+    background: url(../assets/img/forum/icon_sujets.png) no-repeat;
+}
+
+.forumNavigationIconStaff {
+    background: url(../assets/img/forum/icon_annonce.png) no-repeat;
+}
+
+.forumNavigationIconAnimation {
+    background: url(../assets/img/forum/icon_game.png) no-repeat;
+}
+
+.forumNavigationIconGame {
+    background: url(../assets/img/forum/icon_animation.png) no-repeat;
+}
+
+.forumNavigationIconEconomy {
+    background: url(../assets/img/forum/icon_economy.png) no-repeat;
+}
+
+.forumNavigationIconOrganisation {
+    background: url(../assets/img/forum/icon_organisation.png) no-repeat;
+}
+
+.forumNavigationIconDiscussion {
+    background: url(../assets/img/forum/icon_discussion.png) no-repeat;
+}
+
+.forumNavigationIconIdea {
+    background: url(../assets/img/forum/icon_idea.png?1) no-repeat;
+}
+
+.forumNavigationIconCreation {
+    background: url(../assets/img/forum/icon_creation.png) no-repeat;
+}
+
+.forumNavigationIconHelp {
+    background: url(../assets/img/forum/icon_help.png) no-repeat;
+}
+
+.forumNavigationIconTuto {
+    background: url(../assets/img/forum/icon_tuto.png) no-repeat;
+}
+
+.forumHeaderBubbleCategoryMore {
+    margin-left: auto;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: var(--city-grey-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forumHeaderBubbleCategoryMoreIcon {
+    width: 10px;
+    height: 16px;
+    background: url(../assets/img/forum/icon_left.png) no-repeat;
+    transform: rotate(-90deg);
+    filter: brightness(0) invert(1);
+}
+
+.forumSHeaderBubble {
+    position: relative;
+    height: 50px;
+    width: 200px;
+    border-radius: 12px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.forumSHeaderBubble:hover {
+    opacity: 0.7;
+}
+
+.forumSHeaderBubbleText {
+    padding: 10px;
+    position: absolute;
+    border-radius: 8px;
+    display: block;
+    z-index: 1;
+    left: 55px;
+    font-size: 18px;
+}
+
+.forumSHeaderBubbleIcon {
+    height: 40px;
+    width: 165px;
+}
+
+.forumHeaderBubble {
+    position: relative;
+    height: 50px;
+    width: 200px;
+    border-radius: 8px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    margin-bottom: 10px;
+}
+
+.forumHeaderBubble:hover {
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+    .forumHeaderBubble {
+        width: 50px;
+        border-radius: 100%;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+}
+
+.forumHeaderBubbleText {
+    padding: 10px;
+    position: absolute;
+    border-radius: 8px;
+    display: block;
+    z-index: 1;
+    left: 55px;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .forumHeaderBubbleText {
+        background-color: var(--city-white-light);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+        padding: 5px;
+        bottom: -35px;
+        display: none;
+        width: max-content;
+        left: auto;
+        font-size: 16px;
+    }
+}
+
+.forumHeaderBubble:hover > .forumHeaderBubbleText {
+    display: block;
+}
+
+.forumHeaderBubbleIcon {
+    height: 30px;
+    width: 165px;
+}
+
+@media (min-width: 768px) {
+    .forumHeaderBubbleIcon {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+.forumHeaderBubbleIconNewTopic {
+    background: url(../assets/img/forum/icon_newtopic.png) no-repeat;
+    background-size: contain;
+}
+
+.forumHeaderBubbleIconMyDraft {
+    background: url(../assets/img/forum/icon_drafts.png) no-repeat;
+    background-size: contain;
+}
+
+.forumHeaderBubbleIconMyTopic {
+    background: url(../assets/img/forum/icon_mytopic.png) no-repeat;
+    background-size: contain;
+}
+
+.forumHeaderBubbleIconNewTicket {
+    background: url(../assets/img/forum/icon_newticket.png) no-repeat;
+    background-size: contain;
+}
+
+.forumHeaderBubbleIconMyTicket {
+    background: url(../assets/img/forum/icon_myticket.png) no-repeat;
+    background-size: contain;
+}
+
+.forumSearchBox {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.forumSearchBoxBubble {
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    background: var(--city-white-dark);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media (min-width: 576px) {
+    .forumSearchBoxBubble {
+        height: 55px;
+    }
+}
+
+.forumSearchBoxBubbleLeft {
+    width: calc(100% - 50px);
+}
+
+.forumSearchBoxWrite {
+    margin-left: 18px;
+    border: 0;
+    background: 0 0;
+    width: 98%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.forumSearchBoxBubbleRight {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forumSearchBoxIcon {
+    height: 30px;
+    width: 30px;
+    background: url(../assets/img/icon_search.png) no-repeat;
+    background-size: contain;
+}
+
+.forumPaginationFlecheLeftIcon {
+    width: 10px;
+    height: 16px;
+    background: url(../assets/img/forum/icon_left.png) no-repeat;
+    margin-right: 5px;
+}
+
+.forumPaginationFlecheLeftIcon:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.forumPaginationFlecheRightIcon {
+    width: 10px;
+    height: 16px;
+    background: url(../assets/img/forum/icon_right.png) no-repeat;
+    margin-left: 5px;
+}
+
+.forumPaginationFlecheRightIcon:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.forumPaginationBubble {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9E9E9E !important;
+    font-size: 16px;
+}
+
+.forumPaginationCurrent {
+    background: var(--city-blue);
+}
+
+.forumPaginationBubble:hover {
+    background: var(--city-grey-dark);
+    color: var(--city-black);
+    cursor: pointer;
+}
+
+.forumTitleBox {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+}
+
+.forumTitle {
+    font-size: 130%;
+}
+
+.forumTitleBoxLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.forumTitleBoxLeftBubble {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 30px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    justify-content: center;
+}
+
+.forumTitleBoxLeftBubble:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.forumTitleBoxRight {
+    display: flex;
+    margin-left: auto;
+    gap: 4px;
+    align-items: center;
+}
+
+.forumTopicsContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    z-index: 0;
+}
+
+.forumTopicsSearch {
+    border-radius: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    display: none;
+    min-height: 100%;
+    align-content: flex-start;
+    z-index: 1;
+    width: 100%
+}
+
+.forumPlayerOnline {
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 45px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #44cf48;
+    border: 2px solid var(--city-white-forced);
+}
+
+.forumPlayerOffline {
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 45px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #ED1C24;
+    border: 2px solid var(--city-white-forced);
+}
+
+.forumTopicsBubble {
+    position: relative;
+    width: calc(33% - 10px);
+    height: 86px;
+    border-radius: 20px;
+    display: flex;
+    background: var(--city-white);
+    border: 1px solid var(--city-grey-contour);
+}
+
+@media (max-width: 950px) {
+    .forumTopicsBubble {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1254px) {
+    .forumTopicsBubble {
+        width: calc(50% - 12px) !important;
+    }
+}
+
+.forumTopicsBubble:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.forumTopicsBubbleView {
+    opacity: 0.5;
+}
+
+.forumTopicsBubbleEpingleIcon, .forumTopicsBubbleViewIcon {
+    width: 38px;
+    height: 37px;
+}
+
+.forumTopicsBubbleIcons {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    align-items: center;
+}
+
+.forumTopicsBubbleEpingleIcon {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background: url(../assets/img/forum/icon_epingle.png) no-repeat;
+    background-size: contain;
+
+}
+
+.forumTopicsBubbleClosedIcon {
+    width: 30px;
+    height: 38px;
+    background: url(../assets/img/forum/icon_closed.png) no-repeat;
+    background-size: contain;
+
+}
+
+.forumTopicsBubbleViewIcon {
+    width: 37px;
+    height: 38px;
+    background: url(../assets/img/forum/icon_view.png) no-repeat;
+
+}
+
+.forumBubbleLeft {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.forumBubbleRight {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.forumTextTitle {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--forum-title);
+}
+
+.forumTextActivity {
+    margin-top: 5px;
+    color: #9E9E9E;
+    font-size: 12px;
+}
+
+.forumAvatar {
+    margin-left: 13px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forumAvatarBubble {
+    height: 46px;
+    width: 46px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background: var(--city-grey);
+    border: 3px solid rgb(217, 217, 217);
+    padding: 3px;
+}
+
+.forumData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.forumDataTitle {
+    width: 90%;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--forum-title);
+    word-break: break-word;
+}
+
+@media (min-width: 768px) {
+    .forumDataTitle {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.forumDataActivity {
+    margin-top: 4px;
+    color: #9E9E9E;
+    font-size: 12px;
+}
+
+.forumView {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .forumView {
+        margin-left: 10px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+.forumViewBar {
+    width: 1px;
+    height: 20px;
+    background: var(--city-grey);
+}
+
+@media (min-width: 768px) {
+    .forumViewBar {
+        height: 34px;
+    }
+}
+
+.forumViewIcon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (min-width: 768px) {
+    .forumViewIcon {
+        gap: 5px;
+    }
+}
+
+.forumViewIconChat {
+    height: 16px;
+    width: 24px;
+    background: url(../assets/img/home/icon_chat.png) no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .forumViewIconChat {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+.forumViewIconEyes {
+    height: 20px;
+    width: 24px;
+    background: url(../assets/img/home/icon_eyes.png) no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .forumViewIconEyes {
+        height: 24px;
+    }
+}
+
+.forumViewText {
+    color: #B2B2B2;
+    font-size: 17px;
+}
+
+.forumPagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.forumPostBanner {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    background: #6f9cf0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.forumPostBanner:active {
+    opacity: 0.9
+}
+
+.forumPostBanner:after {
+    position: absolute;
+    width: 100%;
+    height: 27px;
+    background: linear-gradient(-45deg, var(--background) 16px, transparent 0), linear-gradient(45deg, var(--background) 16px, transparent 0);
+    background-size: 27px 27px;
+    content: " ";
+    display: block;
+    bottom: 0;
+    left: 0;
+}
+
+.forumPostBannerIcon {
+    width: 70px;
+    height: 70px;
+    background: url(../assets/img/forum/icon_forum_close.png) no-repeat;
+}
+
+.mobile .forumTitleBoxLeft {
+    width: 100%;
+}
+
+.mobile .forumHeader {
+    gap: 0;
+}
+
+.forumHeaderBubbleCategoryFirst {
+    margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+    .forumHeaderBubbleCategoryFirst {
+        margin-top: 0;
+    }
+}
+
+.mobile .forumHeaderBubbleCategoryMore {
+    height: 26px;
+    width: 26px;
+}
+
+
+/* =========================== */
+/*          FORUM POST         */
+/* =========================== */
+.forumPostWriteBox {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.forumPostWriteBoxFirst {
+    width: 100%;
+}
+
+.forumPostWriteBoxEditor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forumPostWriteEditor {
+    border-radius: 16px;
+    border: 2px solid var(--forum-border-grey);
+    background: var(--city-white);
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.forumPostWriteBoxMind {
+    justify-content: flex-end;
+}
+
+.forumPostWriteBoxMind .forumPostWriteBubble {
+    border: 2px solid #4CA7AB !important;
+}
+
+.forumPostWriteBoxSep {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.forumPostWriteBoxButton {
+    margin-left: auto;
+    cursor: pointer;
+    background: var(--green-button);
+    width: fit-content;
+    color: white;
+    padding: 14px 30px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.forumPostWriteBoxButton:hover {
+    background: var(--green-d);
+}
+
+.forumPostPlayerBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.forumPostPlayerRounder {
+    background: var(--city-white);
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.forumPostPlayerRounderCadre {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 12px;
+}
+
+.forumPostPlayerRounderCadre:hover {
+    opacity: 0.7;
+}
+
+.forumPostprofilAvatar {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    border: 3px solid #d9d9d9;
+    padding: 3px;
+    left: 12px;
+    bottom: 5px;
+}
+
+.forumPostPlayerProfil {
+    height: 80px !important;
+}
+
+.forumPostMessageBox {
+    height: 30px;
+    width: 330px;
+    background: var(--city-white);
+    border-radius: 20px;
+    border: 1px solid var(--city-grey-contour);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 500px) {
+    .forumPostMessageBox {
+        display: none;
+    }
+}
+
+.forumPostPlayerOnline {
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 45px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #44cf48;
+    border: 2px solid var(--city-white-forced);
+}
+
+.forumPostPlayerOffline {
+    position: absolute;
+    margin-top: 40px;
+    left: 60px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #ED1C24;
+    border: 2px solid var(--city-white-forced);
+}
+
+.forumPostContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .forumPostContainer {
+        overflow: hidden;
+    }
+}
+
+.forumPostTimeBox {
+    font-size: 118%;
+    padding: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forumPostTimeIcon {
+    height: 21px;
+    width: 20px;
+    background: url(../assets/img/profil/icon_time.png) no-repeat;
+    background-size: contain;
+}
+
+.forumPostWriteBubble {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid var(--city-grey-contour);
+    background: var(--city-white);
+    width: calc(100% - 20px);
+    padding: 8px;
+    overflow: hidden;
+}
+
+.forumPostWriteBubbleText {
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+}
+
+.forumPostWriteBubbleButtons {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.forumPostWriteBubbleButton {
+    background: var(--city-grey);
+    margin-left: 10px;
+    padding: 6px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.forumPostWriteBubbleButton:hover {
+    background: var(--city-grey-dark);
+}
+
+.forumPostReaction {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+.forumPostReactionBubble {
+    width: 185px;
+    height: 38px;
+    border-radius: 15px;
+    background: var(--city-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.forumPostReactionIcon {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    background: center/contain no-repeat;
+}
+
+.forumPostReactionIcon3 {
+    height: 23px;
+    background-image: url(../assets/img/forum/icon_heart.png);
+}
+
+.forumPostReactionIcon4 {
+    background-image: url(../assets/img/forum/icon_lol.png);
+}
+
+.forumPostReactionIcon1 {
+    width: 24px;
+    background-image: url(../assets/img/forum/icon_like.png);
+}
+
+.forumPostReactionIcon2 {
+    width: 24px;
+    background-image: url(../assets/img/forum/icon_dislike.png);
+}
+
+.forumPostReactionIcon1:hover, .forumPostReactionIcon2:hover, .forumPostReactionIcon3:hover, .forumPostReactionIcon4:hover {
+    filter: grayscale(100%);
+    transition: .1s all;
+}
+
+.reactionCount {
+    border-radius: 15px;
+    padding: 2px 6px;
+    border: 1px;
+    color: #ecf0f1;
+    background-color: #ee5253;
+    position: absolute;
+    margin-top: -35px;
+    font-weight: 600;
+}
+
+.type1Count {
+    margin-left: -95px;
+}
+
+.type2Count {
+    margin-left: -5px;
+}
+
+.type3Count {
+    margin-left: 80px;
+}
+
+.type4Count {
+    margin-left: 160px;
+}
+
+.forumPostViewBubble {
+    width: 70px;
+    height: 40px;
+    border-radius: 15px;
+    background: var(--city-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #A8A8A8;
+}
+
+.forumPostEditBubble {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background: var(--city-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #A8A8A8;
+}
+
+.forumPostEditTextArea {
+    border-bottom: 2px solid var(--forum-border-grey);
+    width: 100%;
+    height: 294px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.forumPostEditValidBtn {
+    margin-left: auto;
+    background: #ffcc0a;
+    padding: 13px 30px;
+    margin-right: 5%;
+    border-radius: 10px;
+    color: var(--city-black-forced);
+    cursor: pointer;
+}
+
+.forumPostEditValidBtn:hover {
+    background: #deb004;
+}
+
+.forumPostClose {
+    height: 300px;
+    position: relative;
+}
+
+.forumPlayerOnlineOnPost {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 57px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #44cf48;
+    border: 2px solid var(--city-white-forced);
+}
+
+.forumPlayerOfflineOnPost {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 57px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #ED1C24;
+    border: 2px solid var(--city-white-forced);
+}
+
+@media (max-width: 768px) {
+    .forumPostReaction {
+        display: grid;
+    }
+
+    .forumPostWriteBox {
+        flex-direction: column;
+    }
+
+    .forumPostWriteBubble {
+        width: 85vw;
+    }
+
+    .reactionPopupContent {
+        background-color: var(--background);
+        color: var(--city-black);
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+        max-height: 60%;
+        max-width: 85%;
+        overflow-x: auto;
+    }
+}
+
+
+/* =========================== */
+/*        FORUM CREATE         */
+/* =========================== */
+.forumCreate .title {
+    border-radius: 14px;
+    margin-bottom: 10px;
+    border: 1px solid var(--city-grey-contour);
+    background: var(--city-white-dark);
+    font-size: 22px;
+    padding: 15px 20px;
+    width: 75vw;
+}
+
+@media (min-width: 576px) {
+    .forumCreate .title {
+        width: 100%;
+    }
+}
+
+.forumCreate .select {
+    width: 40%;
+    height: 60px;
+    border: 1px solid var(--city-grey-contour);
+    background: var(--city-white-dark);
+    color: var(--city-black);
+    font-size: 22px;
+    font-family: 'habbofont', 'Ubuntu X', sans-serif !important;
+    padding: 15px;
+    border-radius: 14px;
+}
+
+.forumCreate .editor {
+    height: 150px;
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    min-height: 330px;
+    overflow: hidden;
+    border: 2px solid var(--forum-border-grey);
+    resize: vertical;
+}
+
+.forumCreate .topbar {
+    display: block;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+
+@media (min-width: 768px) {
+    .forumCreate .topbar {
+        display: flex;
+        margin-top: 75px;
+    }
+}
+
+@media (min-width: 950px) {
+    .forumCreate .topbar {
+        margin-top: 0;
+    }
+}
+
+.forumCreate .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.forumCreate .buttons .button {
+    padding: 16px 28px;
+    border-radius: 14px;
+    color: var(--city-white-forced);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.forumCreate .buttons .draft {
+    background: #01b8f5;
+}
+
+.forumCreate .buttons .draft:hover {
+    background: #0085b2;
+}
+
+.forumCreate .buttons .publish {
+    background: #00e07d;
+}
+
+.forumCreate .buttons .publish:hover {
+    background: #00af60;
+}
+
+.forumMyNavigationContainer {
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.forumMyNavigationButton {
+    width: 40%;
+    height: 60px;
+    border-radius: 14px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: initial;
+    gap: 0;
+}
+
+@media (min-width: 576px) {
+    .forumMyNavigationButton {
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+.forumSMyNavigationButton {
+    width: 55%;
+    height: 60px;
+    border-radius: 14px;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: initial;
+}
+
+.forumMyNavigationButton:hover, .forumSMyNavigationButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.forumMyNavigationButtonBlue {
+    width: 10%;
+    height: 60px;
+    border-radius: 14px;
+    background-color: #0a7ee1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forumMyNavigationButtonBlue:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.forumMyNavigationButtonBlueIcon {
+    width: 10px;
+    height: 16px;
+    background: url(../assets/img/forum/icon_left.png) no-repeat;
+    filter: brightness(0) invert(1);
+    margin-right: 5px;
+}
+
+.forumMyNavigationButtonText {
+    width: 75%;
+    color: #9E9E9E;
+    text-align: center;
+    font-size: 18px;
+}
+
+.forumNavigationButtonIcon {
+    height: 35px;
+    width: 35px;
+}
+
+.forumNavigationButtonIconNewTopic {
+    background: url(../assets/img/forum/icon_newtopic.png) no-repeat;
+}
+
+.forumNavigationButtonIconMyDraft {
+    background: url(../assets/img/forum/icon_drafts.png) no-repeat;
+}
+
+.forumNavigationButtonIconMyTopic {
+    background: url(../assets/img/forum/icon_mytopic.png) no-repeat;
+}
+
+.forumSNavigationButtonIconMyTopic {
+    background: url(../assets/img/forum/icon_myticket.png) no-repeat;
+}
+
+@media (max-width: 768px) {
+    .forumCreate .buttons .button {
+        padding: 10px 20px;
+    }
+
+    .forumCreate .select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .webContainer .center {
+        width: 100% !important;
+        margin-left: 0;
+    }
+}
+
+
+/* =========================== */
+/*       FORUM SUPPORT         */
+/* =========================== */
+.forumSupportNews {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.forumSupportNewsBox {
+    display: flex;
+    gap: 12px
+}
+
+.forumSupportNewsBoxBubble {
+    height: 150px;
+    width: 200px;
+    background: var(--city-grey);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.forumSupportNewsBoxBubble:hover {
+    opacity: 0.7;
+}
+
+.forumSupportNewsBoxContent {
+    width: 90%;
+    height: 30px;
+    background-color: var(--city-white);
+    color: var(--city-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* =========================== */
+/*          CITYCASH           */
+/* =========================== */
+.cityCashHead {
+    height: 100px;
+    padding: 10px;
+    background: linear-gradient(45deg, #6dd2ff, #00a4ec);
+    display: flex;
+    margin-bottom: 56px;
+    border-radius: 14px;
+    color: white;
+}
+
+.cityCashHead .image {
+    height: 170px;
+    margin-right: 10px;
+    flex: 0 0 170px;
+    width: 170px;
+    position: relative;
+}
+
+.cityCashHead .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cityCashHead .title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cityCashBottom {
+    background: linear-gradient(45deg, #ffe788, #f6c300);
+    height: 180px;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.cityCashDedi {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.cityCashBottom img {
+    height: 180px;
+    width: 180px;
+}
+
+.cityCashSuccess {
+    background: #00e07d;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    color: white;
+}
+
+.cityCashError {
+    background: #ff3e3e;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    color: white;
+}
+
+
+/* =========================== */
+/*          PRESTIGE           */
+/* =========================== */
+.mobile .prestigeLeft {
+    display: none;
+}
+
+.mobile .prestigeCenter {
+    margin-left: 0;
+    width: 100%;
+}
+
+
+/* =========================== */
+/*           CENTER            */
+/* =========================== */
+.mobile .centerFloater {
+    display: none;
+}
+
+.mobile .centerCenter {
+    margin-left: 0;
+    width: 100%;
+}

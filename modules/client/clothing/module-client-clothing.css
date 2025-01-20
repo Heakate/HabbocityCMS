@@ -1,0 +1,103 @@
+.ModuleClientClothing {
+    z-index: 99999999;
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.ModuleClientClothing .look2 {
+    height: 364px;
+    padding: 30px;
+    left: calc(50% - 205px);
+    width: 350px;
+    background: var(--city-white);
+    border-radius: 10px;
+    position: absolute;
+    top: calc(50% - 205px);
+}
+
+.ModuleClientClothing .look3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ModuleClientClothing .look4 {
+    position: relative;
+    height: 210px;
+    background: rgb(64, 131, 253);
+    border-radius: 12px;
+}
+
+.ModuleClientClothing .look5 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(176, 77, 236);
+    border-radius: 100%;
+    width: 150px;
+    top: -18px;
+    left: calc(50% - 84px);
+    position: relative;
+    border: 6px solid rgb(255, 173, 219);
+}
+
+.ModuleClientClothing .look6 {
+    height: 120px;
+    width: 120px;
+    background: url('../../../assets/img/client/clothing/grande_etoile.png')
+}
+
+.ModuleClientClothing .look7 {
+    position: absolute;
+
+}
+
+.ModuleClientClothing .look8 {
+    position: relative;
+    left: calc(50% - 120px);
+    margin-top: -15px;
+    height: 60px;
+    width: 240px;
+    background: url('../../../assets/img/client/clothing/etoiles.png')
+}
+
+.ModuleClientClothing .look9 {
+    position: relative;
+    height: 34px;
+    float: right;
+    text-align: center;
+    padding: 7px 13px 0;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+    background: #32bf1a;
+    font-size: 150%;
+    color: var(--city-white);
+}
+
+.ModuleClientClothing .look10 {
+    position: absolute;
+    height: 3px;
+    width: calc(100% - 8px);
+    left: 4px;
+    top: 3px;
+    background: #7dce6f;
+}
+
+.ModuleClientClothing .look11 {
+    float: left;
+    font-size: 140%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.ModuleClientClothing .look11:hover {
+    text-decoration: underline;
+}

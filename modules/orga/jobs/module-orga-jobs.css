@@ -1,0 +1,24 @@
+.moduleOrgaJobs .entry {
+    border: 1px solid #e4e4e4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.moduleOrgaJobs .entry .title {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.moduleOrgaJobs .entry .description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.moduleOrgaJobs .entry .link {
+    text-decoration: underline;
+}
+
+.moduleOrgaJobs .entry .date {
+    color: darkgrey;
+}

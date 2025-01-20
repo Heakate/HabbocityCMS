@@ -1,0 +1,64 @@
+.moduleOrgaRewards .top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.moduleOrgaRewards .top .title {
+    font-size: 26px;
+    background: #F9CF00;
+    margin-bottom: 15px;
+    padding: 12px 14px;
+    color: var(--city-white-forced);
+    text-shadow: 1px 0 #725F00, -1px 0 #725F00, 0 2px #725F00, -1px 0 #725F00, 1px 1px #725F00, 0 -1px #725F00, 1px 2px #725F00, -1px -1px #725F00, 1px -1px #725F00, -1px 2px #725F00, -1px 1px #725F00;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.moduleOrgaRewards .top .description {
+    font-size: 20px;
+}
+
+.moduleOrgaRewards .top .image {
+    height: 156px;
+    flex: 0 0 157px;
+    width: 157px;
+    background: red;
+
+    background: url(../../../assets/img/orga/head_rewards.png);
+}
+
+.moduleOrgaRewards .bigTitle {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.moduleOrgaRewards .gotDescription {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.moduleOrgaRewards .gotDescription .link {
+    margin-top: 15px;
+    display: block;
+    text-decoration: underline;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid #dfdfdf;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+th, td {
+    border: 1px solid #dfdfdf;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

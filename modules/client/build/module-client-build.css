@@ -1,0 +1,161 @@
+.ModuleClientBuild {
+    position: fixed;
+    box-shadow: 0 0 0 2px #0000001f, 0 0 20px #0003;
+    user-select: none;
+    z-index: 99999;
+    top: 80px;
+    left: 80px;
+    background: var(--city-white);
+    width: 290px;
+    height: 205px;
+    border-radius: 10px;
+}
+
+.mb2 {
+    position: relative;
+    height: 53px;
+    left: 12px;
+    width: calc(100% - 24px);
+}
+
+.mb3 {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: url(../../../assets/img/client/buildmode.png?9g9g) -2px -3px;
+    top: 14px;
+}
+
+.mb4 {
+    position: absolute;
+    font-size: 170%;
+    left: 35px;
+    top: 11px;
+}
+
+.mbclose {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    background: url(../../../assets/img/close_24.png);
+}
+
+.mbclose:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+.mb5 {
+    position: relative;
+    width: calc(100% - 24px);
+    left: 12px;
+}
+
+.mb6 {
+    position: relative;
+    height: 42px;
+}
+
+.mb7 {
+    position: relative;
+    font-size: 120%;
+    border: 0;
+    background: rgb(202, 202, 202);
+    width: calc(100% - 105px);
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 7px 5px 7px 40px;
+}
+
+.mb7:active {
+    outline: none;
+}
+
+.mb8 {
+    position: absolute;
+    top: 17px;
+    left: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../../../assets/img/client/buildmode.png?9g9g) -32px -4px;
+}
+
+.mb9 {
+    position: absolute;
+    top: 17px;
+    left: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../../../assets/img/client/buildmode.png?9g9g) -57px -4px;
+}
+
+.mb10 {
+    position: absolute;
+    top: 17px;
+    left: 8px;
+    height: 24px;
+    width: 24px;
+    background: url(../../../assets/img/client/buildmode.png?9g9g) -83px -4px;
+}
+
+.mb11 {
+    position: absolute;
+    cursor: pointer;
+    height: 37px;
+    width: 55px;
+    border-radius: 8px;
+    right: 0px;
+    font-size: 90%;
+    top: 10px;
+    color: var(--city-white);
+    background: rgb(255, 127, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb11:hover {
+    opacity: 0.8;
+}
+
+.mb12 {
+    position: absolute;
+    height: 17px;;
+    cursor: pointer;
+    width: 40px;
+    background: rgb(0, 179, 255);
+    color: var(--city-white);
+    right: 60px;
+    top: 10px;
+    font-size: 120%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb13 {
+    position: absolute;
+    height: 17px;
+    cursor: pointer;
+    width: 40px;
+    background: rgb(0, 179, 255);
+    border-radius: 6px;
+    color: var(--city-white);
+    right: 60px;
+    top: 30px;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb12:hover {
+    opacity: 0.8;
+}
+
+.mb13:hover {
+    opacity: 0.8;
+}

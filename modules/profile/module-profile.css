@@ -1,0 +1,460 @@
+.moduleProfile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.moduleProfileLeft {
+    height: 100%;
+    width: 90px;
+    display: inline-block;
+}
+
+.moduleProfileLeftBannerBox {
+    height: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileLeftBanner {
+    height: 170px;
+    width: 67px;
+    background: var(--city-grey);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleProfileLeftBannerAvatar {
+    position: absolute;
+    -webkit-filter: drop-shadow(1.5px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(0 -1px 0px #fff);
+    image-rendering: pixelated;
+}
+
+.moduleProfileLeftBadgesBox {
+    margin-top: 3px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+}
+
+.moduleProfileLeftBadgesBanner {
+    background: var(--city-grey);
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moduleProfileLeftBadgesRounder {
+    margin-top: 12px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: var(--city-grey-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image-rendering: pixelated;
+}
+
+.moduleProfileLeftBadgesRounder:hover > .moduleProfileLeftBadgesRounderInfo {
+    display: block;
+}
+
+.moduleProfileLeftBadgesRounderInfo {
+    left: 75px;
+    background-color: var(--city-white);
+    max-width: 210px;
+    position: absolute;
+    display: none;
+    width: max-content;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+}
+
+.moduleProfileLeftBadgesRounderInfo::before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-right: 10px solid var(--city-white);
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    top: 10px;
+    left: -10px;
+}
+
+.moduleProfileLeftBadgesRounderInfoTitle {
+    font-size: 130%;
+}
+
+.moduleProfileLeftBadgesRounderInfoDesc {
+    font-size: 90%;
+}
+
+.moduleProfileRight {
+    height: 100%;
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.moduleProfileRightCoverBox {
+    margin-top: 3px;
+    margin-left: 2px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.moduleProfileCover {
+    height: 145px;
+    width: 98%;
+    background: var(--city-grey-light);
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.moduleProfileActions {
+    height: 30px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.moduleProfileActionsButton {
+    padding: 8px 10px 8px 10px;
+    color: var(--city-white-forced);
+    background-color: #0095F6;
+    -webkit-border-radius: 5px;
+    display: flex;
+    margin-right: 8px;
+}
+
+.moduleProfileActionsButton:hover {
+    background-color: #0095f6bd;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.moduleProfileActionsButtonText {
+    font-size: 17px;
+}
+
+.moduleProfileActionsButtonIcon {
+    height: 14px;
+    width: 14px;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.moduleProfileActionsButtonIconAdd {
+    background: url(../../assets/img/profile/invite.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleProfileActionsButtonIconDelete {
+    background: url(../../assets/img/profile/delete.png) no-repeat;
+    background-size: contain;
+}
+
+.moduleProfileCoverBannerContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.moduleProfileCoverBannerEdit {
+    height: 32px;
+    bottom: 15px;
+    position: absolute;
+    border-radius: 20px;
+    right: 15px;
+    box-shadow: 0 0 0 2px #0000001f;
+    background: var(--city-white-forced);
+    display: flex;
+    overflow: hidden;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditButton:hover {
+    background: #efefef;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditIcon {
+    height: 14px;
+    width: 14px;
+    background: url("../../assets/img/32_edit.png");
+    background-size: contain;
+}
+
+.moduleProfileCoverBannerEdit .moduleProfileCoverBannerEditDeleteIcon {
+    height: 14px;
+    width: 14px;
+    background: url("../../assets/img/32_delete.png");
+    background-size: contain;
+}
+
+.moduleProfileAvatarEdit {
+    height: 32px;
+    top: 160px;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 5px;
+    box-shadow: 0 0 0 2px #0000001f;
+    background: var(--city-white-forced);
+    display: flex;
+    overflow: hidden;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarEditButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarEditButton:hover {
+    background: #efefef;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarEditIcon {
+    height: 14px;
+    width: 14px;
+    background: url("../../assets/img/32_edit.png");
+    background-size: contain;
+}
+
+.moduleProfileAvatarEdit .moduleProfileAvatarDeleteIcon {
+    height: 14px;
+    width: 14px;
+    background: url("../../assets/img/32_delete.png");
+    background-size: contain;
+}
+
+.moduleProfileAvatar {
+    height: 96px;
+    width: 96px;
+    margin: 130px 23px 0;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    background: rgb(217, 217, 217);
+    border: 3px solid var(--city-white-forced);
+}
+
+.moduleProfileUserBox {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileUserFunction {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 95px;
+}
+
+.moduleProfileUsername {
+    margin-left: 150px;
+    font-size: 25px;
+}
+
+.moduleProfileUserOnline {
+    margin-left: 12px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #44CF48;
+}
+
+.moduleProfileUserOffline {
+    margin-left: 12px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ED1C24;
+}
+
+.moduleProfileUserText {
+    margin-left: 8px;
+    font-size: 14px;
+    color: rgba(141, 138, 124, 0.96);
+}
+
+.moduleProfileRightInfoBox {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileRightInfoBorder {
+    margin-top: 10px;
+    height: 90px;
+    width: 98%;
+    border-radius: 10px;
+    border: 0.1px solid var(--city-grey);
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileRightInfoLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleProfileRightInfoCenter {
+    position: relative;
+    width: 1px;
+    height: 60%;
+    background: rgb(231, 231, 231);
+}
+
+.moduleProfileRightInfoRight {
+    width: 50%;
+}
+
+.moduleProfileInfoTextBox {
+    margin-left: 15px;
+    margin-bottom: 3px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.moduleProfileRightInfoText {
+    margin-left: 8px;
+    font-size: 110%;
+}
+
+.moduleProfileIconRichess {
+    height: 25px;
+    width: 25px;
+    background: url(../../assets/img/profile/richess.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileIconLike {
+    height: 22px;
+    width: 24px;
+    background: url(../../assets/img/profile/like.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileIconTime {
+    height: 25px;
+    width: 25px;
+    background: url(../../assets/img/profile/time_icon.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileIconHeart {
+    height: 25px;
+    width: 25px;
+    background: url(../../assets/img/profile/relation_heart.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileIconSmile {
+    height: 25px;
+    width: 25px;
+    background: url(../../assets/img/profile/relation_smile.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileIconBobba {
+    height: 25px;
+    width: 25px;
+    background: url(../../assets/img/profile/relation_dead.png) no-repeat;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.moduleProfileRightContainerBox {
+    height: 365px;
+}
+
+.moduleProfileRightContainerBorder {
+    margin-top: 8px;
+    height: 310px;
+    width: 98%;
+    border-radius: 10px;
+    border: 0.1px solid var(--city-grey);
+}
+
+.moduleProfileMenu {
+    height: 24px;
+    margin-top: 2px;
+    display: flex;
+    gap: 25px;
+}
+
+.moduleProfileTabs {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 19px;
+    border-bottom: 4px solid transparent;
+}
+
+.moduleProfileTabs:hover {
+    border-bottom: 4px solid var(--city-grey);
+}
+
+.moduleProfileTabs[selected] {
+    border-bottom: 4px solid #dcdcdc;
+}
+
+.moduleProfileTabsContainer {
+    height: 100%;
+    position: relative;
+}
+
+.moduleProfileRelationOpenProfile {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mobile .moduleProfileLeft {
+    display: none;
+}
+
+.mobile .moduleProfileRight {
+    width: 100%;
+}

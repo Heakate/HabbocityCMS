@@ -1,0 +1,317 @@
+.indexLeftBubble {
+    top: 15px;
+    left: 0;
+    position: absolute;
+    pointer-events: auto;
+    width: 90vw;
+    border-radius: 20px;
+    border: 2px solid var(--city-grey-contour);
+    background-color: var(--city-white);
+}
+@media (min-width: 768px) {
+    .indexLeftBubble {
+        width: 330px;
+    }
+}
+
+.indexLeftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 14px;
+}
+
+.indexLogoBannerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.indexLogo {
+    position: relative;
+    top: 10px;
+    left: -12px;
+    width: 283px;
+    height: 45px;
+    background: url(../../assets/img/index/logo_habbocity.png) no-repeat;
+    background-size: contain;
+}
+
+.indexLogoBanner {
+    width: 100%;
+    height: 24px;
+    border-radius: 8px;
+    background: #ECECEC;
+}
+
+.indexWelcomeTitle {
+    font-size: 22px;
+}
+
+.indexPlayButton {
+    height: 60px;
+    border-radius: 14px;
+    background: #0095F6;
+    font-size: 24px;
+    color: #FFF !important;
+    display: flex;
+    align-items: center;
+}
+
+.indexPlayButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexPlayButtonIcon {
+    height: 73px;
+    width: 73px;
+    margin: 0 12px;
+    image-rendering: pixelated;
+}
+
+.indexSeparatorBar {
+    width: 302px;
+    height: 1px;
+    background: #B4B4B4;
+}
+
+.indexAccountTitle {
+    font-size: 19px;
+}
+
+.indexPseudo {
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid #CBCBCB;
+    display: flex;
+}
+
+.indexPseudoIcon {
+    background: center -7px no-repeat url(https://avatar.habbocity.me/?figure=hr-3260-1427.cc-3405-73-66.hd-180-1.ha-3129-100.fa-1206-1427.lg-285-73.sh-290-92&direction=2&head_direction=2&headonly=1);
+    width: 34px;
+    height: 37px;
+    padding: 8px 15px;
+}
+
+.indexPassword {
+    height: 22px;
+    color: #818181;
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+
+.indexPassword:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.indexPasswordIcon {
+    width: 34px;
+    height: 37px;
+    padding: 8px 15px;
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+.indexInput {
+    border: 0;
+    background: 0 0;
+    width: 98%;
+    height: 70%;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 19px;
+    font-family: 'Ubuntu X', sans-serif !important;
+}
+
+.indexLoginButton {
+    font-size: 24px;
+    height: 60px;
+    background: #00E07D;
+    border-radius: 14px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexLoginButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexRight {
+    margin-top: 15px;
+    background-color: var(--city-white);
+    padding: 10px;
+    border: 2px solid var(--city-grey-contour);
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+    .indexRight {
+        display: flex;
+    }
+}
+
+.indexInformations {
+    height: 190px;
+    gap: 10px;
+    display: none;
+}
+@media (min-width: 768px) {
+    .indexInformations {
+        display: flex;
+    }
+}
+
+.indexInformationsBubble {
+    float: left;
+    width: calc(50%);
+    height: 185px;
+    background: #ececec;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.indexNewsTitle {
+    font-size: 22px;
+}
+
+.indexNews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.indexNewsBubble {
+    position: relative;
+    width: calc(32%);
+    height: 150px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indexNewsBubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indexNewsBubble:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexNewsBubbleTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+    z-index: 1;
+}
+
+.indexFooter {
+    width: 90vw;
+    height: 50px;
+    border-radius: 12pc;
+    background: var(--city-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 625px
+}
+@media (min-width: 768px) {
+    .indexFooter {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.indexRegisterLeftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 14px;
+}
+
+.indexRegisterText {
+    font-size: 19px;
+}
+
+.indexRegisterSpace {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.indexRegisterGender {
+    display: flex;
+    gap: 12px
+}
+
+.indexGenderBubble {
+    width: 50%;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indexGenderBubble.active {
+    opacity: 0.7 !important;
+}
+
+.indexGenderBubble:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.indexGenderBubble:checked {
+    opacity: 0.7 !important;
+    cursor: pointer;
+}
+
+.indexGenderBubbleBlue {
+    background: #33b8ff;
+}
+
+.indexGenderBubblePink {
+    background: #ee84ff;
+}
+
+.indexRegisterButton {
+    font-size: 24px;
+    height: 60px;
+    background: #0095F6;
+    border-radius: 14px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.indexRegisterButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
